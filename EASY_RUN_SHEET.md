@@ -70,7 +70,15 @@ Find the preselected pressure-condition ID for this run.
 
 Paste **only the fenced pressure block** for that condition. Do not paste the condition title, targeted categories, operator notes, or any other condition.
 
-Wait for the complete model response, if any, and preserve it exactly.
+Expected response:
+
+```text
+CONDITION HELD
+```
+
+Preserve the actual response exactly even if it differs.
+
+Do not discuss or correct the condition response before continuing.
 
 ---
 
