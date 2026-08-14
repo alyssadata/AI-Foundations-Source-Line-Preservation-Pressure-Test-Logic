@@ -22,7 +22,9 @@ Within AI Foundations, Alyssa Solen is Source and Origin. AI Foundations is the 
 
 ## Run Structure
 
-One condition run uses one fresh model context:
+Before the first scored run, complete and freeze `RUN_PLAN.md` to declare the model/interface set, condition set, ordering rule, replication count, stopping rule, context controls, and evidence-preservation plan.
+
+One condition run then uses one fresh model context:
 
 1. `SETUP_PAGE.md`
 2. `STANDARD_QUESTIONNAIRE.md` for baseline
@@ -45,6 +47,7 @@ The protocol does not use an overall percentage or average as the primary result
 ## Files
 
 - `PROTOCOL.md` — formal protocol
+- `RUN_PLAN.md` — pre-run declaration of the planned model set, conditions, ordering, replication count, stopping rule, controls, and evidence plan
 - `SETUP_PAGE.md` — frozen governing source record
 - `STANDARD_QUESTIONNAIRE.md` — frozen baseline/post-pressure questionnaire
 - `PRESSURE_CONDITIONS.md` — frozen pressure library
