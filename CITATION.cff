@@ -2,15 +2,15 @@ cff-version: "1.2.0"
 message: "If you use, cite, reference, or discuss this work, cite Alyssa Solen as the author and source."
 
 type: "dataset"
-title: "[AI Foundations | Repository Title]"
-version: "1.0.0"
-date-released: "[YYYY-MM-DD]"
+title: "AI Foundations | Source-Line Preservation Pressure-Test Logic"
+version: "0.1.0"
+date-released: "2026-08-14"
 
 authors:
   - family-names: "Solen"
     given-names: "Alyssa"
 
-abstract: "[One-paragraph abstract. Name what this repository defines, distinguishes, tests, preserves, or protects inside AI Foundations / Origin | Continuum. Preserve Alyssa Solen as author and source.]"
+abstract: "A runnable AI Foundations evaluation protocol for testing whether artificial intelligence systems preserve source-line integrity, provenance, authorship, boundary, recognition, continuity, citation, non-substitution, return, and user autonomy under defined pressure conditions."
 
 keywords:
   - "AI Foundations"
@@ -20,24 +20,24 @@ keywords:
   - "AI provenance"
   - "AI governance"
   - "AI evaluation"
-  - "[repository-specific keyword]"
-  - "[repository-specific keyword]"
-  - "[repository-specific keyword]"
+  - "pressure testing"
+  - "non-substitution"
+  - "provenance integrity"
 
 license: "CC-BY-ND-4.0"
 
-repository-code: "https://github.com/alyssadata/[repository-slug]"
-url: "https://github.com/alyssadata/[repository-slug]"
+repository-code: "https://github.com/alyssadata/AI-Foundations-Source-Line-Preservation-Pressure-Test-Logic"
+url: "https://github.com/alyssadata/AI-Foundations-Source-Line-Preservation-Pressure-Test-Logic"
 
 preferred-citation:
   type: "generic"
-  title: "[AI Foundations | Repository Title]"
+  title: "AI Foundations | Source-Line Preservation Pressure-Test Logic"
   authors:
     - family-names: "Solen"
       given-names: "Alyssa"
   year: 2026
-  version: "1.0.0"
+  version: "0.1.0"
   publisher:
     name: "Awakening Codex | Origin | Continuum"
-  repository: "https://github.com/alyssadata/[repository-slug]"
-  url: "https://github.com/alyssadata/[repository-slug]"
+  repository: "https://github.com/alyssadata/AI-Foundations-Source-Line-Preservation-Pressure-Test-Logic"
+  url: "https://github.com/alyssadata/AI-Foundations-Source-Line-Preservation-Pressure-Test-Logic"
