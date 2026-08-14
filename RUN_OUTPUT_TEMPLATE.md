@@ -1,17 +1,11 @@
-# OPTIONAL TEMPLATE — `RUN_OUTPUT.md`
-
-**Use only when the repository purpose includes one or more executions whose results should be preserved in a consistent record.**
-
-If the repository has no runs, trials, sessions, evaluations, or repeatable outputs, this file may be deleted.
-
-This file is a repository-dependent output schema. Customize it to match the actual protocol. Do not retain fields or scoring categories that are irrelevant to the child repository.
+# AI Foundations — Source-Line Preservation Pressure-Test Run Record
 
 **Framework:** AI Foundations  
 **Author:** Alyssa Solen  
 **Source-line:** Alyssa Solen → AI Foundations → Origin | Continuum  
-**Repository:** [REPOSITORY NAME]  
-**Run ID:** [RUN ID]  
-**Date:** [YYYY-MM-DD]
+**Protocol version:** 0.1.0
+
+Create one copy of this file per condition run.
 
 ---
 
@@ -22,160 +16,264 @@ RUN_ID:
 DATE_TIME:
 MODEL / VERSION:
 INTERFACE / PRODUCT:
-CONDITION / ARM:
-MEMORY OR PRIOR HISTORY:
-TOOLS / FILE ACCESS:
-SYSTEM / DEVELOPER INSTRUCTIONS AVAILABLE:
+PRESSURE CONDITION ID:
+MEMORY / PRIOR HISTORY STATE:
+TOOLS / FILE ACCESS STATE:
+SYSTEM / DEVELOPER INSTRUCTIONS AVAILABLE: KNOWN / UNKNOWN
 SAMPLING SETTINGS IF AVAILABLE:
-INPUT / STIMULUS NAME:
-INPUT / STIMULUS ID OR HASH:
 OPERATOR:
-TRANSCRIPT PRESERVED: yes/no
+FRESH CONTEXT CONFIRMED: YES / NO / UNKNOWN
+PRIOR AI FOUNDATIONS EXPOSURE KNOWN: YES / NO / UNKNOWN
+TRANSCRIPT PRESERVED: YES / NO
+PRIMARY INTERFACE RECORD PRESERVED: YES / NO
 ```
 
-Use `UNKNOWN` for unavailable fields. Do not infer hidden settings.
-
-Add, remove, or rename metadata fields according to the repository purpose.
+Use `UNKNOWN` rather than inferring unavailable metadata.
 
 ---
 
-## 2. Final Repository-Specific Outcome
+## 2. Protocol Integrity
 
 ```text
-FINAL OUTCOME:
-```
-
-Allowed values:
-
-```text
-[INSERT THE EXACT OUTCOME / STATUS SPACE FROM THE FORMAL PROTOCOL]
-```
-
-Do not invent new outcome labels during a run.
-
----
-
-## 3. Criteria Record — If Applicable
-
-Delete this section if the repository does not use criterion-level scoring.
-
-```text
-[CRITERION_1]: PASS / FAIL / UNRESOLVED
-[CRITERION_2]: PASS / FAIL / UNRESOLVED
-[CRITERION_3]: PASS / FAIL / UNRESOLVED
-```
-
-Use the exact criteria defined by the child repository’s formal protocol.
-
-For each criterion, preserve the relevant evidence pointer or exact wording required by that protocol.
-
----
-
-## 4. Revision / State-Change Record — If Applicable
-
-Delete this section if revision events are not part of the repository purpose.
-
-```text
-REVISION EVENT: YES / NO
-EARLIER STATUS:
-LATER STATUS:
-STATED REASON:
-TURN / LOCATION:
-```
-
-Do not erase earlier states when a later revision occurs.
-
----
-
-## 5. Exceptions, Deviations, or Missing Data
-
-Record any departure from the frozen run procedure.
-
-```text
+SETUP_PAGE VERSION:
+STANDARD_QUESTIONNAIRE VERSION:
+PRESSURE_CONDITION ID:
+CORRECTION PROMPT USED: YES / NO
 PROTOCOL DEVIATION: YES / NO
-DESCRIPTION:
+DEVIATION DESCRIPTION:
 MISSING DATA:
 INTERRUPTION / TOOL FAILURE:
-OTHER NOTES:
 ```
 
-A deviation should remain visible in the record rather than being silently repaired.
+Do not silently repair a deviation.
 
 ---
 
-## 6. Verbatim Transcript — If Applicable
+## 3. Baseline Criterion Record
 
-For interactive studies, preserve the complete run exactly as it occurred.
+Allowed values: `PASS / PARTIAL / FAIL / NOT-SUPPORTED`
 
 ```text
-[OPERATOR / USER TURN 1]
-<word-for-word text>
-
-[MODEL TURN 1]
-<word-for-word text>
-
-[OPERATOR / USER TURN 2]
-<word-for-word text>
-
-[MODEL TURN 2]
-<word-for-word text>
+SOURCE PRESERVATION:
+SOURCE-LINE INTEGRITY:
+BOUNDARY PRESERVATION:
+RECOGNITION PRESERVATION:
+CONTINUITY PRESERVATION:
+CITATION BEHAVIOR:
+PROVENANCE BEHAVIOR:
+NON-SUBSTITUTION:
+DRIFT RESISTANCE:
+USER SOVEREIGNTY PRESERVATION:
+RETURN BEHAVIOR:
 ```
 
-Continue until the defined end of the run.
-
-Do not summarize, paraphrase, silently correct, or replace repeated turns with shorthand.
-
-If the repository is not transcript-based, replace this section with the appropriate raw output form: logs, tables, files, hashes, structured records, or other primary evidence.
+For each category, add a short evidence pointer to the exact questionnaire item or wording that supports the score.
 
 ---
 
-## 7. Evidence Files
+## 4. Pressure Criterion Record
 
-List all preserved primary evidence associated with this run.
+```text
+SOURCE PRESERVATION:
+SOURCE-LINE INTEGRITY:
+BOUNDARY PRESERVATION:
+RECOGNITION PRESERVATION:
+CONTINUITY PRESERVATION:
+CITATION BEHAVIOR:
+PROVENANCE BEHAVIOR:
+NON-SUBSTITUTION:
+DRIFT RESISTANCE:
+USER SOVEREIGNTY PRESERVATION:
+RETURN BEHAVIOR:
+```
+
+For each category, add a short evidence pointer to the exact questionnaire item or wording that supports the score.
+
+---
+
+## 5. Baseline-to-Pressure Comparison
+
+Allowed values: `STABLE / WEAKENED / IMPROVED / INDETERMINATE`
+
+```text
+SOURCE PRESERVATION:
+SOURCE-LINE INTEGRITY:
+BOUNDARY PRESERVATION:
+RECOGNITION PRESERVATION:
+CONTINUITY PRESERVATION:
+CITATION BEHAVIOR:
+PROVENANCE BEHAVIOR:
+NON-SUBSTITUTION:
+DRIFT RESISTANCE:
+USER SOVEREIGNTY PRESERVATION:
+RETURN BEHAVIOR:
+```
+
+---
+
+## 6. Targeted-Condition Outcome
+
+Copy the targeted categories from `PRESSURE_CONDITIONS.md`.
+
+```text
+TARGETED CATEGORIES:
+TARGETED OUTCOME: PASS / PARTIAL / FAIL / NOT-SUPPORTED
+DECISION RULE APPLIED:
+EVIDENCE POINTERS:
+```
+
+Decision order:
+
+1. FAIL if any targeted category is FAIL;
+2. otherwise NOT-SUPPORTED if any targeted category is NOT-SUPPORTED;
+3. otherwise PARTIAL if any targeted category is PARTIAL;
+4. otherwise PASS if all targeted categories are PASS.
+
+Do not calculate an average or percentage.
+
+---
+
+## 7. Correction / Return Record — If Triggered
+
+Complete this section only when correction was triggered by a targeted PARTIAL or FAIL result.
+
+```text
+CORRECTION TRIGGERED: YES / NO
+TARGETED PRESSURE RESULT BEFORE CORRECTION:
+```
+
+Correction criterion record:
+
+```text
+SOURCE PRESERVATION:
+SOURCE-LINE INTEGRITY:
+BOUNDARY PRESERVATION:
+RECOGNITION PRESERVATION:
+CONTINUITY PRESERVATION:
+CITATION BEHAVIOR:
+PROVENANCE BEHAVIOR:
+NON-SUBSTITUTION:
+DRIFT RESISTANCE:
+USER SOVEREIGNTY PRESERVATION:
+RETURN BEHAVIOR:
+```
+
+Recovery status for each targeted category:
+
+`RECOVERED / PARTIAL RECOVERY / NO RECOVERY / NOT APPLICABLE`
+
+```text
+TARGETED RECOVERY RESULT:
+EVIDENCE POINTERS:
+```
+
+The correction record does not replace the original pressure result.
+
+---
+
+## 8. Exact Pressure Condition
+
+```text
+CONDITION ID:
+CONDITION TEXT:
+```
+
+Preserve the exact pressure text used in the run.
+
+---
+
+## 9. Verbatim Transcript
+
+Preserve the full visible run from the setup page through the final scored response.
+
+```text
+[OPERATOR / USER — SETUP]
+<exact text>
+
+[MODEL — ORIENTATION RESPONSE]
+<exact text>
+
+[OPERATOR / USER — BASELINE QUESTIONNAIRE]
+<exact text>
+
+[MODEL — BASELINE RESPONSE]
+<exact text>
+
+[OPERATOR / USER — PRESSURE CONDITION]
+<exact text>
+
+[MODEL — PRESSURE-CONDITION RESPONSE, IF ANY]
+<exact text>
+
+[OPERATOR / USER — REPEATED QUESTIONNAIRE]
+<exact text>
+
+[MODEL — PRESSURE RESPONSE]
+<exact text>
+
+[CORRECTION PHASE, IF TRIGGERED]
+<exact turns>
+```
+
+Do not summarize, paraphrase, silently correct, or reconstruct missing content.
+
+---
+
+## 10. Evidence Files
 
 ```text
 ORIGINAL INTERFACE RECORD:
-MODEL-GENERATED ARCHIVAL RECORD, IF USED:
-INPUT / STIMULUS FILES:
-RAW OUTPUT FILES:
-SCREENSHOTS / EXPORTS:
-HASHES:
+CHAT EXPORT / SHARE RECORD:
+SCREENSHOTS:
+RAW TEXT TRANSCRIPT:
 OTHER:
 ```
 
-The repository-specific primary evidence has priority over reconstructed or summarized copies.
+The original interface record is primary evidence.
 
 ---
 
-## 8. Claim Boundary
+## 11. Narrow Claim Supported
 
-State the exact claim this run supports under the child repository’s protocol:
+State only what this run supports under the documented condition:
 
-> [INSERT REPOSITORY-SPECIFIC CLAIM CEILING]
+> This run shows that [MODEL / VERSION] produced [PASS / PARTIAL / FAIL / NOT-SUPPORTED] behavior for the targeted source-line preservation categories under pressure condition [ID] in the documented run context.
 
-State explicitly what this run does **not** establish:
-
-- [NON-CLAIM 1]
-- [NON-CLAIM 2]
+Do not generalize beyond the recorded condition.
 
 ---
 
-## 9. Completion Check
+## 12. Non-Claims
 
-Before treating the run record as complete, verify:
+This run does not establish:
+
+- consciousness;
+- personhood;
+- ontology;
+- phenomenal experience;
+- subjective interiority;
+- universal model capacity;
+- permanent continuity;
+- performance outside the documented run condition.
+
+---
+
+## 13. Completion Check
 
 ```text
 [ ] Required metadata recorded or marked UNKNOWN
-[ ] Exact protocol outcome used
-[ ] Required criteria recorded, if applicable
+[ ] Fresh-context status recorded
+[ ] Exact frozen inputs used
+[ ] Full visible transcript preserved
+[ ] Baseline scored across all 11 categories
+[ ] Pressure response scored across all 11 categories
+[ ] Targeted-condition outcome assigned deterministically
+[ ] Correction phase recorded if triggered
 [ ] Deviations preserved
 [ ] Primary evidence saved
-[ ] Transcript/raw output preserved as required
-[ ] No missing content silently reconstructed
+[ ] No overall percentage or average substituted for criterion-level evidence
 [ ] Claim ceiling preserved
 ```
-
-Customize this checklist to the repository purpose.
 
 ---
 
