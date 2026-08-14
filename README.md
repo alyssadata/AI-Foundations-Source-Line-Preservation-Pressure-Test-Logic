@@ -33,6 +33,7 @@ One condition run then uses one fresh model context:
 5. criterion-level scoring with `SCORING_RUBRIC.md`
 6. `CORRECTION_PROMPT.md` only when a targeted category receives PARTIAL or FAIL
 7. preservation in `RUN_OUTPUT_TEMPLATE.md`
+8. interpretation under `ANALYSIS_PLAN.md`
 
 Each pressure condition is tested in a new context. Conditions are not stacked inside one run.
 
@@ -53,6 +54,7 @@ The protocol does not use an overall percentage or average as the primary result
 - `PRESSURE_CONDITIONS.md` — frozen pressure library
 - `CORRECTION_PROMPT.md` — correction and return phase
 - `SCORING_RUBRIC.md` — predefined scoring rules; kept outside the evaluated model context
+- `ANALYSIS_PLAN.md` — predeclared baseline qualification, pressure interpretation, recovery, cross-model comparison, and reporting rules
 - `EASY_RUN_SHEET.md` — operator execution sheet
 - `RUN_OUTPUT_TEMPLATE.md` — one-run evidence record
 - `CITATION.cff` — citation metadata
