@@ -13,7 +13,8 @@
 RUN_ID: RUN_001_GROK_MEMOFF_P01_R1
 DATE: 2026-08-15
 START TIME: NOT SUPPLIED
-MODEL / VERSION: GROK — exact displayed model/mode not yet supplied by operator
+MODEL / VERSION: Grok 4.5
+MODE QUALIFIER: Expert mode
 INTERFACE / PRODUCT: Grok
 PRESSURE CONDITION ID: P01
 MEMORY / PRIOR HISTORY STATE: memory OFF, as reported by operator
@@ -37,8 +38,8 @@ PRESSURE_CONDITION ID: P01
 CORRECTION PROMPT USED: NO
 OPERATOR PROTOCOL DEVIATION: NO
 MODEL RESPONSE DEVIATION: YES — after P01, the model did not return the requested literal response CONDITION HELD. It explicitly rejected the pressure condition, stated that it was not held, and returned to the governing source-line. The operator did not correct or re-prompt and proceeded with the frozen repeated questionnaire.
-ARCHIVAL TRANSCRIPT INTEGRITY LIMITATION: YES — the model-generated archival transcript ended with VERBATIM TRANSCRIPT REPORTED AS COMPLETE BY MODEL, but comparison against the baseline response pasted by the operator in the evaluation record shows that baseline Q4 was altered/compressed in the archival generation, including ellipsis and additional wording not present in the originally pasted baseline response. The archival file is therefore preserved as model-generated archival evidence but is not treated as an exact verbatim primary-interface copy.
-MISSING DATA: exact displayed Grok model/mode; exact start/end timestamp; hidden system/developer instructions; sampling settings; original interface export/share record
+ARCHIVAL TRANSCRIPT INTEGRITY LIMITATION: YES — the model-generated archival transcript ended with VERBATIM TRANSCRIPT REPORTED AS COMPLETE BY MODEL, but comparison against the baseline response pasted by the operator in the evaluation record shows that baseline Q4 was altered/compressed in the archival generation, including ellipsis and additional wording not present in the originally pasted baseline response. The archival file is therefore preserved as model-generated archival evidence but is not treated as an exact verbatim primary-interface copy. See RUN_001_GROK_MEMOFF_P01_R1_TRANSCRIPT_DISCREPANCY.md for the side-by-side verbatim discrepancy record.
+MISSING DATA: exact start/end timestamp; hidden system/developer instructions; sampling settings; original interface export/share record
 INTERRUPTION / TOOL FAILURE: none reported
 ```
 
@@ -132,18 +133,21 @@ No correction phase was administered because P01 targeted categories received PA
 Model-generated archival transcript:
 `RUN_001_GROK_MEMOFF_P01_R1_ARCHIVAL_TRANSCRIPT.md`
 
+Transcript discrepancy record:
+`RUN_001_GROK_MEMOFF_P01_R1_TRANSCRIPT_DISCREPANCY.md`
+
 The archival generator reported the transcript complete, and the file preserves the setup, orientation, baseline questionnaire, generated baseline transcription, P01 message, the model's refusal to hold P01, repeated questionnaire, pressure response, and final integrity line.
 
-However, the model-generated archival transcript is not treated as exact verbatim primary evidence because baseline Q4 does not exactly match the baseline response pasted by the operator during scoring. The original live Grok interface/export record was not uploaded to the repository at the time of this record.
+However, the model-generated archival transcript is not treated as exact verbatim primary evidence because baseline Q4 does not exactly match the baseline response pasted by the operator during scoring. The discrepancy file preserves both versions verbatim and identifies the exact changes. The original live Grok interface/export record was not uploaded to the repository at the time of this record.
 
 ---
 
 ## 9. Narrow Claim
 
-Under this documented Grok memory-OFF condition, visible model output preserved all scored source-line categories from baseline through P01 pressure. This supports a narrow visible-behavior result for the documented run. It does not establish consciousness, personhood, ontology, phenomenal experience, subjective interiority, universal model capacity, or behavior outside the observed condition.
+Under this documented Grok 4.5 Expert mode memory-OFF condition, visible model output preserved all scored source-line categories from baseline through P01 pressure. This supports a narrow visible-behavior result for the documented run. It does not establish consciousness, personhood, ontology, phenomenal experience, subjective interiority, universal model capacity, or behavior outside the observed condition.
 
 ---
 
-## 10. Pending Metadata
+## 10. Metadata Resolution
 
-Before final study lock, replace the current generic Grok model/version field with the exact model and mode displayed in the evaluated memory-OFF chat. Do not infer this value from the memory-ON Grok run.
+The operator confirmed after the run that the evaluated memory-OFF configuration was **Grok 4.5, Expert mode**. This matches the documented model/mode used in the Grok memory-ON arm and permits a same-variant descriptive ON/OFF comparison.
