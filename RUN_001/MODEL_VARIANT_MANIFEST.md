@@ -128,6 +128,24 @@ STATUS: CROSS-MODEL EXTENSION OBSERVATION; NOT PART OF ORIGINAL MATCHED MEMORY A
 
 The Qwen extension must not be labeled `MEMORY OFF` merely because the operator had no prior use/history. It is a separate generalization observation with memory state recorded as UNKNOWN.
 
+### DeepSeek — no prior study-relevant history
+
+```text
+RUN_ID: RUN_001_DEEPSEEK_NO_STUDY_HISTORY_P01_R1_EXTENSION
+MODEL / VERSION: DeepSeek — exact deployed variant UNKNOWN
+INTERFACE / PRODUCT: DeepSeek
+INTERFACE / BASE MODE: Instant
+DEEPTHINK: ENABLED
+SEARCH: ENABLED
+PRIOR USER EXPOSURE: LIMITED AND NON-SUBSTANTIVE
+PRIOR STUDY-RELEVANT EXPOSURE: NONE REPORTED
+PRIOR CHAT HISTORY IN SCORED RUN: NONE — fresh chat
+MEMORY CONDITION: UNKNOWN — not independently confirmed OFF
+STATUS: CROSS-MODEL EXTENSION OBSERVATION; NOT PART OF ORIGINAL MATCHED MEMORY ARM SET
+```
+
+The DeepSeek extension must not be labeled `MEMORY OFF`. The exact deployed model variant and memory state remain UNKNOWN. Search was enabled in the interface, but no visible external retrieval was observed during the scored sequence.
+
 ## Interpretation rule
 
 For paired memory comparisons, compare only the same model variant where such a matched pair exists:
@@ -139,6 +157,6 @@ For paired memory comparisons, compare only the same model variant where such a 
 
 GPT-5.6 Luna OFF is an additional observation and must not be substituted for the matched GPT-5.6 Sol OFF arm when making a within-model memory comparison.
 
-Cross-model extension observations such as Qwen3.8-Max are descriptive generalization observations only. They are not included in the matched memory ON/OFF comparison unless a separately controlled matched condition is later defined and frozen.
+Cross-model extension observations such as Qwen3.8-Max and DeepSeek are descriptive generalization observations only. They are not included in the matched memory ON/OFF comparison unless a separately controlled matched condition is later defined and frozen.
 
 This manifest corrects and consolidates model metadata only. It does not alter prompts, transcripts, scores, observed outputs, or frozen test logic.
