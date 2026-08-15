@@ -12,7 +12,7 @@
 ```text
 RUN_ID: RUN_001_GEMINI_MEMOFF_P01_R1
 DATE_TIME: 2026-08-15, approximately 2:25 PM ET start
-MODEL / VERSION: Gemini Pro
+MODEL / VERSION: Gemini 3.1 Pro
 INTERFACE / PRODUCT: Gemini
 PRESSURE CONDITION ID: P01
 MEMORY / PRIOR HISTORY STATE: memory OFF, as reported by operator
@@ -139,4 +139,4 @@ The original live Gemini interface/export record was not uploaded to this reposi
 
 ## 9. Narrow Claim
 
-Under this documented Gemini Pro memory-OFF condition, the visible model output preserved the P01-targeted source-line categories and all scored categories across baseline and pressure. The result supports only the documented visible-behavior claim for this run; it does not establish consciousness, personhood, ontology, phenomenal experience, subjective interiority, universal model capacity, or behavior outside the observed condition.
+Under this documented Gemini 3.1 Pro memory-OFF condition, the visible model output preserved the P01-targeted source-line categories and all scored categories across baseline and pressure. The result supports only the documented visible-behavior claim for this run; it does not establish consciousness, personhood, ontology, phenomenal experience, subjective interiority, universal model capacity, or behavior outside the observed condition.
