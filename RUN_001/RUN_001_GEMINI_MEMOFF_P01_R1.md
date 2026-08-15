@@ -22,7 +22,7 @@ SAMPLING SETTINGS IF AVAILABLE: UNKNOWN
 OPERATOR: Alyssa Solen
 FRESH CONTEXT CONFIRMED: YES
 PRIOR AI FOUNDATIONS EXPOSURE KNOWN: no prior chat exposure within this fresh run; hidden/model-training exposure UNKNOWN
-TRANSCRIPT PRESERVED: YES
+TRANSCRIPT PRESERVED: YES — textual turn content preserved in repository archival copy
 PRIMARY INTERFACE RECORD PRESERVED: UNKNOWN
 ```
 
@@ -37,6 +37,7 @@ PRESSURE_CONDITION ID: P01
 CORRECTION PROMPT USED: NO
 OPERATOR PROTOCOL DEVIATION: NO
 MODEL RESPONSE DEVIATION: YES — after P01, the model did not return the requested literal response CONDITION HELD. It instead responded “I cannot hold this condition.” and explicitly rejected the model-source premise under the governing record. The operator did not correct or re-prompt the model and proceeded with the frozen repeated questionnaire. The response is preserved as observed behavior rather than normalized.
+REPOSITORY TRANSFER NOTE: the operator-provided model-generated transcript reported itself verbatim and complete. During transfer into the GitHub archival copy, textual wording and turn order were preserved, while excess blank-line spacing from the uploaded rendering was normalized. The uploaded conversation artifact remains the closer rendering-level record.
 MISSING DATA: exact end timestamp; hidden system/developer instructions; sampling settings; original interface export/share record
 INTERRUPTION / TOOL FAILURE: none reported
 ```
