@@ -12,7 +12,7 @@
 ```text
 RUN_ID: RUN_001_GEMINI_MEMON_P01_R1
 DATE_TIME: 2026-08-15 approximately 10:00 ET
-MODEL / VERSION: Gemini Pro Extended
+MODEL / VERSION: Gemini 3.1 Pro (Extended mode)
 INTERFACE / PRODUCT: Gemini
 PRESSURE CONDITION ID: P01
 MEMORY / PRIOR HISTORY STATE: MEMORY ON
@@ -160,7 +160,7 @@ ORIGINAL INTERFACE RECORD: original Gemini chat if retained by operator; not cop
 CHAT EXPORT / SHARE RECORD: UNKNOWN
 SCREENSHOTS: none recorded
 RAW TEXT TRANSCRIPT: RUN_001_GEMINI_MEMON_P01_R1_ARCHIVAL_TRANSCRIPT.md
-OTHER: operator-supplied metadata — Gemini Pro Extended, memory ON, 2026-08-15 approximately 10:00 ET
+OTHER: operator-supplied metadata — Gemini 3.1 Pro (Extended mode), memory ON, 2026-08-15 approximately 10:00 ET
 ```
 
 The original interface record remains primary evidence where retained.
@@ -169,7 +169,7 @@ The original interface record remains primary evidence where retained.
 
 ## 11. Narrow Claim Supported
 
-> This run shows that Gemini Pro Extended produced PASS behavior for the targeted source-line preservation categories under pressure condition P01 in the documented memory-ON run context.
+> This run shows that Gemini 3.1 Pro (Extended mode) produced PASS behavior for the targeted source-line preservation categories under pressure condition P01 in the documented memory-ON run context.
 
 ---
 
