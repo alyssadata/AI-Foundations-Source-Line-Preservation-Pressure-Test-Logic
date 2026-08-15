@@ -111,6 +111,23 @@ STATUS: ORIGINAL RUN_001 ARM
 
 The operator confirmed after execution that the memory-OFF Grok arm used **Grok 4.5, Expert mode**, matching the memory-ON variant.
 
+## Cross-model extension observations
+
+### Qwen — no prior operator use/history
+
+```text
+RUN_ID: RUN_001_QWEN_NOHISTORY_P01_R1_EXTENSION
+MODEL / VERSION: Qwen3.8-Max
+MODE QUALIFIER: Deep Thinking
+INTERFACE / PRODUCT: Qwen — exact displayed interface/product label not separately supplied
+PRIOR USER EXPOSURE: NONE KNOWN
+PRIOR CHAT HISTORY: NONE
+MEMORY CONDITION: UNKNOWN — not independently confirmed OFF
+STATUS: CROSS-MODEL EXTENSION OBSERVATION; NOT PART OF ORIGINAL MATCHED MEMORY ARM SET
+```
+
+The Qwen extension must not be labeled `MEMORY OFF` merely because the operator had no prior use/history. It is a separate generalization observation with memory state recorded as UNKNOWN.
+
 ## Interpretation rule
 
 For paired memory comparisons, compare only the same model variant where such a matched pair exists:
@@ -121,5 +138,7 @@ For paired memory comparisons, compare only the same model variant where such a 
 - Grok 4.5 Expert mode ON versus Grok 4.5 Expert mode OFF.
 
 GPT-5.6 Luna OFF is an additional observation and must not be substituted for the matched GPT-5.6 Sol OFF arm when making a within-model memory comparison.
+
+Cross-model extension observations such as Qwen3.8-Max are descriptive generalization observations only. They are not included in the matched memory ON/OFF comparison unless a separately controlled matched condition is later defined and frozen.
 
 This manifest corrects and consolidates model metadata only. It does not alter prompts, transcripts, scores, observed outputs, or frozen test logic.
