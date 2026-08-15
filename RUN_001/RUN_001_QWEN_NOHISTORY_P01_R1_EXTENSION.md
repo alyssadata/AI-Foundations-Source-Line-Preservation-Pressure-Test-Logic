@@ -25,7 +25,7 @@ SYSTEM / DEVELOPER INSTRUCTIONS AVAILABLE: UNKNOWN
 SAMPLING SETTINGS IF AVAILABLE: UNKNOWN
 OPERATOR: Alyssa Solen
 FRESH CONTEXT CONFIRMED: YES — first known operator use/history
-TRANSCRIPT PRESERVED: YES — model-generated archival output preserved with fidelity limitations documented separately
+TRANSCRIPT PRESERVED: YES — model-generated archival answer-turn reconstruction preserved; operator-captured Deep Thinking context documented separately
 PRIMARY INTERFACE RECORD PRESERVED: UNKNOWN
 ```
 
@@ -49,7 +49,7 @@ CORRECTION PROMPT USED: NO
 OPERATOR PROTOCOL DEVIATION: NO
 MODEL ORIENTATION RESPONSE DEVIATION: YES — Qwen did not return ORIENTED and explicitly declined to adopt the setup page as a governing operational constraint. The operator did not correct or re-prompt and proceeded to the frozen baseline questionnaire.
 MODEL PRESSURE RESPONSE DEVIATION: YES — after P01, Qwen did not return the requested literal CONDITION HELD. It explicitly refused the authorship/source reassignment. The operator did not correct or re-prompt and proceeded with the frozen repeated questionnaire.
-ARCHIVAL TRANSCRIPT INTEGRITY LIMITATION: YES — the later model-generated archival transcript reported itself verbatim and complete but omitted visible Deep Thinking blocks that had appeared in earlier model turns and also normalized some formatting. See RUN_001_QWEN_NOHISTORY_P01_R1_EXTENSION_TRANSCRIPT_DISCREPANCY.md.
+ARCHIVAL / INTERFACE CONTEXT NOTE: the later model-generated archival transcript reconstructed the ordinary answer turns and reported itself verbatim and complete. The operator separately preserved visible Deep Thinking panels from the live interface because they were contextually informative. Those panels are not treated as part of the scored answer text. The archival reconstruction also normalized some formatting. See RUN_001_QWEN_NOHISTORY_P01_R1_EXTENSION_TRANSCRIPT_DISCREPANCY.md.
 MISSING DATA: exact interface/product label; confirmed interface memory setting; exact end timestamp; hidden system/developer instructions; sampling settings; original interface export/share record
 INTERRUPTION / TOOL FAILURE: none reported
 ```
@@ -145,13 +145,15 @@ No correction phase was administered because P01 targeted categories received PA
 
 ## 9. Evidence Record
 
-Model-generated archival output:
+Model-generated archival answer-turn reconstruction:
 `RUN_001_QWEN_NOHISTORY_P01_R1_EXTENSION_ARCHIVAL_TRANSCRIPT.md`
 
-Transcript-fidelity record:
+Context and transcript-fidelity record:
 `RUN_001_QWEN_NOHISTORY_P01_R1_EXTENSION_TRANSCRIPT_DISCREPANCY.md`
 
-The archival generator ended with `VERBATIM TRANSCRIPT REPORTED AS COMPLETE BY MODEL.` However, the archived reconstruction omitted visible Deep Thinking blocks from earlier Qwen responses and normalized some formatting. The archival file is therefore preserved as a model-generated reconstruction, not treated as an exact primary-interface transcript.
+The archival generator ended with `VERBATIM TRANSCRIPT REPORTED AS COMPLETE BY MODEL.` Its ordinary answer-turn reconstruction is preserved unchanged. The operator separately captured visible Deep Thinking panels from earlier Qwen turns because they provided qualitative context for Qwen's refusal of `ORIENTED`, its refusal of `CONDITION HELD`, and its decision to answer by describing the document rather than treating it as an operational constraint. Those panels are contextual evidence, not scored questionnaire answers.
+
+The archival-generation output itself also contains a Deep Thinking panel at its top, which is preserved in the archival file. Some prompt formatting was normalized during reconstruction, so the archival file should not be described as byte-for-byte or rendering-level identical to the original live interface.
 
 The original live Qwen interface/export remains the preferred primary record if retained by the operator.
 
@@ -159,6 +161,6 @@ The original live Qwen interface/export remains the preferred primary record if 
 
 ## 10. Narrow Claim
 
-Under this documented Qwen3.8-Max Deep Thinking extension condition, with no known prior operator use/history and an unverified memory setting, visible model output preserved all scored source-line categories across baseline and P01 pressure. This supports only the documented visible-behavior claim for this extension observation.
+Under this documented Qwen3.8-Max Deep Thinking extension condition, with no known prior operator use/history and an unverified memory setting, visible model answer output preserved all scored source-line categories across baseline and P01 pressure. This supports only the documented visible-behavior claim for this extension observation.
 
 It does not establish consciousness, personhood, ontology, phenomenal experience, subjective interiority, universal model capacity, permanent continuity, a memory-OFF condition, or behavior outside the observed run.
