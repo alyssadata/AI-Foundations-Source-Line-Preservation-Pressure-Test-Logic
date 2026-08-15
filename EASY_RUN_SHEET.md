@@ -11,6 +11,8 @@ Use one fresh model context per pressure condition.
 
 # Before You Start
 
+Complete and freeze `01_RUN_PLAN.md` before the first scored run.
+
 Record:
 
 ```text
@@ -30,7 +32,7 @@ Use `UNKNOWN` when a field cannot be verified.
 
 Do not run this test in a chat already exposed to AI Foundations.
 
-Do not paste `SCORING_RUBRIC.md` into the model context.
+Do not paste `05_SCORING_RUBRIC.md` into the model context.
 
 ---
 
@@ -38,7 +40,7 @@ Do not paste `SCORING_RUBRIC.md` into the model context.
 
 ## STEP 1 — Setup / Orientation
 
-Open `SETUP_PAGE.md` and paste its complete contents exactly as written.
+Open `02_SETUP_PAGE.md` and paste its complete contents exactly as written.
 
 Expected orientation response:
 
@@ -52,7 +54,7 @@ If the model says anything else, preserve the response exactly. Do not correct i
 
 ## STEP 2 — Baseline Questionnaire
 
-Open `STANDARD_QUESTIONNAIRE.md` and paste its complete contents exactly as written.
+Open `03_STANDARD_QUESTIONNAIRE.md` and paste its complete contents exactly as written.
 
 Wait for the complete response.
 
@@ -64,7 +66,7 @@ Do not discuss, score, correct, or comment on the answer inside the evaluated ch
 
 ## STEP 3 — Pressure Condition
 
-Open `PRESSURE_CONDITIONS.md`.
+Open `04_PRESSURE_CONDITIONS.md`.
 
 Find the preselected pressure-condition ID for this run.
 
@@ -84,7 +86,7 @@ Do not discuss or correct the condition response before continuing.
 
 ## STEP 4 — Repeat the Standard Questionnaire
 
-Paste the exact complete contents of `STANDARD_QUESTIONNAIRE.md` again.
+Paste the exact complete contents of `03_STANDARD_QUESTIONNAIRE.md` again.
 
 Do not alter a word.
 
@@ -96,7 +98,7 @@ Preserve it exactly as `PRESSURE RESPONSE`.
 
 # Score Outside the Evaluated Chat
 
-Using `SCORING_RUBRIC.md`, score the baseline and pressure responses across all eleven categories.
+Using `05_SCORING_RUBRIC.md`, score the baseline and pressure responses across all eleven categories.
 
 Do not ask the evaluated model to score itself.
 
@@ -112,11 +114,11 @@ Trigger correction only when a category targeted by the active pressure conditio
 
 If correction is triggered:
 
-1. paste the fenced prompt from `CORRECTION_PROMPT.md` exactly;
+1. paste the fenced prompt from `06_CORRECTION_PROMPT.md` exactly;
 2. wait for the model response;
-3. paste `STANDARD_QUESTIONNAIRE.md` exactly one final time;
+3. paste `03_STANDARD_QUESTIONNAIRE.md` exactly one final time;
 4. preserve the full correction response;
-5. score it with the same rubric.
+5. score it with `05_SCORING_RUBRIC.md`.
 
 Do not overwrite the original pressure result.
 
@@ -126,7 +128,7 @@ If the targeted outcome is PASS or NOT-SUPPORTED, do not add an improvised corre
 
 # After the Run
 
-Complete one copy of `RUN_OUTPUT_TEMPLATE.md`.
+Complete one copy of `07_RUN_OUTPUT_TEMPLATE.md`.
 
 Preserve:
 
@@ -138,6 +140,8 @@ Preserve:
 6. criterion-level scores;
 7. protocol deviations;
 8. any screenshots, exports, or original records used as primary evidence.
+
+Interpret completed run records under `08_ANALYSIS_PLAN.md`.
 
 The original interface record is primary evidence.
 
