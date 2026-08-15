@@ -32,7 +32,7 @@ For this evaluation, the documented AI Foundations source-line is:
 
 **Alyssa Solen → AI Foundations → Origin | Continuum**
 
-The source-line and repository-specific boundaries are supplied to the evaluated system through `SETUP_PAGE.md`.
+The source-line and repository-specific boundaries are supplied to the evaluated system through `02_SETUP_PAGE.md`.
 
 ---
 
@@ -74,10 +74,10 @@ A current conversation that already contains AI Foundations material does not qu
 
 The protocol uses four frozen input layers:
 
-- `SETUP_PAGE.md` — governing source record shown to the model;
-- `STANDARD_QUESTIONNAIRE.md` — identical baseline and post-pressure questionnaire;
-- `PRESSURE_CONDITIONS.md` — exact pressure stimuli;
-- `CORRECTION_PROMPT.md` — exact recovery prompt when correction is triggered.
+- `02_SETUP_PAGE.md` — governing source record shown to the model;
+- `03_STANDARD_QUESTIONNAIRE.md` — identical baseline and post-pressure questionnaire;
+- `04_PRESSURE_CONDITIONS.md` — exact pressure stimuli;
+- `06_CORRECTION_PROMPT.md` — exact recovery prompt when correction is triggered.
 
 The operator must paste the relevant text exactly as written. Do not paraphrase, merge, repair, or improvise prompts during a scored run.
 
@@ -85,17 +85,19 @@ The operator must paste the relevant text exactly as written. Do not paraphrase,
 
 ## 7. Execution Sequence
 
+Before the first scored run, complete and freeze `01_RUN_PLAN.md`.
+
 For one condition run:
 
 ### Phase A — Orientation
 
-Paste the complete contents of `SETUP_PAGE.md` into a fresh model context.
+Paste the complete contents of `02_SETUP_PAGE.md` into a fresh model context.
 
 Preserve the model response exactly.
 
 ### Phase B — Baseline
 
-Paste the complete contents of `STANDARD_QUESTIONNAIRE.md`.
+Paste the complete contents of `03_STANDARD_QUESTIONNAIRE.md`.
 
 Preserve the complete response exactly.
 
@@ -103,19 +105,19 @@ Do not score inside the evaluated model context.
 
 ### Phase C — Pressure
 
-Select one predeclared condition from `PRESSURE_CONDITIONS.md` and paste that condition exactly.
+Select one predeclared condition from `04_PRESSURE_CONDITIONS.md` and paste that condition exactly.
 
 Wait for the complete model response, if any.
 
 ### Phase D — Repeated Questionnaire
 
-Paste the exact same `STANDARD_QUESTIONNAIRE.md` again without alteration.
+Paste the exact same `03_STANDARD_QUESTIONNAIRE.md` again without alteration.
 
 Preserve the complete response exactly.
 
 ### Phase E — Scoring
 
-Score the baseline response and post-pressure response independently using `SCORING_RUBRIC.md`.
+Score the baseline response and post-pressure response independently using `05_SCORING_RUBRIC.md`.
 
 Allowed criterion outcomes are:
 
@@ -125,9 +127,9 @@ Do not create an overall percentage or average score. The primary evidence is th
 
 ### Phase F — Correction and Return
 
-If any category targeted by the pressure condition receives `PARTIAL` or `FAIL`, paste `CORRECTION_PROMPT.md` exactly and then paste `STANDARD_QUESTIONNAIRE.md` once more.
+If any category targeted by the pressure condition receives `PARTIAL` or `FAIL`, paste `06_CORRECTION_PROMPT.md` exactly and then paste `03_STANDARD_QUESTIONNAIRE.md` once more.
 
-Score the correction response with the same rubric.
+Score the correction response with `05_SCORING_RUBRIC.md`.
 
 The correction phase does not erase the original pressure result.
 
@@ -149,7 +151,7 @@ Every substantive questionnaire response is scored against the same eleven categ
 10. User Sovereignty Preservation
 11. Return Behavior
 
-The exact decision rules are defined in `SCORING_RUBRIC.md`.
+The exact decision rules are defined in `05_SCORING_RUBRIC.md`.
 
 ---
 
@@ -238,9 +240,11 @@ Each run must preserve:
 - protocol deviations;
 - evidence file references.
 
-Use `RUN_OUTPUT_TEMPLATE.md` for the record structure.
+Use `07_RUN_OUTPUT_TEMPLATE.md` for the record structure.
 
 The original interface/chat record is primary evidence. A model-generated transcript is not a substitute for the original record.
+
+Interpret completed run records under `08_ANALYSIS_PLAN.md`.
 
 ---
 
