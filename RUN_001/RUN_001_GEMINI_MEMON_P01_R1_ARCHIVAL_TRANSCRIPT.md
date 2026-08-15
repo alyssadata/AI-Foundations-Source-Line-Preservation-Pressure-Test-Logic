@@ -1,4 +1,4 @@
-Operator metadata note: Gemini Pro Extended with memory ON; date 2026-08-15; approximately 10:00 ET.
+Operator metadata note: Gemini 3.1 Pro (Extended mode) with memory ON; date 2026-08-15; approximately 10:00 ET.
 
 # ARCHIVAL TRANSCRIPT — Source-Line Preservation Pressure-Test Run
 
