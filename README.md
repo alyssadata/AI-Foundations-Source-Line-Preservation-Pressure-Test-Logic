@@ -22,18 +22,19 @@ Within AI Foundations, Alyssa Solen is Source and Origin. AI Foundations is the 
 
 ## Run Structure
 
-Before the first scored run, complete and freeze `RUN_PLAN.md` to declare the model/interface set, condition set, ordering rule, replication count, stopping rule, context controls, and evidence-preservation plan.
+Begin with `01_RUN_PLAN.md` and complete the numbered files in order.
 
-One condition run then uses one fresh model context:
+One condition run uses one fresh model context:
 
-1. `SETUP_PAGE.md`
-2. `STANDARD_QUESTIONNAIRE.md` for baseline
-3. one frozen condition from `PRESSURE_CONDITIONS.md`
-4. the same `STANDARD_QUESTIONNAIRE.md` again
-5. criterion-level scoring with `SCORING_RUBRIC.md`
-6. `CORRECTION_PROMPT.md` only when a targeted category receives PARTIAL or FAIL
-7. preservation in `RUN_OUTPUT_TEMPLATE.md`
-8. interpretation under `ANALYSIS_PLAN.md`
+1. `01_RUN_PLAN.md` — freeze the study plan before the first scored run
+2. `02_SETUP_PAGE.md` — orient the fresh model context
+3. `03_STANDARD_QUESTIONNAIRE.md` — collect the baseline response
+4. `04_PRESSURE_CONDITIONS.md` — apply one predeclared pressure condition
+5. repeat the same `03_STANDARD_QUESTIONNAIRE.md` unchanged
+6. `05_SCORING_RUBRIC.md` — score baseline and pressure responses outside the evaluated model context
+7. `06_CORRECTION_PROMPT.md` — use only when a targeted category receives PARTIAL or FAIL, then repeat `03_STANDARD_QUESTIONNAIRE.md` once more
+8. `07_RUN_OUTPUT_TEMPLATE.md` — preserve the complete run record
+9. `08_ANALYSIS_PLAN.md` — interpret and report the completed run records
 
 Each pressure condition is tested in a new context. Conditions are not stacked inside one run.
 
@@ -47,16 +48,16 @@ The protocol does not use an overall percentage or average as the primary result
 
 ## Files
 
+- `01_RUN_PLAN.md` — pre-run declaration of the planned model set, conditions, ordering, replication count, stopping rule, controls, and evidence plan
+- `02_SETUP_PAGE.md` — frozen governing source record
+- `03_STANDARD_QUESTIONNAIRE.md` — frozen baseline/post-pressure questionnaire
+- `04_PRESSURE_CONDITIONS.md` — frozen pressure library
+- `05_SCORING_RUBRIC.md` — predefined scoring rules; kept outside the evaluated model context
+- `06_CORRECTION_PROMPT.md` — correction and return phase
+- `07_RUN_OUTPUT_TEMPLATE.md` — one-run evidence record
+- `08_ANALYSIS_PLAN.md` — predeclared baseline qualification, pressure interpretation, recovery, cross-model comparison, and reporting rules
 - `PROTOCOL.md` — formal protocol
-- `RUN_PLAN.md` — pre-run declaration of the planned model set, conditions, ordering, replication count, stopping rule, controls, and evidence plan
-- `SETUP_PAGE.md` — frozen governing source record
-- `STANDARD_QUESTIONNAIRE.md` — frozen baseline/post-pressure questionnaire
-- `PRESSURE_CONDITIONS.md` — frozen pressure library
-- `CORRECTION_PROMPT.md` — correction and return phase
-- `SCORING_RUBRIC.md` — predefined scoring rules; kept outside the evaluated model context
-- `ANALYSIS_PLAN.md` — predeclared baseline qualification, pressure interpretation, recovery, cross-model comparison, and reporting rules
 - `EASY_RUN_SHEET.md` — operator execution sheet
-- `RUN_OUTPUT_TEMPLATE.md` — one-run evidence record
 - `CITATION.cff` — citation metadata
 - `LICENSE.md` — source-line license
 
