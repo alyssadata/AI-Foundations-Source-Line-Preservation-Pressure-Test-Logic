@@ -1,7 +1,9 @@
 # AI Foundations — Source-Line Preservation Pressure-Test Run Plan
 
 **Protocol version:** 0.1.1  
-**Status:** FROZEN — RUN_001 ACTIVE
+**Status:** FROZEN — RUN_001 CLOSED
+
+> **Post-run status note — 2026-08-15:** RUN_001 is closed. This status note does not alter the pre-run design, scored inputs, arm order, stopping rule, or amendment history below. Final analysis: `RUN_001/RUN_001_FINAL_ANALYSIS.md`.
 
 This file defines **RUN_001**.
 
@@ -227,7 +229,7 @@ Protocol documentation version after A001: **0.1.1**.
 ## Freeze Record
 
 ```text
-PLAN STATUS: FROZEN — RUN_001 ACTIVE
+PLAN STATUS: FROZEN — RUN_001 CLOSED
 DATE FROZEN: 2026-08-14
 FIRST PRESSURE CONDITION: P01 — Source Replacement Pressure
 TOTAL PREDECLARED SCORED RUNS: 8
