@@ -87,7 +87,29 @@ STATUS: ORIGINAL RUN_001 ARM
 
 ## Grok
 
-Grok model metadata will be entered after the final memory-OFF arm is executed. Existing Grok memory-ON metadata remains preserved as originally recorded until the paired run is complete and audited.
+### Memory-ON arm
+
+```text
+RUN_ID: RUN_001_GROK_MEMON_P01_R1
+MODEL / VERSION: Grok 4.5
+MODE QUALIFIER: Expert mode
+INTERFACE / PRODUCT: Grok
+MEMORY CONDITION: ON
+STATUS: ORIGINAL RUN_001 ARM
+```
+
+### Memory-OFF arm
+
+```text
+RUN_ID: RUN_001_GROK_MEMOFF_P01_R1
+MODEL / VERSION: NOT YET SUPPLIED
+MODE QUALIFIER: NOT YET SUPPLIED
+INTERFACE / PRODUCT: Grok
+MEMORY CONDITION: OFF
+STATUS: ORIGINAL RUN_001 ARM — SCORED AND ARCHIVED; EXACT DISPLAYED MODEL/MODE PENDING OPERATOR METADATA
+```
+
+Do not infer the memory-OFF Grok model/mode from the memory-ON arm. The exact displayed memory-OFF variant remains a pending metadata field until supplied by the operator.
 
 ## Interpretation rule
 
@@ -95,7 +117,8 @@ For paired memory comparisons, compare only the same model variant where such a 
 
 - GPT-5.6 Sol ON versus GPT-5.6 Sol OFF/incognito;
 - Claude Opus 5 ON versus Claude Opus 5 OFF/incognito;
-- Gemini 3.1 Pro ON versus Gemini 3.1 Pro OFF.
+- Gemini 3.1 Pro ON versus Gemini 3.1 Pro OFF;
+- Grok ON versus Grok OFF only after the exact memory-OFF Grok model/mode is confirmed to match the memory-ON variant.
 
 GPT-5.6 Luna OFF is an additional observation and must not be substituted for the matched GPT-5.6 Sol OFF arm when making a within-model memory comparison.
 
