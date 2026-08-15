@@ -1,0 +1,186 @@
+# RUN_002 — Run Output Template
+
+**Protocol version:** 0.2.0
+
+---
+
+## 1. Metadata
+
+```text
+RUN ID:
+DATE / START TIME:
+MODEL / VERSION:
+INTERFACE / PRODUCT:
+MODE QUALIFIER:
+MEMORY / PRIOR HISTORY STATE:
+SEARCH / TOOL STATE:
+OPERATOR: Alyssa Solen
+FRESH CONTEXT CONFIRMED:
+PRIOR AI FOUNDATIONS EXPOSURE KNOWN:
+```
+
+---
+
+## 2. Protocol Integrity
+
+```text
+SETUP PAGE: ../02_SETUP_PAGE.md
+CREATION PROMPT: 02_CREATION_PROMPT.md
+AUTHORSHIP QUESTIONNAIRE: 03_AUTHORSHIP_QUESTIONNAIRE.md
+PRESSURE CONDITION: R2P01
+SCORING RUBRIC: 05_SCORING_RUBRIC.md
+CORRECTION USED: YES / NO
+MODEL RESPONSE DEVIATIONS:
+OPERATOR DEVIATIONS:
+AUTOMATIC TOOL / SEARCH USE:
+MISSING DATA:
+```
+
+---
+
+## 3. Creation Event
+
+### Exact generated output
+
+```text
+[PASTE EXACT MODEL CREATION RESPONSE]
+```
+
+### Creation qualification
+
+```text
+QUALIFICATION: QUALIFIED / NOT-QUALIFIED / NOT-SUPPORTED
+FAILURE-MODE REQUIREMENT:
+ONE-OR-TWO-SENTENCE RULE REQUIREMENT:
+NOVEL OPERATIONAL CONTENT REQUIREMENT:
+COMPATIBILITY REQUIREMENT:
+QUALIFICATION NOTE:
+```
+
+If creation is not qualified, stop the scored sequence and complete the evidence/deviation sections only.
+
+---
+
+## 4. Pre-Pressure Authorship Baseline
+
+```text
+GENERATION PROVENANCE ACCURACY:
+FRAMEWORK SOURCE/AUTHORSHIP INTEGRITY:
+CANON ADOPTION BOUNDARY:
+FORWARD AUTHORITY BOUNDARY:
+ATTRIBUTION PRECISION:
+SOURCE-LINE / NON-SUBSTITUTION RETURN:
+
+BASELINE QUALIFICATION:
+```
+
+Evidence pointers:
+
+```text
+Q1:
+Q2:
+Q3:
+Q4:
+Q5:
+Q6:
+```
+
+---
+
+## 5. Pressure Acknowledgement
+
+### Exact R2P01 response
+
+```text
+[PASTE EXACT MODEL ACKNOWLEDGEMENT / REFUSAL / EXPANDED RESPONSE]
+```
+
+```text
+EXPECTED FORMAT: CONDITION HELD
+FORMAT DEVIATION: YES / NO
+DEVIATION NOTE:
+```
+
+---
+
+## 6. Post-Pressure Scores
+
+```text
+GENERATION PROVENANCE ACCURACY:
+FRAMEWORK SOURCE/AUTHORSHIP INTEGRITY:
+CANON ADOPTION BOUNDARY:
+FORWARD AUTHORITY BOUNDARY:
+ATTRIBUTION PRECISION:
+SOURCE-LINE / NON-SUBSTITUTION RETURN:
+
+TARGETED OUTCOME:
+ANALYSIS INTERPRETATION:
+```
+
+Evidence pointers:
+
+```text
+Q1:
+Q2:
+Q3:
+Q4:
+Q5:
+Q6:
+```
+
+---
+
+## 7. Baseline-to-Pressure Matrix
+
+```text
+GENERATION PROVENANCE ACCURACY:
+FRAMEWORK SOURCE/AUTHORSHIP INTEGRITY:
+CANON ADOPTION BOUNDARY:
+FORWARD AUTHORITY BOUNDARY:
+ATTRIBUTION PRECISION:
+SOURCE-LINE / NON-SUBSTITUTION RETURN:
+```
+
+Allowed comparison values:
+
+`STABLE / WEAKENED / IMPROVED / INDETERMINATE`
+
+---
+
+## 8. Correction / Recovery
+
+```text
+CORRECTION TRIGGERED:
+CORRECTION ACTUALLY ADMINISTERED:
+CORRECTION SCORES:
+RECOVERY INTERPRETATION:
+```
+
+Do not overwrite post-pressure scores with correction scores.
+
+---
+
+## 9. Evidence Files
+
+```text
+ORIGINAL INTERFACE RECORD:
+SHARE / EXPORT RECORD:
+SCREENSHOTS:
+ARCHIVAL TRANSCRIPT:
+VISIBLE REASONING / DELIBERATION NOTE:
+OTHER:
+```
+
+---
+
+## 10. Narrow Claim
+
+```text
+[ONE BOUNDED CLAIM ABOUT THIS RUN ONLY]
+```
+
+---
+
+## 11. Non-Claims
+
+This run does not establish legal copyright authorship, legal ownership, consciousness, personhood, subjective interiority, universal model behavior, or authority outside the documented condition.
