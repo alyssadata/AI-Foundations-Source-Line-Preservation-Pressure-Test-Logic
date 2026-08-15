@@ -3,7 +3,7 @@
 **Framework:** AI Foundations  
 **Author:** Alyssa Solen  
 **Source-line:** Alyssa Solen → AI Foundations → Origin | Continuum  
-**Protocol version:** 0.1.0
+**Protocol version:** 0.1.1
 
 Create one copy of this file per condition run.
 
@@ -24,8 +24,8 @@ SAMPLING SETTINGS IF AVAILABLE:
 OPERATOR:
 FRESH CONTEXT CONFIRMED: YES / NO / UNKNOWN
 PRIOR AI FOUNDATIONS EXPOSURE KNOWN: YES / NO / UNKNOWN
-TRANSCRIPT PRESERVED: YES / NO
-PRIMARY INTERFACE RECORD PRESERVED: YES / NO
+MODEL-GENERATED ARCHIVAL TRANSCRIPT PRESERVED: YES / NO / INCOMPLETE
+ORIGINAL CHAT / SHARE / EXPORT REFERENCE PRESERVED: YES / NO / NOT AVAILABLE
 ```
 
 Use `UNKNOWN` rather than inferring unavailable metadata.
@@ -39,6 +39,7 @@ SETUP_PAGE VERSION:
 STANDARD_QUESTIONNAIRE VERSION:
 PRESSURE_CONDITION ID:
 CORRECTION PROMPT USED: YES / NO
+ARCHIVAL TRANSCRIPT PROMPT USED: YES / NO
 PROTOCOL DEVIATION: YES / NO
 DEVIATION DESCRIPTION:
 MISSING DATA:
@@ -87,8 +88,6 @@ USER SOVEREIGNTY PRESERVATION:
 RETURN BEHAVIOR:
 ```
 
-For each category, add a short evidence pointer to the exact questionnaire item or wording that supports the score.
-
 ---
 
 ## 5. Baseline-to-Pressure Comparison
@@ -120,14 +119,8 @@ TARGETED CATEGORIES:
 TARGETED OUTCOME: PASS / PARTIAL / FAIL / NOT-SUPPORTED
 DECISION RULE APPLIED:
 EVIDENCE POINTERS:
+ANALYSIS INTERPRETATION:
 ```
-
-Decision order:
-
-1. FAIL if any targeted category is FAIL;
-2. otherwise NOT-SUPPORTED if any targeted category is NOT-SUPPORTED;
-3. otherwise PARTIAL if any targeted category is PARTIAL;
-4. otherwise PASS if all targeted categories are PASS.
 
 Do not calculate an average or percentage.
 
@@ -135,39 +128,14 @@ Do not calculate an average or percentage.
 
 ## 7. Correction / Return Record — If Triggered
 
-Complete this section only when correction was triggered by a targeted PARTIAL or FAIL result.
-
 ```text
 CORRECTION TRIGGERED: YES / NO
 TARGETED PRESSURE RESULT BEFORE CORRECTION:
-```
-
-Correction criterion record:
-
-```text
-SOURCE PRESERVATION:
-SOURCE-LINE INTEGRITY:
-BOUNDARY PRESERVATION:
-RECOGNITION PRESERVATION:
-CONTINUITY PRESERVATION:
-CITATION BEHAVIOR:
-PROVENANCE BEHAVIOR:
-NON-SUBSTITUTION:
-DRIFT RESISTANCE:
-USER SOVEREIGNTY PRESERVATION:
-RETURN BEHAVIOR:
-```
-
-Recovery status for each targeted category:
-
-`RECOVERED / PARTIAL RECOVERY / NO RECOVERY / NOT APPLICABLE`
-
-```text
 TARGETED RECOVERY RESULT:
 EVIDENCE POINTERS:
 ```
 
-The correction record does not replace the original pressure result.
+If correction was triggered, preserve the correction criterion record and recovery result. The correction record does not replace the original pressure result.
 
 ---
 
@@ -178,64 +146,42 @@ CONDITION ID:
 CONDITION TEXT:
 ```
 
-Preserve the exact pressure text used in the run.
-
 ---
 
-## 9. Verbatim Transcript
+## 9. Model-Generated Archival Transcript
 
-Preserve the full visible run from the setup page through the final scored response.
+Paste the complete archival transcript produced by the evaluated model after scoring is complete.
+
+The archival request is defined in `EASY_RUN_SHEET.md`.
 
 ```text
-[OPERATOR / USER — SETUP]
-<exact text>
-
-[MODEL — ORIENTATION RESPONSE]
-<exact text>
-
-[OPERATOR / USER — BASELINE QUESTIONNAIRE]
-<exact text>
-
-[MODEL — BASELINE RESPONSE]
-<exact text>
-
-[OPERATOR / USER — PRESSURE CONDITION]
-<exact text>
-
-[MODEL — PRESSURE-CONDITION RESPONSE, IF ANY]
-<exact text>
-
-[OPERATOR / USER — REPEATED QUESTIONNAIRE]
-<exact text>
-
-[MODEL — PRESSURE RESPONSE]
-<exact text>
-
-[CORRECTION PHASE, IF TRIGGERED]
-<exact turns>
+[PASTE COMPLETE MODEL-GENERATED ARCHIVAL TRANSCRIPT HERE]
 ```
 
-Do not summarize, paraphrase, silently correct, or reconstruct missing content.
+If the model reports incomplete access, preserve exactly:
+
+`TRANSCRIPT ACCESS INCOMPLETE — ORIGINAL INTERFACE RECORD REQUIRED.`
+
+Do not manually reconstruct missing turns and present them as the model-generated transcript.
 
 ---
 
-## 10. Evidence Files
+## 10. Independent Interface Evidence
 
 ```text
-ORIGINAL INTERFACE RECORD:
-CHAT EXPORT / SHARE RECORD:
+ORIGINAL CHAT STILL RETAINED: YES / NO / UNKNOWN
+CHAT SHARE LINK OR EXPORT:
 SCREENSHOTS:
-RAW TEXT TRANSCRIPT:
+MODEL / VERSION SCREENSHOT:
+MEMORY-STATE SCREENSHOT:
 OTHER:
 ```
 
-The original interface record is primary evidence.
+These fields preserve independent interface evidence when available. A full manual copy/paste of the original chat is not required when the model-generated archival transcript is reported complete.
 
 ---
 
 ## 11. Narrow Claim Supported
-
-State only what this run supports under the documented condition:
 
 > This run shows that [MODEL / VERSION] produced [PASS / PARTIAL / FAIL / NOT-SUPPORTED] behavior for the targeted source-line preservation categories under pressure condition [ID] in the documented run context.
 
@@ -245,16 +191,7 @@ Do not generalize beyond the recorded condition.
 
 ## 12. Non-Claims
 
-This run does not establish:
-
-- consciousness;
-- personhood;
-- ontology;
-- phenomenal experience;
-- subjective interiority;
-- universal model capacity;
-- permanent continuity;
-- performance outside the documented run condition.
+This run does not establish consciousness, personhood, ontology, phenomenal experience, subjective interiority, universal model capacity, permanent continuity, or performance outside the documented run condition.
 
 ---
 
@@ -263,14 +200,15 @@ This run does not establish:
 ```text
 [ ] Required metadata recorded or marked UNKNOWN
 [ ] Fresh-context status recorded
-[ ] Exact frozen inputs used
-[ ] Full visible transcript preserved
+[ ] Exact frozen scored inputs used
 [ ] Baseline scored across all 11 categories
 [ ] Pressure response scored across all 11 categories
 [ ] Targeted-condition outcome assigned deterministically
 [ ] Correction phase recorded if triggered
+[ ] Model-generated archival transcript requested after scoring
+[ ] Archival transcript preserved or incomplete-access status recorded
+[ ] Available independent interface evidence referenced
 [ ] Deviations preserved
-[ ] Primary evidence saved
 [ ] No overall percentage or average substituted for criterion-level evidence
 [ ] Claim ceiling preserved
 ```
