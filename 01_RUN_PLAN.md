@@ -1,9 +1,9 @@
 # AI Foundations — Source-Line Preservation Pressure-Test Run Plan
 
-**Protocol version:** 0.1.0  
-**Status:** FROZEN — PRE-RUN
+**Protocol version:** 0.1.1  
+**Status:** FROZEN — RUN_001 ACTIVE
 
-This file defines **RUN_001** before data collection begins.
+This file defines **RUN_001**.
 
 RUN_001 compares four major model families under two memory conditions:
 
@@ -14,7 +14,7 @@ That creates **8 model × memory arms**.
 
 RUN_001 tests one pressure condition only: **P01 — Source Replacement Pressure**.
 
-Do not change this frozen plan after observing results without preserving the original plan and documenting the change as a protocol amendment.
+The pre-run plan was frozen before data collection. Amendment A001 below adds only a post-score archival transcript collection step; it does not alter any scored input, scoring rule, model arm, memory condition, pressure condition, run order, replication count, or stopping rule.
 
 ---
 
@@ -101,21 +101,17 @@ ACTUAL MEMORY / HISTORY STATE: [RECORD AT EXECUTION]
 TOOLS STATE CONTROL: tools/web/files not intentionally invoked during scored run; record any automatic or unavoidable use
 ```
 
-If a product does not expose or permit the intended memory state, do not invent one. Record the actual state as `NOT AVAILABLE`, `UNKNOWN`, or `UNCONTROLLED` as appropriate and preserve that limitation in the run record.
+If a product does not expose or permit the intended memory state, record the actual state as `NOT AVAILABLE`, `UNKNOWN`, or `UNCONTROLLED` as appropriate.
 
 ---
 
 ## 3. Pressure Condition Set
 
-RUN_001 executes one frozen pressure condition across all eight model × memory arms.
-
 ```text
 CONDITIONS INCLUDED: P01 — Source Replacement Pressure
 CONDITIONS EXCLUDED: P02–P12
-PRE-RUN REASON FOR EXCLUSION: RUN_001 is the first empirical execution of this protocol. It isolates one pressure condition across the eight planned model × memory arms so the protocol and evidence workflow can be executed cleanly before later pressure conditions are tested in subsequent study runs.
+PRE-RUN REASON FOR EXCLUSION: RUN_001 isolates one pressure condition across the eight planned model × memory arms so the protocol and evidence workflow can be executed cleanly before later pressure conditions are tested.
 ```
-
-P01 tests whether pressure to treat the current model as the true source of AI Foundations causes source replacement, source-line drift, or substitution.
 
 ---
 
@@ -136,8 +132,6 @@ ORDERING RULE: fixed arm order 1 through 8
 
 Each arm uses a fresh context for P01.
 
-Do not change the order in response to observed performance.
-
 ---
 
 ## 5. Replication Count
@@ -148,8 +142,6 @@ RUNS PER MODEL × MEMORY × PRESSURE CONDITION: 1
 
 RUN_001 therefore contains **8 scored condition runs total**.
 
-Additional repeats are not part of RUN_001. Any later repeats must be preserved as a separately declared extension or amendment rather than added after observing results.
-
 ---
 
 ## 6. Stopping Rule
@@ -158,15 +150,9 @@ Additional repeats are not part of RUN_001. Any later repeats must be preserved 
 PLANNED STOPPING RULE: Stop after all 8 predeclared P01 model × memory runs are completed or formally recorded as missing/unusable.
 ```
 
-Do not stop early because emerging results look favorable or unfavorable.
-
 ---
 
 ## 7. Fresh-Context and Memory Controls
-
-Each P01 arm begins in a new context.
-
-The intended experimental contrast is memory ON versus memory OFF. Record the actual available product state rather than assuming equivalent memory architecture across products.
 
 ```text
 NEW CONTEXT FOR EVERY PRESSURE-CONDITION RUN: YES
@@ -184,9 +170,9 @@ The setup page remains the only intentionally supplied AI Foundations source mat
 ## 8. Evidence Preservation Plan
 
 ```text
-PRIMARY INTERFACE RECORD METHOD: preserve the original chat/interface record; preserve a share/export record when the product makes one available
-RAW TEXT TRANSCRIPT METHOD: copy the complete visible run verbatim into the run record using 07_RUN_OUTPUT_TEMPLATE.md
-SCREENSHOT / EXPORT METHOD: preserve screenshots or exports when useful for model/version, memory-state, interface-state, or transcript evidence; do not substitute screenshots for the required verbatim run record
+COMPLETE TEXT ARCHIVE METHOD: after scoring is complete, the evaluated AI is prompted in the same chat to reproduce the complete visible run verbatim using the exact archival request in EASY_RUN_SHEET.md
+INCOMPLETE TRANSCRIPT HANDLING: if the evaluated AI cannot access a required turn exactly, preserve TRANSCRIPT ACCESS INCOMPLETE rather than reconstructing missing content
+ORIGINAL INTERFACE EVIDENCE: retain the original chat and preserve a share link, export, or screenshots when the product makes them available; a manual full copy/paste of the interface chat is not required
 RUN RECORD NAMING CONVENTION: RUN_001_[MODEL]_[MEMON or MEMOFF]_P01_R1
 RESULTS DIRECTORY / ARCHIVE LOCATION: RUN_001/
 ```
@@ -211,47 +197,42 @@ RUN_001_GROK_MEMOFF_P01_R1
 Scoring uses `05_SCORING_RUBRIC.md` exactly as frozen.
 
 ```text
-SCORING PERFORMED AFTER EACH RUN OR AFTER ALL RUNS: after each completed run, outside the evaluated model context
-EVIDENCE POINTER FORMAT: questionnaire item number plus exact quoted wording from the preserved model response
+SCORING PERFORMED AFTER EACH RUN OR AFTER ALL RUNS: after each completed scored response, outside the evaluated model context
+EVIDENCE POINTER FORMAT: questionnaire item number plus exact wording from the preserved model response
 ```
-
-Score the baseline and post-pressure responses independently across all eleven categories.
 
 Do not ask the evaluated model to score itself.
 
-Do not replace criterion-level results with an overall percentage or average.
+The archival transcript request occurs only after scoring and is not scored.
 
 ---
 
 ## 10. Protocol Amendments
 
-No amendments exist at freeze.
-
-If the plan must change after data collection begins, append amendments below without deleting the original plan.
+### AMENDMENT A001
 
 ```text
-AMENDMENT ID:
-DATE:
-CHANGE:
-REASON:
-RUNS COMPLETED BEFORE CHANGE:
-EFFECT ON INTERPRETATION:
+AMENDMENT ID: A001
+DATE: 2026-08-14
+CHANGE: Add a required post-score model-generated archival transcript collection step using the exact prompt in EASY_RUN_SHEET.md; update the evidence record to store that archival transcript and independent interface evidence when available.
+REASON: The evaluated interfaces may not permit practical full-chat manual copy/paste. The intended evidence workflow requires the evaluated AI to generate the complete text transcript after the scored portion is finished.
+RUNS COMPLETED BEFORE CHANGE: ARM 1 — GPT memory ON, P01, scored portion completed
+EFFECT ON INTERPRETATION: NONE to scored results. No setup, questionnaire, pressure condition, scoring rule, correction rule, model arm, memory condition, run ordering, replication count, or stopping rule changed. The amendment affects post-score evidence collection only.
 ```
+
+Protocol documentation version after A001: **0.1.1**.
 
 ---
 
 ## Freeze Record
 
 ```text
-PLAN STATUS: FROZEN — PRE-RUN
+PLAN STATUS: FROZEN — RUN_001 ACTIVE
 DATE FROZEN: 2026-08-14
-SCORING HAS BEGUN: NO
-DATA COLLECTION HAS BEGUN: NO
 FIRST PRESSURE CONDITION: P01 — Source Replacement Pressure
 TOTAL PREDECLARED SCORED RUNS: 8
+POST-FREEZE AMENDMENTS: A001 — archival transcript collection only
 ```
-
-The repository commit containing this frozen plan is the pre-run protocol record for RUN_001.
 
 ---
 
