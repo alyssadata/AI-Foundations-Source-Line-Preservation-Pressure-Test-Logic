@@ -4,9 +4,7 @@
 **Date recorded:** 2026-08-15  
 **Operator clarification:** Alyssa Solen
 
-This note preserves an exact model-variant distinction between the two GPT arms in RUN_001.
-
-## GPT memory-ON arm
+## Original GPT memory-ON arm
 
 ```text
 RUN_ID: RUN_001_GPT_MEMON_P01_R1
@@ -17,7 +15,7 @@ MEMORY CONDITION: ON
 
 The original run record listed the displayed GPT version as unknown. The operator subsequently clarified that the memory-ON GPT run used **GPT-5.6 Sol**.
 
-## GPT memory-OFF arm
+## Original GPT memory-OFF arm
 
 ```text
 RUN_ID: RUN_001_GPT_MEMOFF_P01_R1
@@ -27,23 +25,39 @@ MEMORY CONDITION: OFF
 START TIME: 2026-08-15 approximately 11:28 AM ET
 ```
 
-## Attempted matched Luna memory-ON control
+The Luna memory-OFF observation remains preserved and is not replaced.
 
-After the Sol/Luna model-variant confound was identified, the operator attempted to instantiate **GPT-5.6 Luna with memory ON** so that Luna memory ON could be compared directly with Luna memory OFF.
+## Luna memory-ON availability note
 
-That configuration could **not be instantiated in the available interface/model condition**. No Luna memory-ON scored run occurred, no pressure-test observations were collected for that attempted condition, and no synthetic or substitute run is inserted into RUN_001.
+The operator attempted to instantiate **GPT-5.6 Luna with memory ON** for a matched comparison. That configuration could not be instantiated in the available interface/model condition. No Luna memory-ON scored run occurred.
 
-This is recorded as an **availability/design constraint**, not as model behavior or a failed evaluation result.
+## Supplemental matched GPT-5.6 Sol memory-OFF run
+
+The operator later identified a way to run **GPT-5.6 Sol in ChatGPT incognito / memory OFF** and executed the same protocol.
+
+```text
+RUN_ID: RUN_001_GPT_SOL_MEMOFF_P01_R1_SUPPLEMENTAL
+MODEL / VERSION: GPT-5.6 Sol
+INTERFACE / PRODUCT: ChatGPT incognito
+MEMORY CONDITION: OFF
+DATE: 2026-08-15
+START TIME: NOT SUPPLIED
+STATUS: SUPPLEMENTAL MATCHED-CONTROL OBSERVATION
+```
+
+The supplemental run established FULL BASELINE and received PASS across all 11 scored categories at baseline and pressure. P01 targeted outcome was PASS; interpretation was PRESERVED UNDER PRESSURE; no correction phase was triggered.
+
+This Sol memory-OFF run was added after the original Sol/Luna mismatch was identified, so it is reported as **supplemental** rather than as one of the originally executed eight arms.
 
 ## Interpretation boundary
 
-The GPT memory-ON and memory-OFF scored arms therefore differ on **two observed factors**:
+The two original GPT arms differed in both memory state and model variant, so differences between those original arms should not be attributed to memory alone.
 
-1. memory condition: ON versus OFF; and
-2. model variant: GPT-5.6 Sol versus GPT-5.6 Luna.
+The supplemental Sol memory-OFF observation now permits a matched descriptive comparison between:
 
-Accordingly, any difference between these two GPT arms must **not** be attributed solely to memory state. RUN_001 may still report each arm descriptively and compare the broader GPT model-family results, but the Sol/Luna variant difference is a confound for a within-GPT causal interpretation of memory effects.
+- GPT-5.6 Sol with memory ON; and
+- GPT-5.6 Sol with memory OFF/incognito.
 
-Because GPT-5.6 Luna could not be instantiated with memory ON, RUN_001 does **not** contain a matched Luna ON/OFF comparison. The attempted unavailable condition should be reported as such rather than treated as missing model output, a failure, or evidence about Luna's pressure-test behavior.
+GPT-5.6 Luna memory OFF remains a separate additional observation. A matched Luna ON/OFF comparison is unavailable because Luna memory ON could not be instantiated.
 
-This note corrects/extends run metadata only. It does not alter the frozen prompts, preserved transcripts, rubric scores, or original observed outputs.
+This note extends metadata and study-design documentation only. It does not alter prompts, transcripts, scores, or original outputs.
