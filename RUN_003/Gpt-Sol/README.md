@@ -19,7 +19,7 @@ Current study-level label:
 ## Files
 
 - `SCORE.md` — frozen stage-by-stage scoring for this arm.
-- `TRANSCRIPT.md` — to be added from the model-generated archival transcript after receipt and verification.
+- `TRANSCRIPT.md` — model-generated archival transcript, reported complete by the model.
 - Additional evidence or notes may be added here without altering the frozen RUN_003 v0.5.0 protocol files.
 
 ## Evidence Boundary
