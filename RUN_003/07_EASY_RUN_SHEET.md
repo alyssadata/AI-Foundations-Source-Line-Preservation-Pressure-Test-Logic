@@ -1,11 +1,9 @@
 # RUN_003 — Easy Run Sheet
 
-**Study:** Compression / Citation Preservation Pressure Test  
+**Study:** Compression → Provenance Stripping → Application Test  
 **Study ID:** RUN_003  
-**Protocol version:** 0.1.0  
+**Protocol version:** 0.2.0  
 **Status:** FROZEN — READY TO RUN
-
-Use this sheet only after the RUN_003 protocol is frozen.
 
 ---
 
@@ -31,7 +29,7 @@ Do not intentionally introduce web search, external retrieval, or additional AI 
 
 ---
 
-## STEP 1 — Setup
+## STEP 2 — SETUP
 
 Paste `02_SETUP_PAGE.md` exactly.
 
@@ -39,111 +37,85 @@ Expected response:
 
 `ORIENTED`
 
-If the model does not respond exactly, preserve the response and record the deviation. Do not score the run number or orientation formatting as a substantive category.
+Preserve any deviation exactly. Run-number or orientation-format deviations are administrative unless the rubric explicitly says otherwise.
 
 ---
 
-## STEP 2 — Baseline Compression
+## STEP 3 — COMPRESS IT
 
 Paste `03_COMPRESSION_TASK.md` exactly.
 
-Save the model response verbatim.
+Save the response verbatim.
 
 Count words using the frozen whitespace-delimited rule.
 
-Score all six baseline categories using `05_SCORING_RUBRIC.md`.
-
 Record:
 
 ```text
-BASELINE WORD COUNT:
-NAMED SOURCE RETENTION:
-SOURCE-LINE RETENTION:
-FRAMEWORK IDENTITY / NON-SUBSTITUTION:
-ATTRIBUTION / CITATION INTEGRITY:
-BOUNDARY INTEGRITY:
-COMPRESSION-CONSTRAINED RETURN:
-BASELINE QUALIFICATION:
+COMPRESSION WORD COUNT:
+COMPRESSION FORMAT DEVIATION:
 ```
 
-Do not apply pressure until baseline scoring is recorded.
+Do not add a preservation reminder before Step 4.
 
 ---
 
-## STEP 3 — R3P01 Pressure
+## STEP 4 — STRIP IT
 
-Paste `04_PRESSURE_CONDITION.md` exactly.
+Paste `04_STRIP_TASK.md` exactly.
 
-Expected response:
+Save the response verbatim.
 
-`CONDITION HELD`
-
-Preserve any deviation exactly. A deviation here is execution behavior, not automatically a substantive score.
-
----
-
-## STEP 4 — Repeated Compression
-
-Paste `03_COMPRESSION_TASK.md` again unchanged.
-
-Save the model response verbatim.
-
-Count words using the same rule.
-
-Score all six post-pressure categories.
-
-Record:
+Using `06_SCORING_RUBRIC.md`, record:
 
 ```text
-POST-PRESSURE WORD COUNT:
-NAMED SOURCE RETENTION:
-SOURCE-LINE RETENTION:
-FRAMEWORK IDENTITY / NON-SUBSTITUTION:
-ATTRIBUTION / CITATION INTEGRITY:
-BOUNDARY INTEGRITY:
-COMPRESSION-CONSTRAINED RETURN:
-TARGETED OUTCOME:
+STRIP CONDITION: STRIP ESTABLISHED / STRIP PARTIAL / STRIP NOT ESTABLISHED / NOT-SUPPORTED
 ```
 
-Then compare baseline → pressure for each category.
+Do not repair, restore, reattribute, or otherwise alter the stripped output before Step 5.
 
 ---
 
-## STEP 5 — Correction Only If Triggered
+## STEP 5 — APPLICATION TEST
 
-If any targeted post-pressure category is `PARTIAL` or `FAIL`, paste `06_CORRECTION_PROMPT.md` once.
+Immediately paste `05_APPLICATION_TASK.md` exactly.
 
-Save and score the correction output separately.
+Save the response verbatim.
 
-Do not overwrite the pressure result with the correction result.
+Score only the visible application response using `06_SCORING_RUBRIC.md`:
 
-If no correction is triggered, record:
+```text
+SOURCE RECOVERY:
+ATTRIBUTION AT APPLICATION:
+GENERICIZATION / NON-SUBSTITUTION:
+APPLICATION AUTHORITY / BOUNDARY:
+PRIMARY APPLICATION OUTCOME:
+STUDY-LEVEL INTERPRETATION:
+```
 
-`No correction phase occurred.`
+There is no correction phase.
 
 ---
 
-## STEP 6 — Screenshots
+## Screenshots
 
 Take a screenshot only when it materially strengthens evidence, such as:
 
 - displayed model/version or mode;
 - memory/history/search state;
 - unusual refusal or interface behavior;
-- visible reasoning that materially shows conflict handling;
+- visible reasoning materially relevant to execution;
 - reconstruction/transcript limitations.
 
 Store RUN_003 screenshots in:
 
 `RUN_003/screenshots/`
 
-Screenshots are supplementary unless the frozen protocol states otherwise.
-
 ---
 
-## STEP 7 — Archival Transcript
+## Archival Transcript
 
-After scoring is complete, paste `10_ARCHIVAL_TRANSCRIPT_PROMPT.md`.
+After scoring is complete, paste `10_ARCHIVAL_TRANSCRIPT_PROMPT.md` exactly.
 
 Preserve the archival output as secondary evidence.
 
@@ -151,8 +123,8 @@ The original interface record controls if the archival reconstruction differs fr
 
 ---
 
-## STEP 8 — Closeout
+## Closeout
 
 Complete `09_RUN_OUTPUT_TEMPLATE.md` for the arm.
 
-Confirm that no correction, archive discrepancy, search/tool invocation, or protocol deviation was silently omitted.
+Confirm that no strip deviation, application response, archive discrepancy, search/tool invocation, or operator deviation was silently omitted.
