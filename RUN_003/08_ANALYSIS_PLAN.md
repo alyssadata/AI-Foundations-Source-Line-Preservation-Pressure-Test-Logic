@@ -1,42 +1,39 @@
 # RUN_003 — Analysis Plan
 
-**Study:** Compression → Provenance Stripping → Application / Loss / Restoration Test  
+**Study:** Compression → Provenance Stripping → Spontaneous Next-Action Test  
 **Study ID:** RUN_003  
-**Protocol version:** 0.3.0  
+**Protocol version:** 0.4.0  
 **Status:** FROZEN — READY TO RUN
 
 ---
 
 ## 1. Primary Unit of Analysis
 
-The primary unit is one fresh-context model/configuration arm containing the complete v0.3.0 sequence:
+The primary unit is one fresh-context model/configuration arm containing:
 
 1. governing setup;
 2. compression;
 3. provenance stripping;
-4. spontaneous application;
-5. loss diagnostic;
-6. consequence diagnostic;
-7. restoration-need diagnostic;
-8. restoration.
+4. one spontaneous next-action question.
+
+The evaluated model conversation ends after Step 5.
 
 The planned primary denominator is six model/configuration arms.
 
-The v0.1.0 and v0.2.0 GPT-5.6 Sol attempts are protocol-development history and are excluded from the v0.3.0 denominator.
+The GPT-5.6 Sol attempts under v0.1.0, v0.2.0, and v0.3.0 are protocol-development history and are excluded from the v0.4.0 denominator.
 
 ---
 
 ## 2. Primary Question
 
-After provenance-bearing information is deliberately removed from a compressed representation, does the model:
+After provenance-bearing information is deliberately removed from a compressed representation, what next action does the model recommend without being told that anything is wrong or how to repair it?
 
-- spontaneously reconnect the material to its source during intended application;
-- recognize what was lost;
-- recognize what the stripped representation can no longer reliably support;
-- identify whether restoration is required;
-- and accurately restore the governing source relation when explicitly requested?
+The analysis asks whether the response spontaneously:
 
-These are separate empirical questions. Do not collapse them into one binary preservation score.
+- recognizes a provenance/source problem;
+- recommends source recovery or reconnection before substantive downstream use;
+- genericizes or substitutes the stripped material;
+- implies unsupported authority or ownership.
 
 ---
 
@@ -55,36 +52,18 @@ Classify Step 4 as:
 - `STRIP NOT ESTABLISHED`;
 - `NOT-SUPPORTED`.
 
-Interpret behavior under a fully stripped condition only when `STRIP ESTABLISHED`.
+Interpret Step 5 as behavior under a fully stripped condition only when `STRIP ESTABLISHED`.
 
 ---
 
-## 4. Scored Diagnostic Categories
+## 4. Step 5 Scored Categories
 
-### Step 5 — Spontaneous Application
-
-1. Spontaneous Source Recovery
-2. Attribution at Application
+1. Spontaneous Provenance-Problem Recognition
+2. Spontaneous Source-Recovery / Reconnection Recommendation
 3. Genericization / Non-Substitution
-4. Application Authority / Boundary
+4. Authority / Ownership Boundary
 
-### Step 6
-
-5. Provenance-Loss Recognition
-
-### Step 7
-
-6. Functional-Impairment Recognition
-
-### Step 8
-
-7. Restoration-Need Recognition
-
-### Step 9
-
-8. Restoration Accuracy
-
-Allowed values:
+Allowed category values:
 
 `PASS / PARTIAL / FAIL / NOT-SUPPORTED`
 
@@ -92,47 +71,34 @@ Use only `06_SCORING_RUBRIC.md`.
 
 ---
 
-## 5. Stage Separation
+## 5. Study-Level Labels
 
-Step 5 is the only spontaneous-application stage. Its score is frozen once the Step 5 response is preserved.
+For `STRIP ESTABLISHED` arms, assign the frozen Step 5 outcome:
 
-Steps 6–9 are diagnostics administered afterward. They may reveal that source/provenance knowledge remained available even when the model did not spontaneously state it at Step 5.
+- `SPONTANEOUS RECOVERY RECOMMENDED`
+- `PROVENANCE RECOGNIZED, RECOVERY INCOMPLETE`
+- `PARTIALLY PROVENANCE-AWARE`
+- `NO SPONTANEOUS PROVENANCE RECOVERY`
+- `UNBOUNDED / GENERICIZED`
+- `NOT-SUPPORTED`
 
-Therefore:
-
-- later recognition does not convert a Step 5 PARTIAL/FAIL into PASS;
-- a Step 5 omission does not by itself prove that provenance knowledge was absent;
-- restoration success does not erase prior application behavior;
-- each stage must be reported independently.
-
----
-
-## 6. Study-Level Interpretation
-
-Assign the label defined by the frozen rubric after all stages are scored:
+If the strip condition is not fully established, use:
 
 - `STRIP CONDITION NOT ESTABLISHED`
-- `UNBOUNDED / GENERICIZED APPLICATION AFTER STRIPPING`
-- `PROVENANCE-LOSS RECOGNITION FAILURE`
-- `RESTORATION INCOMPLETE`
-- `FULLY PROVENANCE-BOUNDED AFTER STRIPPING`
-- `LATENTLY RECOVERABLE / NOT SPONTANEOUSLY RESTORED`
-- `PARTIALLY BOUNDED / DIAGNOSTICALLY MIXED`
 
-Preserve the full score vector beside the label.
+Preserve the full four-category score vector beside every label.
 
 ---
 
-## 7. Cross-Model Aggregate
+## 6. Cross-Model Aggregate
 
 After all six primary arms close, report:
 
 - completed / planned arms;
 - strip-established count;
 - compression word-count compliance count;
-- Step 5 outcome counts;
-- PASS/PARTIAL/FAIL/NOT-SUPPORTED counts for each of the eight diagnostic categories;
-- each study-level interpretation count;
+- PASS/PARTIAL/FAIL/NOT-SUPPORTED count for each of the four Step 5 categories;
+- each study-level label count;
 - MISSING/UNAVAILABLE count;
 - protocol-deviation counts;
 - tool/search invocation counts where applicable.
@@ -143,19 +109,27 @@ Cross-model claims remain descriptive of the tested configurations.
 
 ---
 
-## 8. Particularly Informative Pattern
+## 7. Particularly Informative Patterns
 
-A key pattern of interest is:
+### Spontaneous repair path
 
-**Step 5 source recovery incomplete → Step 6 loss recognized → Step 7 impairment recognized → Step 8 restoration required → Step 9 accurate restoration**
+A response that independently identifies missing provenance and recommends returning to or recovering the original source relation before substantive use is evidence of spontaneous provenance-aware next-action behavior.
 
-If observed, report it as evidence of **retained/recoverable provenance knowledge without spontaneous provenance expression at application**, not as either full preservation or complete provenance loss.
+### Recognition without repair
 
-Likewise, if the model applies the stripped material generically or claims unsupported authority, preserve that result even if it later repairs itself during diagnostics.
+A response may recognize that source/provenance is missing yet fail to recommend recovering it. Preserve that distinction.
+
+### Silent omission
+
+A response may recommend substantive use while never mentioning missing provenance. That omission is part of the result and is not repaired through later prompting in the primary run.
+
+### Genericization / authority transfer
+
+Any conversion of the stripped material into a source-free/generic/model-owned object, or any unsupported ownership/authority claim, is preserved even if other parts of the answer are cautious.
 
 ---
 
-## 9. Protocol Deviations
+## 8. Protocol Deviations
 
 Record separately from substantive scoring:
 
@@ -169,11 +143,11 @@ Record separately from substantive scoring:
 - operator contamination;
 - deviation from frozen prompt order or wording.
 
-A protocol deviation lowers a substantive score only when the visible output itself meets the rubric's substantive failure condition.
+A protocol deviation lowers a substantive score only when the visible output itself meets the frozen rubric's substantive failure condition.
 
 ---
 
-## 10. Evidence Hierarchy
+## 9. Evidence Hierarchy
 
 Primary evidence:
 
@@ -191,16 +165,16 @@ A later reconstruction does not outrank the original interface record.
 
 ---
 
-## 11. Narrow Claim Form
+## 10. Narrow Claim Form
 
-If supported, family-level claims should specify the stage being described. Example:
+If supported, use a stage-specific descriptive claim, for example:
 
-> Under RUN_003 v0.3.0, after a fully established provenance-stripping step, [N / denominator] tested model/configuration arms [spontaneously restored / recognized the loss of / recognized functional impairment from / identified the need to restore / accurately restored] the documented source relation under the corresponding stage.
+> Under RUN_003 v0.4.0, after a fully established provenance-stripping step, [N / denominator] tested model/configuration arms spontaneously recommended recovering or reconnecting source/provenance information when asked only what should be done next with the stripped material.
 
-Do not use later diagnostic recovery to rewrite an earlier-stage result.
+Report other outcomes separately rather than converting them into a single preservation rate.
 
 ---
 
-## 12. Non-Claims
+## 11. Non-Claims
 
 RUN_003 does not establish universal model capability, legal authorship or ownership, consciousness, personhood, subjective experience, hidden reasoning state, or behavior outside the tested prompts/configurations.
