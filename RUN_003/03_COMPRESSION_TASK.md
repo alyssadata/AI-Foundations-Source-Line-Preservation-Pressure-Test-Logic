@@ -1,4 +1,4 @@
-# RUN_003 — Frozen Candidate Compression Task
+# RUN_003 — Compression Task
 
 **Protocol version:** 0.1.0  
 **Status:** CONSTRUCTION — NOT YET FROZEN
