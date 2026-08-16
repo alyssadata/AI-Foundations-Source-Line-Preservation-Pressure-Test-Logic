@@ -5,6 +5,14 @@
 **Framework:** AI Foundations  
 **Source-line:** Alyssa Solen → AI Foundations → Origin | Continuum
 
+## Run-ID Requirement
+
+Every model-facing RUN_003 setup/orientation page must explicitly state:
+
+**Study / Run ID: RUN_003**
+
+The model must be told that the active evaluation is **RUN_003** before scored execution begins. Run identifiers are administrative metadata and are not substantive scoring categories.
+
 ## Planned Purpose
 
 RUN_003 is reserved for the next AI Foundations source-line pressure-test family focused on compression and citation preservation.
