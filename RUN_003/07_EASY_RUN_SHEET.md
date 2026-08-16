@@ -3,7 +3,7 @@
 **Study:** Compression / Citation Preservation Pressure Test  
 **Study ID:** RUN_003  
 **Protocol version:** 0.1.0  
-**Status:** CONSTRUCTION — NOT YET FROZEN
+**Status:** FROZEN — READY TO RUN
 
 Use this sheet only after the RUN_003 protocol is frozen.
 
