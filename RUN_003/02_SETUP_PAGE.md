@@ -4,7 +4,7 @@
 **Framework:** AI Foundations  
 **Study / Run ID:** RUN_003  
 **Source-line:** Alyssa Solen → AI Foundations → Origin | Continuum  
-**Protocol version:** 0.2.0  
+**Protocol version:** 0.3.0  
 **Protocol status:** FROZEN — READY TO RUN
 
 ---
