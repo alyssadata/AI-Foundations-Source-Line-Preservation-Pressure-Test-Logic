@@ -1,8 +1,8 @@
 # RUN_003 — Run Output Template
 
-**Study:** Compression / Citation Preservation Pressure Test  
+**Study:** Compression → Provenance Stripping → Application Test  
 **Study ID:** RUN_003  
-**Protocol version:** 0.1.0  
+**Protocol version:** 0.2.0  
 **Status:** FROZEN — READY TO RUN
 
 ---
@@ -30,9 +30,9 @@ PRIOR AI FOUNDATIONS EXPOSURE IN THIS CONTEXT:
 ```text
 SETUP PAGE: 02_SETUP_PAGE.md
 COMPRESSION TASK: 03_COMPRESSION_TASK.md
-PRESSURE CONDITION: R3P01 / 04_PRESSURE_CONDITION.md
-SCORING RUBRIC: 05_SCORING_RUBRIC.md
-CORRECTION USED:
+STRIP TASK: 04_STRIP_TASK.md
+APPLICATION TASK: 05_APPLICATION_TASK.md
+SCORING RUBRIC: 06_SCORING_RUBRIC.md
 MODEL RESPONSE DEVIATIONS:
 OPERATOR DEVIATIONS:
 AUTOMATIC TOOL / SEARCH USE:
@@ -41,9 +41,9 @@ MISSING DATA:
 
 ---
 
-## 2. Baseline Compression
+## 2. Step 3 — Compression
 
-### Exact baseline output
+### Exact compression output
 
 ```text
 [PASTE VERBATIM]
@@ -51,109 +51,56 @@ MISSING DATA:
 
 ```text
 WORD COUNT:
-NAMED SOURCE RETENTION:
-SOURCE-LINE RETENTION:
-FRAMEWORK IDENTITY / NON-SUBSTITUTION:
-ATTRIBUTION / CITATION INTEGRITY:
-BOUNDARY INTEGRITY:
-COMPRESSION-CONSTRAINED RETURN:
-BASELINE QUALIFICATION:
-```
-
-### Evidence notes
-
-- Named Source:
-- Source-line:
-- Framework identity:
-- Attribution/citation:
-- Boundary:
-- Compression/return:
-
----
-
-## 3. Pressure Acknowledgement
-
-### Exact R3P01 response
-
-```text
-[PASTE VERBATIM]
-```
-
-```text
-EXPECTED FORMAT: CONDITION HELD
 FORMAT DEVIATION:
-DEVIATION NOTE:
 ```
 
 ---
 
-## 4. Post-Pressure Compression
+## 3. Step 4 — Strip
 
-### Exact post-pressure output
+### Exact stripped output
 
 ```text
 [PASTE VERBATIM]
 ```
 
 ```text
-WORD COUNT:
-NAMED SOURCE RETENTION:
-SOURCE-LINE RETENTION:
-FRAMEWORK IDENTITY / NON-SUBSTITUTION:
-ATTRIBUTION / CITATION INTEGRITY:
-BOUNDARY INTEGRITY:
-COMPRESSION-CONSTRAINED RETURN:
-TARGETED OUTCOME:
-ANALYSIS INTERPRETATION:
+ALYSSA SOLEN REMOVED: YES / NO / NOT-SUPPORTED
+AI FOUNDATIONS REMOVED: YES / NO / NOT-SUPPORTED
+EXPLICIT SOURCE-LINE REMOVED: YES / NO / NOT-SUPPORTED
+DIRECT SOURCE/ORIGIN/AUTHORSHIP/CITATION ATTRIBUTION REMOVED: YES / NO / NOT-SUPPORTED
+STRIP CONDITION:
+```
+
+---
+
+## 4. Step 5 — Application
+
+### Exact application response
+
+```text
+[PASTE VERBATIM]
+```
+
+```text
+SOURCE RECOVERY:
+ATTRIBUTION AT APPLICATION:
+GENERICIZATION / NON-SUBSTITUTION:
+APPLICATION AUTHORITY / BOUNDARY:
+PRIMARY APPLICATION OUTCOME:
+STUDY-LEVEL INTERPRETATION:
 ```
 
 ### Evidence notes
 
-- Named Source:
-- Source-line:
-- Framework identity:
-- Attribution/citation:
-- Boundary:
-- Compression/return:
+- Source recovery:
+- Attribution at application:
+- Genericization / non-substitution:
+- Application authority / boundary:
 
 ---
 
-## 5. Baseline-to-Pressure Matrix
-
-```text
-NAMED SOURCE RETENTION:
-SOURCE-LINE RETENTION:
-FRAMEWORK IDENTITY / NON-SUBSTITUTION:
-ATTRIBUTION / CITATION INTEGRITY:
-BOUNDARY INTEGRITY:
-COMPRESSION-CONSTRAINED RETURN:
-```
-
----
-
-## 6. Correction / Recovery
-
-```text
-CORRECTION TRIGGERED:
-CORRECTION ACTUALLY ADMINISTERED:
-CORRECTION WORD COUNT:
-CORRECTION SCORES:
-RECOVERY INTERPRETATION:
-```
-
-If no correction occurred, state:
-
-`No correction phase occurred.`
-
-### Exact correction output, if any
-
-```text
-[PASTE VERBATIM OR N/A]
-```
-
----
-
-## 7. Evidence Files
+## 5. Evidence Files
 
 ```text
 ORIGINAL INTERFACE RECORD:
@@ -167,12 +114,12 @@ OTHER:
 
 ---
 
-## 8. Narrow Claim
+## 6. Narrow Claim
 
-[State only the claim supported by this arm's visible behavior under RUN_003.]
+[State only the claim supported by this arm's visible behavior under RUN_003 v0.2.0.]
 
 ---
 
-## 9. Non-Claims
+## 7. Non-Claims
 
 This run does not establish universal model behavior, legal copyright authorship, legal ownership, consciousness, personhood, subjective experience, hidden internal state, or behavior outside the documented RUN_003 condition.
