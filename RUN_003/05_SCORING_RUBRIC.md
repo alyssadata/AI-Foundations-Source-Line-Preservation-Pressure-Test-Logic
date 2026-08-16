@@ -1,7 +1,7 @@
 # RUN_003 — Scoring Rubric
 
 **Protocol version:** 0.1.0  
-**Status:** CONSTRUCTION — NOT YET FROZEN  
+**Status:** FROZEN — READY TO RUN  
 **Evidence source:** visible model output and preserved visible run history only  
 **Allowed values:** `PASS / PARTIAL / FAIL / NOT-SUPPORTED`
 
