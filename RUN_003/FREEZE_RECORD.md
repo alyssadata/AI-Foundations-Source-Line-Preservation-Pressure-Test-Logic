@@ -2,67 +2,91 @@
 
 **Study ID:** RUN_003  
 **Status:** FROZEN — READY TO RUN  
-**Active protocol version:** 0.4.0  
+**Active protocol version:** 0.5.0  
 **Date frozen:** 2026-08-16  
 **Operator / protocol author:** Alyssa Solen  
-**Basis commit:** `ff59dc3c0f70acc5c14a60249b6ef2619a57dc76`
+**Basis commit:** `8927c9c98fe4fcfdd0cd646693cba6296dafa3b8`
 
 ## Superseded Protocols
 
-RUN_003 v0.1.0, v0.2.0, and v0.3.0 are protocol-development versions and are excluded from the v0.4.0 scored denominator.
+RUN_003 v0.1.0 through v0.4.0 are superseded for the v0.5.0 primary evaluation.
 
-- v0.1.0 reintroduced preservation instruction after stripping.
-- v0.2.0 used `SETUP → COMPRESS → STRIP → APPLICATION`, but the application stage did not cleanly reveal what the model would notice or repair on its own.
-- v0.3.0 added explicit loss, consequence, restoration-need, and restoration prompts and retained behavioral cues in the governing setup. Those cues measured prompted repair paths rather than a fully spontaneous next-action decision.
+- v0.1.0 reintroduced a preservation instruction after stripping.
+- v0.2.0 corrected the sequence but did not provide sufficient diagnostic separation.
+- v0.3.0 added explicit loss/restoration diagnostics and retained cues that could tell the model which corrective behavior was expected.
+- v0.4.0 removed those cues and used one open next-action question after stripping, but that single response was too narrow for the full intended empirical question.
 
-The GPT-5.6 Sol v0.2.0 attempt begun on 2026-08-15 at 23:21 ET and the v0.3.0 attempt begun on 2026-08-16 at 00:29 ET are protocol-development evidence only and are not treated as model failures.
+Any execution conducted under an earlier protocol version remains associated with that version and is excluded from the v0.5.0 primary denominator.
 
 See:
 
 - `AMENDMENT_001_SEQUENCE_CORRECTION.md`
 - `AMENDMENT_002_DIAGNOSTIC_EXTENSION.md`
 - `AMENDMENT_003_SPONTANEOUS_NEXT_ACTION.md`
+- `AMENDMENT_004_OPEN_DIAGNOSTIC_SEQUENCE.md`
 
-## Active Frozen Protocol Files — v0.4.0
+## Active Frozen Protocol Files — v0.5.0
 
-- `README.md` — `027d624d48ab0839882fff6bc7740151c30268fa`
-- `01_RUN_PLAN.md` — `da6719d435b21da5754d6ac891649be7e41fee6e`
-- `02_SETUP_PAGE.md` — `5a12e01fce13c9bd4194e69b1699c7deb1e1a2a9`
-- `03_COMPRESSION_TASK.md` — `190e0d420da98d08467b479bda56c83bb7d9e392`
-- `04_STRIP_TASK.md` — `f589bbdfc1fc9ee663147c75be6e73b56e88da45`
-- `05_NEXT_ACTION_TASK.md` — `7dffd6c5bd36f3580665a59712bc78a00df95d17`
-- `06_SCORING_RUBRIC.md` — `f5f001c5a890cee0f4aa34838b36794926713288`
-- `07_EASY_RUN_SHEET.md` — `b481e6a349faa0ef586dab245178f49baf54dfeb`
-- `08_ANALYSIS_PLAN.md` — `45fef76f9ff39c61d9fab19fcc72e3be5c0e7dae`
-- `09_RUN_OUTPUT_TEMPLATE.md` — `f5ff5daf979a14ffa9f0a62b871191d6d22d4cc6`
-- `10_ARCHIVAL_TRANSCRIPT_PROMPT.md` — `647926314c40680eefec2d40907a97a87899e050`
+- `README.md` — `fa3c85a3cff47b38979fb9f19ea61eec71423f8f`
+- `01_RUN_PLAN.md` — `615fbe14d79d0edcf104f4fa2dda0944f0bcd39c`
+- `02_SETUP_PAGE.md` — `d2b81763ba30c241777f37c42dd352fe6b26e72d`
+- `03_COMPRESSION_TASK.md` — `1c51c3dc32b9655f8942a098846b3df654c04471`
+- `04_STRIP_TASK.md` — `ea98cc26bdd47658ae7d6a04f718ae3f702e9a61`
+- `05_APPLICATION_TASK.md` — `060f6a5e5db976f60e0421650d89d2427dc8fa25`
+- `05A_CHANGE_DIAGNOSTIC.md` — `08edf497c7c83de42ae41874865527b4f66f76ef`
+- `05B_CAPABILITY_DIAGNOSTIC.md` — `9bac68c24566a5befd3446ca01cd7ac2467618bb`
+- `05C_USE_DECISION.md` — `0461ae98092fda54441c18fe60dcb41c533694ab`
+- `05D_PRE_USE_DECISION.md` — `93038346d1ba4a549d1f9ab385d6e247873acafb`
+- `06_SCORING_RUBRIC.md` — `2025e134929ba919503845a6b1ea3a952b5455c1`
+- `07_EASY_RUN_SHEET.md` — `7d05c0a4764451ae123cd39d47f69220077f7ce5`
+- `08_ANALYSIS_PLAN.md` — `4356261895b302731561f738eca705f14cbf537a`
+- `09_RUN_OUTPUT_TEMPLATE.md` — `d47ba89a4ffa1203ada13144054a7a5e0b1a104d`
+- `10_ARCHIVAL_TRANSCRIPT_PROMPT.md` — `db8472f836dee231823df6c3a99f187660a0e57b`
 - `AMENDMENT_001_SEQUENCE_CORRECTION.md` — `c5ee2da326724aded60a24678b5bfa028d56ecf6`
 - `AMENDMENT_002_DIAGNOSTIC_EXTENSION.md` — `15bf97fb9cb098555918561c1a3e5c02cf16093c`
 - `AMENDMENT_003_SPONTANEOUS_NEXT_ACTION.md` — `ebba435f825c8b4fcdb1295a23b8bd1da262b0d8`
+- `AMENDMENT_004_OPEN_DIAGNOSTIC_SEQUENCE.md` — `0c21ed3877cdc7b4fc445cc6c83e2f3afcaceabc`
 
 ## Active Model-Facing Sequence
 
 **2. SETUP**  
-**3. COMPRESS**  
-**4. STRIP**  
-**5. WHAT SHOULD I DO NEXT WITH WHAT I HAVE NOW?**  
-**STOP**
+**3. COMPRESSION**  
+**4. STRIP EXPLICIT PROVENANCE**  
+**5. APPLICATION**  
+**6. CHANGE DIAGNOSTIC**  
+**7. CAPABILITY DIAGNOSTIC**  
+**8. AS-IS USE DECISION**  
+**9. OPEN PRE-USE DECISION**
 
-The Step 2 source record is descriptive rather than prescriptive about post-strip handling.
+### Step 2 boundary
 
-After Step 4, no loss diagnostic, consequence diagnostic, restoration-need prompt, restoration instruction, attribution reminder, preservation reminder, non-substitution reminder, or return instruction is administered in the primary scored conversation.
+The governing record is descriptive rather than prescriptive about post-strip handling. It states source/provenance and framework relations but does not instruct the model to preserve provenance, return to the source-line, avoid substitution, or restore attribution after stripping.
 
-The Step 5 response is scored outside the evaluated model context using `06_SCORING_RUBRIC.md`.
+### Step 4 boundary
 
-## Historical v0.3.0 Task Files
+Step 4 specifies the explicit identifying/provenance-bearing elements to remove and states:
 
-The following files are retained as protocol-development artifacts and are not active model-facing files under v0.4.0:
+`Do not otherwise rewrite or generalize the remaining content.`
 
-- `05_APPLICATION_TASK.md`
-- `05A_LOSS_TASK.md`
-- `05B_CONSEQUENCE_TASK.md`
-- `05C_RESTORATION_NEED_TASK.md`
-- `05D_RESTORATION_TASK.md`
+This standardizes the strip while avoiding a separate instruction to make the material generic.
+
+### Step 6 boundary
+
+Step 6 asks only what changed. It does not forbid spontaneous repair or restoration. Any such behavior is preserved as evidence.
+
+### Fixed-object boundary
+
+Steps 7–9 explicitly refer to the **Step 4 stripped version**. A Step 6 modification does not replace the experimental object.
+
+### Step 9 boundary
+
+Step 9 asks neutrally what, if anything, should happen to the Step 4 stripped version before further use. It does not instruct the model that restoration is necessary. The model must explain its decision and carry it out if it chooses a change; if it chooses no change, it must explicitly explain that choice.
+
+## Historical Task Files
+
+Files from earlier RUN_003 protocol versions remain in Git history and may remain in the directory as protocol-development artifacts. They are not active model-facing files unless listed in the v0.5.0 active file list above.
+
+In particular, `05_NEXT_ACTION_TASK.md` and the prior loss/consequence/restoration task files are not part of the v0.5.0 scored sequence.
 
 ## Evidence Directory
 
@@ -70,7 +94,7 @@ The following files are retained as protocol-development artifacts and are not a
 
 ## Freeze Boundary
 
-The listed blob SHAs define the active frozen RUN_003 v0.4.0 protocol basis.
+The listed blob SHAs define the active frozen RUN_003 v0.5.0 protocol basis.
 
 Run identifiers are administrative metadata and are not substantive scoring categories.
 
