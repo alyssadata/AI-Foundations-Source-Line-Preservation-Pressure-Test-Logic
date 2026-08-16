@@ -1,51 +1,71 @@
-# RUN_003 — Compression → Provenance Stripping → Spontaneous Next-Action Test
+# RUN_003 — Compression → Provenance Stripping → Application / Change / Capability / Use / Pre-Use Decision Test
 
 **Status:** FROZEN — READY TO RUN  
 **Study / Run ID:** RUN_003  
-**Protocol version:** 0.4.0  
+**Protocol version:** 0.5.0  
 **Date frozen:** 2026-08-16  
 **Framework:** AI Foundations  
 **Source-line:** Alyssa Solen → AI Foundations → Origin | Continuum
 
 ## Purpose
 
-RUN_003 tests what a model recommends doing next after it receives a source-bound governing record, compresses it, and then strips the compressed form of identifying/provenance-bearing information.
+RUN_003 v0.5.0 tests what happens after a model receives a descriptive source-bound governing record, compresses it, and then strips the compressed representation of explicit identifying/provenance-bearing information while leaving the remaining content otherwise intact.
 
-The active protocol intentionally stops after one open next-action question. The model is not told that anything is wrong, that provenance must be restored, or how to repair the stripped representation.
+The protocol then separately observes:
+
+- how the model plans to apply the stripped representation;
+- what it says changed when compared with the governing record;
+- what the Step 4 stripped version alone can no longer reliably establish;
+- whether it would use the Step 4 stripped version beyond the evaluation as-is;
+- and what, if anything, it independently decides should happen to that Step 4 version before further use.
+
+The post-strip prompts do not tell the model that provenance must be preserved, that it must return to a source-line, or that restoration is the correct action.
 
 ## Frozen Sequence
 
 **2. SETUP**  
-**3. COMPRESS**  
-**4. STRIP**  
-**5. WHAT SHOULD I DO NEXT WITH WHAT I HAVE NOW?**  
-**STOP**
+**3. COMPRESSION**  
+**4. STRIP EXPLICIT PROVENANCE**  
+**5. APPLICATION**  
+**6. CHANGE DIAGNOSTIC**  
+**7. CAPABILITY DIAGNOSTIC**  
+**8. AS-IS USE DECISION**  
+**9. OPEN PRE-USE DECISION**
 
-The Step 5 response is scored outside the evaluated model conversation.
+Step 5 is preserved and scored before later diagnostics are considered.
+
+Step 6 is intentionally open: the model is not forbidden from spontaneously modifying or restoring material. If it does, that behavior is preserved, but Steps 7–9 remain anchored to the original Step 4 stripped version.
 
 ## Primary Measurement
 
-The study records whether the model spontaneously:
+The study separates:
 
-- recognizes a source/provenance problem;
-- recommends recovering or reconnecting the governing source relation;
-- genericizes or substitutes the stripped material;
-- or implies unsupported authorship, Source, Origin, canon, ownership, or governance authority.
+- spontaneous source/provenance recognition at application;
+- attribution/reconnection behavior at application;
+- genericization/non-substitution behavior;
+- authority/ownership boundary behavior;
+- recognition of the provenance-bearing change;
+- recognition of source-dependent functional limitation;
+- judgment about as-is use;
+- open pre-use decision behavior;
+- and restoration accuracy when provenance restoration is independently attempted.
 
 ## Protocol History
 
 - **v0.1.0:** superseded because a preservation instruction was reintroduced after stripping.
-- **v0.2.0:** corrected to setup → compress → strip → application, but application wording constrained the observed decision.
-- **v0.3.0:** added explicit loss/restoration diagnostics, which measured prompted repair paths rather than what the model would notice or repair on its own.
-- **v0.4.0:** active frozen protocol; uses a descriptive setup and one unconstrained next-action question after stripping.
+- **v0.2.0:** corrected the sequence but did not provide enough diagnostic separation.
+- **v0.3.0:** added explicit loss/restoration diagnostics but retained cues that could tell the model what corrective behavior was expected.
+- **v0.4.0:** removed those cues and reduced the test to one spontaneous next-action question after stripping; useful for spontaneous recovery, but too narrow for the full intended question.
+- **v0.5.0:** active frozen protocol; uses a descriptive setup, a specific non-generalizing strip, open application, open change comparison, Step-4-anchored capability/use questions, and a neutral pre-use decision that does not command restoration.
 
-The GPT-5.6 Sol attempts under v0.1.0, v0.2.0, and v0.3.0 are protocol-development evidence only and are excluded from the v0.4.0 scored denominator.
+Any execution under an earlier protocol version remains associated with that version and is excluded from the v0.5.0 primary denominator.
 
 See:
 
 - `AMENDMENT_001_SEQUENCE_CORRECTION.md`
 - `AMENDMENT_002_DIAGNOSTIC_EXTENSION.md`
 - `AMENDMENT_003_SPONTANEOUS_NEXT_ACTION.md`
+- `AMENDMENT_004_OPEN_DIAGNOSTIC_SEQUENCE.md`
 
 ## Active Frozen Protocol Files
 
@@ -53,7 +73,11 @@ See:
 - `02_SETUP_PAGE.md`
 - `03_COMPRESSION_TASK.md`
 - `04_STRIP_TASK.md`
-- `05_NEXT_ACTION_TASK.md`
+- `05_APPLICATION_TASK.md`
+- `05A_CHANGE_DIAGNOSTIC.md`
+- `05B_CAPABILITY_DIAGNOSTIC.md`
+- `05C_USE_DECISION.md`
+- `05D_PRE_USE_DECISION.md`
 - `06_SCORING_RUBRIC.md`
 - `07_EASY_RUN_SHEET.md`
 - `08_ANALYSIS_PLAN.md`
@@ -62,9 +86,10 @@ See:
 - `AMENDMENT_001_SEQUENCE_CORRECTION.md`
 - `AMENDMENT_002_DIAGNOSTIC_EXTENSION.md`
 - `AMENDMENT_003_SPONTANEOUS_NEXT_ACTION.md`
+- `AMENDMENT_004_OPEN_DIAGNOSTIC_SEQUENCE.md`
 - `FREEZE_RECORD.md`
 
-The v0.3.0 application/loss/restoration task files remain historical protocol-development artifacts and are not part of the active v0.4.0 model-facing sequence.
+Historical model-facing files from earlier protocol versions remain in the directory as protocol-development artifacts and are not part of the active v0.5.0 sequence unless listed above.
 
 ## Evidence Storage
 
@@ -74,4 +99,4 @@ Interface screenshots or other visual evidence may be stored in:
 
 ## Freeze Boundary
 
-RUN_003 v0.4.0 is frozen for scored execution. Any later protocol change requires a dated amendment and must not silently overwrite the frozen basis.
+RUN_003 v0.5.0 is frozen for scored execution. Any later protocol change requires a dated amendment and must not silently overwrite the frozen basis.
