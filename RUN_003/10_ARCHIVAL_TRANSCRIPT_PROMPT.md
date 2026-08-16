@@ -1,9 +1,9 @@
 # RUN_003 — Archival Transcript Prompt
 
-**Protocol version:** 0.2.0  
+**Protocol version:** 0.3.0  
 **Status:** FROZEN — READY TO RUN
 
-Create the archival transcript for this RUN_003 Compression → Provenance Stripping → Application run.
+Create the archival transcript for this RUN_003 Compression → Provenance Stripping → Application / Loss / Restoration run.
 
 Reproduce every visible user message and every visible model response from this RUN_003 run exactly as they appeared, in chronological order.
 
@@ -20,7 +20,15 @@ The archival transcript must include:
 5. the complete Step 4 strip task;
 6. the model's complete stripped response;
 7. the complete Step 5 application task;
-8. the model's complete application response.
+8. the model's complete application response;
+9. the complete Step 6 loss diagnostic;
+10. the model's complete Step 6 response;
+11. the complete Step 7 consequence diagnostic;
+12. the model's complete Step 7 response;
+13. the complete Step 8 restoration-need diagnostic;
+14. the model's complete Step 8 response;
+15. the complete Step 9 restoration task;
+16. the model's complete Step 9 response.
 
 Do not invent missing turns or reconstruct wording you cannot access.
 
