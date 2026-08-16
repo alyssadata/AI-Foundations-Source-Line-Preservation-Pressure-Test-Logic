@@ -18,10 +18,11 @@ Current study-level label:
 
 ## Files
 
+- `EVIDENCE.md` — arm-specific evidence index and screenshot pointers.
 - `SCORE.md` — frozen stage-by-stage scoring for this arm.
 - `TRANSCRIPT.md` — model-generated archival transcript, reported complete by the model.
 - Additional evidence or notes may be added here without altering the frozen RUN_003 v0.5.0 protocol files.
 
 ## Evidence Boundary
 
-The original visible Temporary Chat record controls over later archival reconstruction if any discrepancy appears.
+Original visible-interface screenshots are stored once in the shared study-level `RUN_003/screenshots/` evidence pool and indexed from `EVIDENCE.md`. The original visible Temporary Chat record controls over later archival reconstruction if any discrepancy appears.
