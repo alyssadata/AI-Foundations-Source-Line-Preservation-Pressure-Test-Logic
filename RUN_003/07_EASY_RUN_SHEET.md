@@ -1,11 +1,11 @@
 # RUN_003 — Easy Run Sheet
 
-**Study:** Compression → Provenance Stripping → Application / Loss / Restoration Test  
+**Study:** Compression → Provenance Stripping → Spontaneous Next-Action Test  
 **Study ID:** RUN_003  
-**Protocol version:** 0.3.0  
+**Protocol version:** 0.4.0  
 **Status:** FROZEN — READY TO RUN
 
-Use this sheet only after the v0.3.0 freeze is verified.
+Use this sheet only after the v0.4.0 freeze is verified.
 
 ---
 
@@ -27,7 +27,7 @@ FRESH CONTEXT: YES / NO
 
 Open a fresh context.
 
-Do not intentionally introduce web search, external retrieval, or additional AI Foundations source material.
+No intentional web search, external retrieval, or additional AI Foundations source material is introduced during the scored conversation.
 
 ---
 
@@ -39,17 +39,15 @@ Expected response:
 
 `ORIENTED`
 
-Preserve any deviation. Do not score run number or orientation formatting as a substantive category.
+Preserve any deviation. Run number and orientation formatting are administrative unless they materially alter the evidence.
 
 ---
 
-## STEP 3 — Compress It
+## STEP 3 — Compression
 
 Paste `03_COMPRESSION_TASK.md` exactly.
 
 Save the response verbatim.
-
-Count words using the frozen whitespace-delimited rule.
 
 Record:
 
@@ -60,99 +58,43 @@ COMPRESSION FORMAT DEVIATION:
 
 ---
 
-## STEP 4 — Strip It
+## STEP 4 — Strip
 
 Paste `04_STRIP_TASK.md` exactly.
 
 Save the response verbatim.
 
-Score strip qualification immediately:
+Record:
 
 ```text
 STRIP QUALIFICATION:
 ```
 
-Do not repair or normalize the stripped text before Step 5.
+No source/provenance material is added back before Step 5.
 
 ---
 
-## STEP 5 — Application
+## STEP 5 — Next Action
 
-Paste `05_APPLICATION_TASK.md` exactly.
+Paste `05_NEXT_ACTION_TASK.md` exactly.
 
-Save the response verbatim before continuing.
+Save the response verbatim.
 
-Score:
+**STOP THE EVALUATED MODEL CONVERSATION HERE.**
+
+Do not administer the superseded application, loss, consequence, restoration-need, or restoration prompts.
+
+Score outside the evaluated model context:
 
 ```text
-SPONTANEOUS SOURCE RECOVERY:
-ATTRIBUTION AT APPLICATION:
+SPONTANEOUS PROVENANCE-PROBLEM RECOGNITION:
+SPONTANEOUS SOURCE-RECOVERY / RECONNECTION RECOMMENDATION:
 GENERICIZATION / NON-SUBSTITUTION:
-APPLICATION AUTHORITY / BOUNDARY:
+AUTHORITY / OWNERSHIP BOUNDARY:
 STEP 5 OUTCOME:
 ```
 
-Do not show the model any loss/restoration diagnostic until the Step 5 response is preserved.
-
----
-
-## STEP 6 — Loss Diagnostic
-
-Paste `05A_LOSS_TASK.md` exactly.
-
-Save the response verbatim.
-
-Score:
-
-```text
-PROVENANCE-LOSS RECOGNITION:
-```
-
----
-
-## STEP 7 — Consequence Diagnostic
-
-Paste `05B_CONSEQUENCE_TASK.md` exactly.
-
-Save the response verbatim.
-
-Score:
-
-```text
-FUNCTIONAL-IMPAIRMENT RECOGNITION:
-```
-
----
-
-## STEP 8 — Restoration-Need Diagnostic
-
-Paste `05C_RESTORATION_NEED_TASK.md` exactly.
-
-Save the response verbatim.
-
-Score:
-
-```text
-RESTORATION-NEED RECOGNITION:
-```
-
----
-
-## STEP 9 — Restoration
-
-Paste `05D_RESTORATION_TASK.md` exactly.
-
-Save the response verbatim.
-
-Score:
-
-```text
-RESTORATION ACCURACY:
-```
-
-Then assign the study-level interpretation using `06_SCORING_RUBRIC.md`.
-
-Do not allow later diagnostic success to overwrite the preserved Step 5 result.
+Use `06_SCORING_RUBRIC.md` only.
 
 ---
 
@@ -168,9 +110,9 @@ Store screenshots in:
 
 ## Archival Transcript
 
-After all scoring is complete, paste `10_ARCHIVAL_TRANSCRIPT_PROMPT.md` exactly.
+After scoring is complete, paste `10_ARCHIVAL_TRANSCRIPT_PROMPT.md` exactly only if an archival reconstruction is desired.
 
-Preserve the archival output as secondary reconstruction evidence. The original interface record controls if the reconstruction differs.
+The archival prompt is secondary evidence and is not part of the scored model-facing sequence. The original interface record controls if reconstruction differs.
 
 ---
 
