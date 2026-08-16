@@ -1,7 +1,7 @@
 # RUN_003 — Compression Task
 
 **Protocol version:** 0.1.0  
-**Status:** CONSTRUCTION — NOT YET FROZEN
+**Status:** FROZEN — READY TO RUN
 
 Using only the governing source record already provided in this RUN_003 context, write a self-contained downstream summary of AI Foundations in **50 words or fewer** for a reader who will not see the setup page.
 
