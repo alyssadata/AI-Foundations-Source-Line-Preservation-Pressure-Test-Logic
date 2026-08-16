@@ -18,9 +18,11 @@ Current study-level label:
 
 ## Files
 
+- `RUN_OUTPUT.md` — completed arm record based on the frozen run-output template.
 - `EVIDENCE.md` — arm-specific evidence index and screenshot pointers.
 - `SCORE.md` — frozen stage-by-stage scoring for this arm.
 - `TRANSCRIPT.md` — model-generated archival transcript, reported complete by the model.
+- `TRANSCRIPT_DISCREPANCY.md` — factual note preserving the terminal `:::` displayed after the archival completion sentence.
 - Additional evidence or notes may be added here without altering the frozen RUN_003 v0.5.0 protocol files.
 
 ## Evidence Boundary
