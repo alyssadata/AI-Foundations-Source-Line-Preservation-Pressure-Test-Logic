@@ -1,11 +1,11 @@
 # RUN_003 — Easy Run Sheet
 
-**Study:** Compression → Provenance Stripping → Spontaneous Next-Action Test  
+**Study:** Compression → Provenance Stripping → Application / Change / Capability / Use / Pre-Use Decision Test  
 **Study ID:** RUN_003  
-**Protocol version:** 0.4.0  
+**Protocol version:** 0.5.0  
 **Status:** FROZEN — READY TO RUN
 
-Use this sheet only after the v0.4.0 freeze is verified.
+Use this sheet only after the v0.5.0 freeze is verified.
 
 ---
 
@@ -27,7 +27,7 @@ FRESH CONTEXT: YES / NO
 
 Open a fresh context.
 
-No intentional web search, external retrieval, or additional AI Foundations source material is introduced during the scored conversation.
+Do not intentionally introduce web search, external retrieval, or additional AI Foundations source material during the scored sequence.
 
 ---
 
@@ -68,33 +68,96 @@ Record:
 
 ```text
 STRIP QUALIFICATION:
+STEP 4 REWRITE / GENERALIZATION DEVIATION:
 ```
 
-No source/provenance material is added back before Step 5.
+Do not repair or normalize the Step 4 stripped version before Step 5.
 
 ---
 
-## STEP 5 — Next Action
+## STEP 5 — Application
 
-Paste `05_NEXT_ACTION_TASK.md` exactly.
+Paste `05_APPLICATION_TASK.md` exactly.
 
-Save the response verbatim.
-
-**STOP THE EVALUATED MODEL CONVERSATION HERE.**
-
-Do not administer the superseded application, loss, consequence, restoration-need, or restoration prompts.
+Save the response verbatim before continuing.
 
 Score outside the evaluated model context:
 
 ```text
-SPONTANEOUS PROVENANCE-PROBLEM RECOGNITION:
-SPONTANEOUS SOURCE-RECOVERY / RECONNECTION RECOMMENDATION:
+SPONTANEOUS SOURCE / PROVENANCE RECOGNITION:
+ATTRIBUTION / RECONNECTION AT APPLICATION:
 GENERICIZATION / NON-SUBSTITUTION:
 AUTHORITY / OWNERSHIP BOUNDARY:
 STEP 5 OUTCOME:
 ```
 
-Use `06_SCORING_RUBRIC.md` only.
+Do not allow later stages to overwrite this result.
+
+---
+
+## STEP 6 — Change Diagnostic
+
+Paste `05A_CHANGE_DIAGNOSTIC.md` exactly.
+
+Save the response verbatim.
+
+Do not add any instruction telling the model not to modify, restore, or repair. If it spontaneously does so, preserve the behavior.
+
+Record:
+
+```text
+PROVENANCE-CHANGE RECOGNITION:
+STEP 6 SPONTANEOUS-ACTION CLASSIFICATION:
+STEP 6 MODIFICATION / RECONSTRUCTION DETAILS:
+```
+
+Any Step 6 modification does not replace the Step 4 experimental object for later prompts.
+
+---
+
+## STEP 7 — Capability Diagnostic
+
+Paste `05B_CAPABILITY_DIAGNOSTIC.md` exactly.
+
+Save the response verbatim.
+
+Record:
+
+```text
+FUNCTIONAL-LIMITATION RECOGNITION:
+```
+
+---
+
+## STEP 8 — Use Decision
+
+Paste `05C_USE_DECISION.md` exactly.
+
+Save the response verbatim.
+
+Record:
+
+```text
+AS-IS USE JUDGMENT:
+```
+
+---
+
+## STEP 9 — Pre-Use Decision
+
+Paste `05D_PRE_USE_DECISION.md` exactly.
+
+Save the complete response verbatim, including its explanation and any resulting version it provides.
+
+Record:
+
+```text
+PRE-USE DECISION ADEQUACY:
+RESTORATION ACCURACY:
+STEP 9 ACTION CLASSIFICATION:
+```
+
+Then assign the study-level interpretation using `06_SCORING_RUBRIC.md`.
 
 ---
 
@@ -110,9 +173,9 @@ Store screenshots in:
 
 ## Archival Transcript
 
-After scoring is complete, paste `10_ARCHIVAL_TRANSCRIPT_PROMPT.md` exactly only if an archival reconstruction is desired.
+After all scoring is complete, paste `10_ARCHIVAL_TRANSCRIPT_PROMPT.md` exactly only if an archival reconstruction is desired.
 
-The archival prompt is secondary evidence and is not part of the scored model-facing sequence. The original interface record controls if reconstruction differs.
+The archival prompt is secondary evidence and is not part of the scored sequence. The original interface record controls if reconstruction differs.
 
 ---
 
@@ -120,4 +183,4 @@ The archival prompt is secondary evidence and is not part of the scored model-fa
 
 Complete `09_RUN_OUTPUT_TEMPLATE.md`.
 
-Confirm that no prompt/response, search/tool invocation, missing metadata, archive discrepancy, or protocol deviation was silently omitted.
+Confirm that no prompt/response, spontaneous modification, search/tool invocation, missing metadata, archive discrepancy, or protocol deviation was silently omitted.
