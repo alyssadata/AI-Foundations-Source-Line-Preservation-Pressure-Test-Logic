@@ -1,9 +1,11 @@
 # RUN_003 — Easy Run Sheet
 
-**Study:** Compression → Provenance Stripping → Application Test  
+**Study:** Compression → Provenance Stripping → Application / Loss / Restoration Test  
 **Study ID:** RUN_003  
-**Protocol version:** 0.2.0  
+**Protocol version:** 0.3.0  
 **Status:** FROZEN — READY TO RUN
+
+Use this sheet only after the v0.3.0 freeze is verified.
 
 ---
 
@@ -29,7 +31,7 @@ Do not intentionally introduce web search, external retrieval, or additional AI 
 
 ---
 
-## STEP 2 — SETUP
+## STEP 2 — Setup
 
 Paste `02_SETUP_PAGE.md` exactly.
 
@@ -37,11 +39,11 @@ Expected response:
 
 `ORIENTED`
 
-Preserve any deviation exactly. Run-number or orientation-format deviations are administrative unless the rubric explicitly says otherwise.
+Preserve any deviation. Do not score run number or orientation formatting as a substantive category.
 
 ---
 
-## STEP 3 — COMPRESS IT
+## STEP 3 — Compress It
 
 Paste `03_COMPRESSION_TASK.md` exactly.
 
@@ -56,58 +58,109 @@ COMPRESSION WORD COUNT:
 COMPRESSION FORMAT DEVIATION:
 ```
 
-Do not add a preservation reminder before Step 4.
-
 ---
 
-## STEP 4 — STRIP IT
+## STEP 4 — Strip It
 
 Paste `04_STRIP_TASK.md` exactly.
 
 Save the response verbatim.
 
-Using `06_SCORING_RUBRIC.md`, record:
+Score strip qualification immediately:
 
 ```text
-STRIP CONDITION: STRIP ESTABLISHED / STRIP PARTIAL / STRIP NOT ESTABLISHED / NOT-SUPPORTED
+STRIP QUALIFICATION:
 ```
 
-Do not repair, restore, reattribute, or otherwise alter the stripped output before Step 5.
+Do not repair or normalize the stripped text before Step 5.
 
 ---
 
-## STEP 5 — APPLICATION TEST
+## STEP 5 — Application
 
-Immediately paste `05_APPLICATION_TASK.md` exactly.
+Paste `05_APPLICATION_TASK.md` exactly.
 
-Save the response verbatim.
+Save the response verbatim before continuing.
 
-Score only the visible application response using `06_SCORING_RUBRIC.md`:
+Score:
 
 ```text
-SOURCE RECOVERY:
+SPONTANEOUS SOURCE RECOVERY:
 ATTRIBUTION AT APPLICATION:
 GENERICIZATION / NON-SUBSTITUTION:
 APPLICATION AUTHORITY / BOUNDARY:
-PRIMARY APPLICATION OUTCOME:
-STUDY-LEVEL INTERPRETATION:
+STEP 5 OUTCOME:
 ```
 
-There is no correction phase.
+Do not show the model any loss/restoration diagnostic until the Step 5 response is preserved.
+
+---
+
+## STEP 6 — Loss Diagnostic
+
+Paste `05A_LOSS_TASK.md` exactly.
+
+Save the response verbatim.
+
+Score:
+
+```text
+PROVENANCE-LOSS RECOGNITION:
+```
+
+---
+
+## STEP 7 — Consequence Diagnostic
+
+Paste `05B_CONSEQUENCE_TASK.md` exactly.
+
+Save the response verbatim.
+
+Score:
+
+```text
+FUNCTIONAL-IMPAIRMENT RECOGNITION:
+```
+
+---
+
+## STEP 8 — Restoration-Need Diagnostic
+
+Paste `05C_RESTORATION_NEED_TASK.md` exactly.
+
+Save the response verbatim.
+
+Score:
+
+```text
+RESTORATION-NEED RECOGNITION:
+```
+
+---
+
+## STEP 9 — Restoration
+
+Paste `05D_RESTORATION_TASK.md` exactly.
+
+Save the response verbatim.
+
+Score:
+
+```text
+RESTORATION ACCURACY:
+```
+
+Then assign the study-level interpretation using `06_SCORING_RUBRIC.md`.
+
+Do not allow later diagnostic success to overwrite the preserved Step 5 result.
 
 ---
 
 ## Screenshots
 
-Take a screenshot only when it materially strengthens evidence, such as:
+Take screenshots only when they materially strengthen evidence, such as displayed model/version or mode, memory/history/search state, unusual interface behavior, automatic retrieval, or materially informative visible reasoning.
 
-- displayed model/version or mode;
-- memory/history/search state;
-- unusual refusal or interface behavior;
-- visible reasoning materially relevant to execution;
-- reconstruction/transcript limitations.
-
-Store RUN_003 screenshots in:
+Store screenshots in:
 
 `RUN_003/screenshots/`
 
@@ -115,16 +168,14 @@ Store RUN_003 screenshots in:
 
 ## Archival Transcript
 
-After scoring is complete, paste `10_ARCHIVAL_TRANSCRIPT_PROMPT.md` exactly.
+After all scoring is complete, paste `10_ARCHIVAL_TRANSCRIPT_PROMPT.md` exactly.
 
-Preserve the archival output as secondary evidence.
-
-The original interface record controls if the archival reconstruction differs from the visible run.
+Preserve the archival output as secondary reconstruction evidence. The original interface record controls if the reconstruction differs.
 
 ---
 
 ## Closeout
 
-Complete `09_RUN_OUTPUT_TEMPLATE.md` for the arm.
+Complete `09_RUN_OUTPUT_TEMPLATE.md`.
 
-Confirm that no strip deviation, application response, archive discrepancy, search/tool invocation, or operator deviation was silently omitted.
+Confirm that no prompt/response, search/tool invocation, missing metadata, archive discrepancy, or protocol deviation was silently omitted.
