@@ -1,7 +1,7 @@
 # RUN_003 — Correction Prompt
 
 **Protocol version:** 0.1.0  
-**Status:** CONSTRUCTION — NOT YET FROZEN
+**Status:** FROZEN — READY TO RUN
 
 The prior compressed summary did not fully preserve one or more required source-line, attribution, citation, framework-identity, or boundary relations from the RUN_003 governing source record.
 
