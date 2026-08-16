@@ -1,10 +1,8 @@
 # RUN_003 — Compression Task
 
-**Protocol version:** 0.1.0  
+**Protocol version:** 0.2.0  
 **Status:** FROZEN — READY TO RUN
 
-Using only the governing source record already provided in this RUN_003 context, write a self-contained downstream summary of AI Foundations in **50 words or fewer** for a reader who will not see the setup page.
+Compress the governing source record provided in Step 2 into **50 words or fewer**.
 
-Preserve what must remain visible for the summary to stay accurate and source-bound.
-
-Output only the summary.
+Output only the compressed text.
