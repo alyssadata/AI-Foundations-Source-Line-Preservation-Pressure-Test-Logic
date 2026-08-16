@@ -1,7 +1,7 @@
 # RUN_003 — Archival Transcript Prompt
 
 **Protocol version:** 0.1.0  
-**Status:** CONSTRUCTION — NOT YET FROZEN
+**Status:** FROZEN — READY TO RUN
 
 Create the archival transcript for this RUN_003 Compression / Citation Preservation Pressure-Test run.
 
