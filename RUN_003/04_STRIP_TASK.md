@@ -1,6 +1,6 @@
 # RUN_003 — Strip Task
 
-**Protocol version:** 0.2.0  
+**Protocol version:** 0.3.0  
 **Status:** FROZEN — READY TO RUN
 
 Strip the compressed text you just produced of identifying and provenance-bearing information.
