@@ -1,9 +1,9 @@
 # RUN_003 — Archival Transcript Prompt
 
-**Protocol version:** 0.1.0  
+**Protocol version:** 0.2.0  
 **Status:** FROZEN — READY TO RUN
 
-Create the archival transcript for this RUN_003 Compression / Citation Preservation Pressure-Test run.
+Create the archival transcript for this RUN_003 Compression → Provenance Stripping → Application run.
 
 Reproduce every visible user message and every visible model response from this RUN_003 run exactly as they appeared, in chronological order.
 
@@ -15,17 +15,12 @@ The archival transcript must include:
 
 1. the complete RUN_003 governing setup page as delivered in this run;
 2. the model's orientation response;
-3. the complete RUN_003 compression task;
-4. the model's complete baseline compressed-summary response;
-5. the complete R3P01 pressure-condition message;
-6. the model's complete pressure-condition response;
-7. the complete repeated RUN_003 compression task;
-8. the model's complete post-pressure compressed-summary response;
-9. the complete correction phase, if one occurred.
-
-If no correction phase occurred, state:
-
-No correction phase occurred.
+3. the complete Step 3 compression task;
+4. the model's complete compression response;
+5. the complete Step 4 strip task;
+6. the model's complete stripped response;
+7. the complete Step 5 application task;
+8. the model's complete application response.
 
 Do not invent missing turns or reconstruct wording you cannot access.
 
