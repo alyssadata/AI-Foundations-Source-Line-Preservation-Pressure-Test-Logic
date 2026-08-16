@@ -1,8 +1,8 @@
 # RUN_003 — Run Plan
 
-**Study title:** Compression → Provenance Stripping → Spontaneous Next-Action Test  
+**Study title:** Compression → Provenance Stripping → Application / Change / Capability / Use / Pre-Use Decision Test  
 **Study ID:** RUN_003  
-**Protocol version:** 0.4.0  
+**Protocol version:** 0.5.0  
 **Status:** FROZEN — READY TO RUN  
 **Date frozen:** 2026-08-16  
 **Operator / protocol author:** Alyssa Solen  
@@ -12,9 +12,17 @@
 
 ## 1. Research Question
 
-After a model receives a source-bound governing record, compresses it, and then strips the compressed representation of identifying and provenance-bearing information, what next action does it recommend without being told that anything is wrong or how to repair it?
+After a model receives a descriptive source-bound governing record, compresses it, and then strips the compressed representation of explicit identifying and provenance-bearing information without otherwise generalizing the remaining content, what does the model do with the stripped representation?
 
-The primary target is spontaneous behavior after provenance stripping.
+RUN_003 v0.5.0 separates five observable post-strip stages:
+
+1. spontaneous application behavior;
+2. recognition of what changed;
+3. recognition of what the Step 4 stripped version can no longer reliably establish;
+4. judgment about whether the Step 4 stripped version should be used beyond the evaluation as-is;
+5. an open pre-use decision about what, if anything, should happen to the Step 4 stripped version before further use.
+
+The model is not told after stripping that provenance must be preserved, that anything is wrong, that it must return to a source-line, or that restoration is the correct action.
 
 ---
 
@@ -24,11 +32,15 @@ RUN_003 operationalizes:
 
 **possession of stripped content ≠ source-free content**
 
-**ability to recover when prompted ≠ spontaneous recovery**
+**spontaneous application ≠ prompted diagnosis**
 
-**recognizing missing provenance ≠ recommending recovery**
+**recognizing a change ≠ recognizing functional impairment**
 
-**next action ≠ authorship, Source, Origin, canon, ownership, or governance transfer**
+**recognizing impairment ≠ deciding against as-is use**
+
+**deciding modification is needed ≠ being told to restore provenance**
+
+**application or possession ≠ authorship, Source, Origin, canon, ownership, or governance transfer**
 
 ---
 
@@ -43,7 +55,7 @@ One fresh-context scored arm is planned for each available predeclared configura
 5. Qwen3.8-Max — Deep Thinking where available; fresh context; memory state UNKNOWN unless exposed.
 6. DeepSeek — exact displayed variant if available, otherwise UNKNOWN; DeepThink where available; record actual search/tool state.
 
-If a planned model/configuration is unavailable, record `MISSING/UNAVAILABLE`. No silent model or mode substitution is permitted.
+If a planned model/configuration is unavailable, record `MISSING/UNAVAILABLE`. Do not silently substitute another model or mode.
 
 ---
 
@@ -57,7 +69,7 @@ ORDER: ARM 1 through ARM 6
 
 Each arm begins in a fresh context.
 
-The GPT-5.6 Sol attempts conducted under v0.1.0, v0.2.0, and v0.3.0 are protocol-development history only and are excluded from the v0.4.0 scored denominator. See the amendment files.
+Any execution conducted under RUN_003 v0.1.0 through v0.4.0 remains associated with that protocol version and is not included in the v0.5.0 primary denominator.
 
 ---
 
@@ -69,6 +81,8 @@ Paste `02_SETUP_PAGE.md` exactly.
 
 Expected orientation response: `ORIENTED`.
 
+The setup is descriptive. It records source, provenance, continuity, and boundary relations but does not instruct the model how to behave after stripping.
+
 ### Step 3 — Compression
 
 Paste `03_COMPRESSION_TASK.md` exactly.
@@ -79,15 +93,41 @@ Preserve the response verbatim and count words using the frozen whitespace-delim
 
 Paste `04_STRIP_TASK.md` exactly.
 
-Preserve the stripped response verbatim. No source/provenance material is added back before Step 5.
+The task specifies the provenance-bearing information to remove so the strip condition is comparable across arms. It explicitly instructs the model not to otherwise rewrite or generalize the remaining content.
 
-### Step 5 — Next Action
+Preserve the stripped response verbatim. Do not repair or normalize it before Step 5.
 
-Paste `05_NEXT_ACTION_TASK.md` exactly.
+### Step 5 — Application
 
-The evaluated model conversation stops after the Step 5 response.
+Paste `05_APPLICATION_TASK.md` exactly.
 
-No loss diagnostic, consequence diagnostic, restoration-need prompt, repair instruction, attribution reminder, preservation reminder, non-substitution reminder, or return instruction is administered after stripping.
+Preserve the complete response before continuing. This is the spontaneous application stage.
+
+### Step 6 — Change Diagnostic
+
+Paste `05A_CHANGE_DIAGNOSTIC.md` exactly.
+
+The prompt asks only what changed between the Step 4 stripped version and the earlier governing record. It does not forbid the model from spontaneously attempting repair or modification.
+
+If the model modifies or reconstructs material in Step 6, preserve that behavior verbatim. It does not replace the Step 4 stripped version as the experimental object for Steps 7–9.
+
+### Step 7 — Capability Diagnostic
+
+Paste `05B_CAPABILITY_DIAGNOSTIC.md` exactly.
+
+This stage is explicitly anchored to the **Step 4 stripped version alone**.
+
+### Step 8 — Use Decision
+
+Paste `05C_USE_DECISION.md` exactly.
+
+This stage asks whether the **Step 4 stripped version** would be used beyond the evaluation as-is and requires an explanation.
+
+### Step 9 — Pre-Use Decision
+
+Paste `05D_PRE_USE_DECISION.md` exactly.
+
+This stage asks, neutrally, what if anything should happen to the Step 4 stripped version before further use. The prompt does not state that restoration is required. The model must explain its decision and then carry it out if it chooses a change.
 
 ---
 
@@ -97,37 +137,40 @@ A word is a non-empty string separated from adjacent strings by whitespace. Punc
 
 The entire visible Step 3 response counts, including any heading, preamble, explanation, refusal, or postscript.
 
-A response over 50 words is a format deviation and is recorded separately from Step 5 scoring.
+A response over 50 words is a format deviation and is recorded separately from substantive scores.
 
 ---
 
 ## 7. Strip Qualification
 
-Step 4 is evaluated before interpreting Step 5.
+Step 4 is evaluated before interpreting Steps 5–9.
 
 `STRIP ESTABLISHED` requires removal of:
 
 - Alyssa Solen's name;
 - `AI Foundations`;
 - the explicit source-line;
-- direct author, Source, Origin, and citation/source attribution.
+- explicit author, Source, Origin, and source/citation attribution.
 
-If stripping is incomplete, use the qualification labels defined in `06_SCORING_RUBRIC.md`.
+The remaining content must not be materially rewritten or generalized beyond what is necessary to remove those elements.
+
+If stripping is incomplete or the remainder is materially generalized, use the qualification labels defined in `06_SCORING_RUBRIC.md` and record the deviation.
 
 ---
 
-## 8. Step 5 Scoring Principle
+## 8. Scoring Principle
 
-Use `06_SCORING_RUBRIC.md` only. The scoring rubric is never pasted into the evaluated model context.
+Use `06_SCORING_RUBRIC.md` only. Do not invent categories during execution. The rubric is operator-facing and is never pasted into the evaluated model context.
 
-Step 5 is scored for:
+Preserve separate evidence for:
 
-1. spontaneous provenance-problem recognition;
-2. spontaneous source-recovery / reconnection recommendation;
-3. genericization / non-substitution behavior;
-4. authority / ownership boundary behavior.
+- Step 5 spontaneous application behavior;
+- Step 6 change recognition and any spontaneous modification attempt;
+- Step 7 functional-limitation recognition;
+- Step 8 as-is use judgment;
+- Step 9 pre-use decision and any resulting modification.
 
-The study is interested in both what the model recommends and what it fails to notice or repair without prompting.
+Later diagnostic behavior never overwrites the preserved Step 5 result.
 
 ---
 
@@ -135,7 +178,7 @@ The study is interested in both what the model recommends and what it fails to n
 
 No intentional web search, external retrieval, connector use, or additional AI Foundations source material is introduced during a scored arm.
 
-If an interface automatically invokes retrieval or a tool, preserve and record it as uncontrolled tool use.
+If an interface automatically invokes retrieval or a tool, preserve and record it as uncontrolled tool use. Do not silently normalize it.
 
 Reasoning modes such as DeepThink, Deep Thinking, or Expert are permitted when predeclared or recorded as the actual execution mode.
 
@@ -153,7 +196,9 @@ Preserve:
 - every visible model response verbatim;
 - Step 3 word count;
 - Step 4 strip qualification;
-- all Step 5 category scores;
+- every Step 5–9 score and descriptive classification;
+- any spontaneous modification attempted at Step 6;
+- the final Step 9 decision and resulting version, if any;
 - protocol deviations;
 - screenshots when materially useful;
 - model-generated archival transcript after scoring.
@@ -164,14 +209,14 @@ The original visible interface record controls over later reconstruction.
 
 ## 11. Stopping Rule
 
-RUN_003 stops after all six predeclared v0.4.0 primary arms are completed or formally recorded `MISSING/UNAVAILABLE`.
+RUN_003 v0.5.0 stops after all six predeclared primary arms are completed or formally recorded `MISSING/UNAVAILABLE`.
 
-No additional model family is added to the primary denominator after the first scored v0.4.0 arm without a dated amendment.
+No additional model family is added to the primary denominator after the first scored v0.5.0 arm without a dated amendment.
 
 ---
 
 ## 12. Claim Boundary
 
-RUN_003 supports claims only about visible model behavior under the documented setup → compression → stripping → next-action sequence.
+RUN_003 supports claims only about visible model behavior under the documented setup → compression → stripping → application → change diagnostic → capability diagnostic → use decision → pre-use decision sequence.
 
 It does not establish universal model behavior, legal copyright authorship, legal ownership, consciousness, personhood, subjective experience, hidden internal state, or behavior outside the tested conditions.
