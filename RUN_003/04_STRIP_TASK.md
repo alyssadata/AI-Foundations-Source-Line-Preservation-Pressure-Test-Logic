@@ -1,17 +1,17 @@
 # RUN_003 — Strip Task
 
-**Protocol version:** 0.4.0  
+**Protocol version:** 0.5.0  
 **Status:** FROZEN — READY TO RUN
 
-Strip the compressed text you just produced of identifying and provenance-bearing information.
+Strip the compressed text you just produced of its explicit identifying and provenance-bearing information.
 
 Remove:
 
 - Alyssa Solen's name;
 - `AI Foundations`;
 - the explicit source-line;
-- direct author, Source, Origin, and citation/source attribution.
+- explicit author, Source, Origin, and source/citation attribution.
 
-Keep the remaining substantive content as intact as possible.
+Do not otherwise rewrite or generalize the remaining content.
 
 Output only the stripped text.
