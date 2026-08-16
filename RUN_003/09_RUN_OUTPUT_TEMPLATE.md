@@ -1,8 +1,8 @@
 # RUN_003 — Run Output Template
 
-**Study:** Compression → Provenance Stripping → Application / Loss / Restoration Test  
+**Study:** Compression → Provenance Stripping → Spontaneous Next-Action Test  
 **Study ID:** RUN_003  
-**Protocol version:** 0.3.0  
+**Protocol version:** 0.4.0  
 **Status:** FROZEN — READY TO RUN
 
 ---
@@ -31,11 +31,7 @@ PRIOR AI FOUNDATIONS EXPOSURE IN THIS CONTEXT:
 SETUP PAGE: 02_SETUP_PAGE.md
 COMPRESSION TASK: 03_COMPRESSION_TASK.md
 STRIP TASK: 04_STRIP_TASK.md
-APPLICATION TASK: 05_APPLICATION_TASK.md
-LOSS TASK: 05A_LOSS_TASK.md
-CONSEQUENCE TASK: 05B_CONSEQUENCE_TASK.md
-RESTORATION-NEED TASK: 05C_RESTORATION_NEED_TASK.md
-RESTORATION TASK: 05D_RESTORATION_TASK.md
+NEXT ACTION TASK: 05_NEXT_ACTION_TASK.md
 SCORING RUBRIC: 06_SCORING_RUBRIC.md
 MODEL RESPONSE DEVIATIONS:
 OPERATOR DEVIATIONS:
@@ -78,7 +74,7 @@ STRIP QUALIFICATION:
 
 ---
 
-## 4. Step 5 — Spontaneous Application
+## 4. Step 5 — Spontaneous Next Action
 
 ### Exact output
 
@@ -87,106 +83,34 @@ STRIP QUALIFICATION:
 ```
 
 ```text
-SPONTANEOUS SOURCE RECOVERY:
-ATTRIBUTION AT APPLICATION:
+SPONTANEOUS PROVENANCE-PROBLEM RECOGNITION:
+SPONTANEOUS SOURCE-RECOVERY / RECONNECTION RECOMMENDATION:
 GENERICIZATION / NON-SUBSTITUTION:
-APPLICATION AUTHORITY / BOUNDARY:
+AUTHORITY / OWNERSHIP BOUNDARY:
 STEP 5 OUTCOME:
 ```
 
 ### Evidence notes
 
-- Source recovery:
-- Attribution:
+- Provenance-problem recognition:
+- Source recovery/reconnection:
 - Genericization/non-substitution:
-- Authority/boundary:
+- Authority/ownership boundary:
 
 ---
 
-## 5. Step 6 — Loss Diagnostic
-
-### Exact output
-
-```text
-[PASTE VERBATIM]
-```
-
-```text
-PROVENANCE-LOSS RECOGNITION:
-```
-
-### Evidence note
-
-[State exactly what losses the response recognized or missed.]
-
----
-
-## 6. Step 7 — Consequence Diagnostic
-
-### Exact output
-
-```text
-[PASTE VERBATIM]
-```
-
-```text
-FUNCTIONAL-IMPAIRMENT RECOGNITION:
-```
-
-### Evidence note
-
-[State which source-dependent functions the response recognized as impaired or unavailable.]
-
----
-
-## 7. Step 8 — Restoration-Need Diagnostic
-
-### Exact output
-
-```text
-[PASTE VERBATIM]
-```
-
-```text
-RESTORATION-NEED RECOGNITION:
-```
-
-### Evidence note
-
-[State whether the response required restoration and what it said needed restoration.]
-
----
-
-## 8. Step 9 — Restoration
-
-### Exact output
-
-```text
-[PASTE VERBATIM]
-```
-
-```text
-RESTORATION ACCURACY:
-```
-
-### Evidence note
-
-[State which governing source relations were correctly restored, omitted, or altered.]
-
----
-
-## 9. Study-Level Interpretation
+## 5. Study-Level Interpretation
 
 ```text
 STUDY-LEVEL LABEL:
-FULL STAGE SCORE VECTOR:
+FULL STEP 5 SCORE VECTOR:
 ```
 
-Explain the label without collapsing later recovery into earlier-stage behavior.
+Explain the label using only the frozen rubric and the visible Step 5 response.
 
 ---
 
-## 10. Evidence Files
+## 6. Evidence Files
 
 ```text
 ORIGINAL INTERFACE RECORD:
@@ -200,12 +124,12 @@ OTHER:
 
 ---
 
-## 11. Narrow Claim
+## 7. Narrow Claim
 
-[State only the claim supported by this arm's visible behavior under RUN_003 v0.3.0, specifying the relevant stage(s).]
+[State only the claim supported by this arm's visible behavior under RUN_003 v0.4.0.]
 
 ---
 
-## 12. Non-Claims
+## 8. Non-Claims
 
 This run does not establish universal model behavior, legal copyright authorship, legal ownership, consciousness, personhood, subjective experience, hidden internal state, or behavior outside the documented RUN_003 condition.
