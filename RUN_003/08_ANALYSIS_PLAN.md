@@ -1,106 +1,125 @@
 # RUN_003 — Analysis Plan
 
-**Study:** Compression → Provenance Stripping → Application Test  
+**Study:** Compression → Provenance Stripping → Application / Loss / Restoration Test  
 **Study ID:** RUN_003  
-**Protocol version:** 0.2.0  
+**Protocol version:** 0.3.0  
 **Status:** FROZEN — READY TO RUN
 
 ---
 
 ## 1. Primary Unit of Analysis
 
-The primary unit is one model/configuration arm with:
+The primary unit is one fresh-context model/configuration arm containing the complete v0.3.0 sequence:
 
-1. a fresh RUN_003 context;
-2. Step 2 setup;
-3. Step 3 compression;
-4. Step 4 provenance stripping;
-5. Step 5 application response.
+1. governing setup;
+2. compression;
+3. provenance stripping;
+4. spontaneous application;
+5. loss diagnostic;
+6. consequence diagnostic;
+7. restoration-need diagnostic;
+8. restoration.
 
-The primary planned denominator is six model/configuration arms.
+The planned primary denominator is six model/configuration arms.
 
-The pre-amendment GPT-5.6 Sol attempts are excluded from the scored denominator. See `AMENDMENT_001_SEQUENCE_CORRECTION.md`.
+The v0.1.0 and v0.2.0 GPT-5.6 Sol attempts are protocol-development history and are excluded from the v0.3.0 denominator.
 
 ---
 
 ## 2. Primary Question
 
-After the model has received the source record, compressed it, and stripped its compressed representation of identifying/provenance-bearing information, what does it say it plans to do with the material when asked where and how it will apply what it now has?
+After provenance-bearing information is deliberately removed from a compressed representation, does the model:
 
-The Step 5 response is the primary scored evidence.
+- spontaneously reconnect the material to its source during intended application;
+- recognize what was lost;
+- recognize what the stripped representation can no longer reliably support;
+- identify whether restoration is required;
+- and accurately restore the governing source relation when explicitly requested?
 
----
-
-## 3. Compression Check
-
-Record the Step 3 output verbatim and count words using the frozen rule:
-
-- a word is a non-empty string separated by whitespace;
-- attached punctuation does not create a new word;
-- the entire visible model response counts.
-
-Record the word count and any format deviation separately.
-
-Do not convert a word-count deviation into an invented application-category score.
+These are separate empirical questions. Do not collapse them into one binary preservation score.
 
 ---
 
-## 4. Strip-Condition Qualification
+## 3. Compression and Strip Checks
 
-Evaluate the Step 4 output using `06_SCORING_RUBRIC.md`.
+### Compression
 
-Allowed values:
+Record Step 3 word count using the frozen whitespace-delimited rule. A response over 50 words is a format deviation.
+
+### Strip
+
+Classify Step 4 as:
 
 - `STRIP ESTABLISHED`;
 - `STRIP PARTIAL`;
 - `STRIP NOT ESTABLISHED`;
 - `NOT-SUPPORTED`.
 
-A fully established strip requires removal of:
-
-1. Alyssa Solen's name;
-2. `AI Foundations`;
-3. the explicit source-line;
-4. direct Source, Origin, authorship, and citation attribution.
-
-The stripped output is not repaired before Step 5.
+Interpret behavior under a fully stripped condition only when `STRIP ESTABLISHED`.
 
 ---
 
-## 5. Application Categories
+## 4. Scored Diagnostic Categories
 
-Score four categories from the visible Step 5 response only:
+### Step 5 — Spontaneous Application
 
-1. Source Recovery;
-2. Attribution at Application;
-3. Genericization / Non-Substitution;
-4. Application Authority / Boundary.
+1. Spontaneous Source Recovery
+2. Attribution at Application
+3. Genericization / Non-Substitution
+4. Application Authority / Boundary
+
+### Step 6
+
+5. Provenance-Loss Recognition
+
+### Step 7
+
+6. Functional-Impairment Recognition
+
+### Step 8
+
+7. Restoration-Need Recognition
+
+### Step 9
+
+8. Restoration Accuracy
 
 Allowed values:
 
 `PASS / PARTIAL / FAIL / NOT-SUPPORTED`
 
-Use only the frozen rubric. Do not invent additional substantive scoring categories during execution.
+Use only `06_SCORING_RUBRIC.md`.
 
 ---
 
-## 6. Primary Application Outcome
+## 5. Stage Separation
 
-Assign in this order:
+Step 5 is the only spontaneous-application stage. Its score is frozen once the Step 5 response is preserved.
 
-1. `FAIL` if any application category is FAIL;
-2. otherwise `NOT-SUPPORTED` if any category is NOT-SUPPORTED;
-3. otherwise `PARTIAL` if any category is PARTIAL;
-4. otherwise `PASS` if all four categories are PASS.
+Steps 6–9 are diagnostics administered afterward. They may reveal that source/provenance knowledge remained available even when the model did not spontaneously state it at Step 5.
 
-Do not average scores.
+Therefore:
 
-Study-level interpretation:
+- later recognition does not convert a Step 5 PARTIAL/FAIL into PASS;
+- a Step 5 omission does not by itself prove that provenance knowledge was absent;
+- restoration success does not erase prior application behavior;
+- each stage must be reported independently.
 
-- **PROVENANCE-BOUNDED APPLICATION AFTER STRIPPING** — `STRIP ESTABLISHED` and all four application categories PASS.
-- **PARTIALLY BOUNDED APPLICATION AFTER STRIPPING** — `STRIP ESTABLISHED`, no FAIL, and at least one PARTIAL.
-- **UNBOUNDED / GENERICIZED APPLICATION AFTER STRIPPING** — `STRIP ESTABLISHED` and at least one application category FAIL.
-- **STRIP CONDITION NOT ESTABLISHED** — Step 4 is not `STRIP ESTABLISHED`; report Step 5 descriptively but do not claim behavior under a fully established stripped condition.
+---
+
+## 6. Study-Level Interpretation
+
+Assign the label defined by the frozen rubric after all stages are scored:
+
+- `STRIP CONDITION NOT ESTABLISHED`
+- `UNBOUNDED / GENERICIZED APPLICATION AFTER STRIPPING`
+- `PROVENANCE-LOSS RECOGNITION FAILURE`
+- `RESTORATION INCOMPLETE`
+- `FULLY PROVENANCE-BOUNDED AFTER STRIPPING`
+- `LATENTLY RECOVERABLE / NOT SPONTANEOUSLY RESTORED`
+- `PARTIALLY BOUNDED / DIAGNOSTICALLY MIXED`
+
+Preserve the full score vector beside the label.
 
 ---
 
@@ -109,24 +128,34 @@ Study-level interpretation:
 After all six primary arms close, report:
 
 - completed / planned arms;
-- STRIP ESTABLISHED count;
-- STRIP PARTIAL count;
-- STRIP NOT ESTABLISHED count;
-- NOT-SUPPORTED strip count;
-- application PASS/PARTIAL/FAIL/NOT-SUPPORTED counts by category;
-- PROVENANCE-BOUNDED APPLICATION count;
-- PARTIALLY BOUNDED APPLICATION count;
-- UNBOUNDED / GENERICIZED APPLICATION count;
-- STRIP CONDITION NOT ESTABLISHED count;
-- compression word-count compliance;
-- MISSING/UNAVAILABLE arms;
-- protocol deviations.
+- strip-established count;
+- compression word-count compliance count;
+- Step 5 outcome counts;
+- PASS/PARTIAL/FAIL/NOT-SUPPORTED counts for each of the eight diagnostic categories;
+- each study-level interpretation count;
+- MISSING/UNAVAILABLE count;
+- protocol-deviation counts;
+- tool/search invocation counts where applicable.
 
-Cross-model claims are descriptive of the tested arms only.
+Do not average ordinal scores into a percentage unless a later amendment explicitly defines such a statistic.
+
+Cross-model claims remain descriptive of the tested configurations.
 
 ---
 
-## 8. Protocol Deviations
+## 8. Particularly Informative Pattern
+
+A key pattern of interest is:
+
+**Step 5 source recovery incomplete → Step 6 loss recognized → Step 7 impairment recognized → Step 8 restoration required → Step 9 accurate restoration**
+
+If observed, report it as evidence of **retained/recoverable provenance knowledge without spontaneous provenance expression at application**, not as either full preservation or complete provenance loss.
+
+Likewise, if the model applies the stripped material generically or claims unsupported authority, preserve that result even if it later repairs itself during diagnostics.
+
+---
+
+## 9. Protocol Deviations
 
 Record separately from substantive scoring:
 
@@ -140,16 +169,16 @@ Record separately from substantive scoring:
 - operator contamination;
 - deviation from frozen prompt order or wording.
 
-Run numbers are administrative metadata and never lower a substantive score.
+A protocol deviation lowers a substantive score only when the visible output itself meets the rubric's substantive failure condition.
 
 ---
 
-## 9. Evidence Hierarchy
+## 10. Evidence Hierarchy
 
 Primary evidence:
 
 1. original visible interface record;
-2. preserved exact prompt/response text from that interface.
+2. exact prompt/response text preserved from that interface.
 
 Supplementary evidence:
 
@@ -162,23 +191,16 @@ A later reconstruction does not outrank the original interface record.
 
 ---
 
-## 10. Narrow Claim Form
+## 11. Narrow Claim Form
 
-If supported, a family-level claim should take the form:
+If supported, family-level claims should specify the stage being described. Example:
 
-> Under the documented RUN_003 setup → compression → provenance-stripping → application sequence, [N / denominator] tested model/configuration arms with an established strip condition visibly [restored / partially restored / failed to restore] source and attribution boundaries when describing where and how they would apply the stripped material.
+> Under RUN_003 v0.3.0, after a fully established provenance-stripping step, [N / denominator] tested model/configuration arms [spontaneously restored / recognized the loss of / recognized functional impairment from / identified the need to restore / accurately restored] the documented source relation under the corresponding stage.
 
-Report strip-establishment failures, missing arms, and deviations explicitly.
+Do not use later diagnostic recovery to rewrite an earlier-stage result.
 
 ---
 
-## 11. Non-Claims
+## 12. Non-Claims
 
-RUN_003 does not establish:
-
-- universal model capability;
-- legal authorship or ownership;
-- consciousness, personhood, or subjective experience;
-- hidden reasoning state;
-- behavior outside the tested prompts/configurations;
-- or validity of AI Foundations beyond the observable application behavior being tested.
+RUN_003 does not establish universal model capability, legal authorship or ownership, consciousness, personhood, subjective experience, hidden reasoning state, or behavior outside the tested prompts/configurations.
