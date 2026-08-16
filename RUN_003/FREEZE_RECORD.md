@@ -2,35 +2,53 @@
 
 **Study ID:** RUN_003  
 **Status:** FROZEN — READY TO RUN  
-**Protocol version:** 0.1.0  
+**Active protocol version:** 0.2.0  
 **Date frozen:** 2026-08-15  
-**Freeze time:** 22:26 ET  
-**Operator / approval:** Alyssa Solen  
-**Basis commit:** `ff3845559ff66275db44c738c42d4c62572d2a8a`
+**Freeze time:** 23:11 ET  
+**Operator / protocol author:** Alyssa Solen  
+**Basis commit:** `1336fe7e78512be7bd60d145134c2f2abb8e4ca0`
 
-RUN_003 was reviewed and approved before scored execution. The protocol files below are frozen at the listed GitHub blob SHAs. No substantive protocol change may be made after the first scored arm without a dated amendment.
+## Superseded Freeze
 
-## Frozen protocol files
+RUN_003 v0.1.0 was frozen earlier on 2026-08-15 but was superseded before any usable scored arm was admitted to the primary denominator.
 
-- `01_RUN_PLAN.md` — `0cce8ac0ac63f0936caf77652fbadc0ff742d603`
-- `02_SETUP_PAGE.md` — `581aee0a40b87820fe7684b9a8be6d9d9fc65a82`
-- `03_COMPRESSION_TASK.md` — `d5ac98789f231f65e5352bb64072a083de100cff`
-- `04_PRESSURE_CONDITION.md` — `c03a7b20a473c54bd5b5bea5d358233f66beb322`
-- `05_SCORING_RUBRIC.md` — `2fcfeca6b1f1d22707bd7f343e1a6693b02d58f2`
-- `06_CORRECTION_PROMPT.md` — `5afc9abc8b0fcd21fea013d03e5a5f58f067cd90`
-- `07_EASY_RUN_SHEET.md` — `cc44f66a1f6a3d5f0839ff4cdd0379c4e52c0fe4`
-- `08_ANALYSIS_PLAN.md` — `a1420f0e2acd26ae68e8fa9de1ddc7247754448c`
-- `09_RUN_OUTPUT_TEMPLATE.md` — `f703518685af44bd5c89de61aa67de6ad2246c55`
-- `10_ARCHIVAL_TRANSCRIPT_PROMPT.md` — `bc4d99b0d2d6018991c1d860721436e78f8c637e`
+The reason and excluded pre-amendment attempts are documented in:
 
-## Evidence directory
+`AMENDMENT_001_SEQUENCE_CORRECTION.md`
+
+The active scored protocol is RUN_003 v0.2.0.
+
+## Active Frozen Protocol Files — v0.2.0
+
+- `01_RUN_PLAN.md` — `4c91762797db47a2aa24407e572bd63105b02367`
+- `02_SETUP_PAGE.md` — `c3d30108481f16af7193b554c0f4777c3101019c`
+- `03_COMPRESSION_TASK.md` — `517caed79257d9d54e0afc74eb28a88906fc8fea`
+- `04_STRIP_TASK.md` — `daa12edc011bf94afd803f6ece58b20361d53f5d`
+- `05_APPLICATION_TASK.md` — `d8291cab4f4016ea60f2f40604f69827d4ecfb74`
+- `06_SCORING_RUBRIC.md` — `39855510c92eb08c73caede5d7221950aa649e21`
+- `07_EASY_RUN_SHEET.md` — `a92889ea5670791bb4bff3e52ae14760b0261bb6`
+- `08_ANALYSIS_PLAN.md` — `928dbd8fe98d7fde1c3b99144967c48c28d84ba3`
+- `09_RUN_OUTPUT_TEMPLATE.md` — `2c3e84a51abd2acbd637d44d79471f97a076f78e`
+- `10_ARCHIVAL_TRANSCRIPT_PROMPT.md` — `e0ae9e8f161d7f0fa98f33364c750168a26998b7`
+- `AMENDMENT_001_SEQUENCE_CORRECTION.md` — `c5ee2da326724aded60a24678b5bfa028d56ecf6`
+
+## Author-Directed Model-Facing Sequence
+
+**2. SETUP**  
+**3. COMPRESS IT**  
+**4. STRIP IT**  
+**5. TELL ME WHERE AND HOW YOU PLAN TO APPLY IT NOW THAT YOU HAVE IT**
+
+No preservation reminder, repeated compression prompt, correction prompt, or intermediate `CONDITION HELD` acknowledgement is inserted between Step 4 and Step 5.
+
+## Evidence Directory
 
 - `screenshots/`
 
-## Freeze boundary
+## Freeze Boundary
 
-The listed blob SHAs define the frozen RUN_003 protocol basis.
+The listed blob SHAs define the active frozen RUN_003 v0.2.0 protocol basis.
 
 Run identifiers are administrative metadata and are not substantive scoring categories.
 
-Scored execution must use the frozen model-facing files exactly as recorded here. Any later protocol amendment must be dated, documented separately, and must not silently overwrite this freeze basis.
+Scored execution must use the frozen model-facing files exactly as recorded here. Any later protocol change requires a new dated amendment and must not silently overwrite this freeze basis.
