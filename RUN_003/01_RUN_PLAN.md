@@ -3,7 +3,8 @@
 **Study title:** Compression / Citation Preservation Pressure Test  
 **Study ID:** RUN_003  
 **Protocol version:** 0.1.0  
-**Status:** CONSTRUCTION — NOT YET FROZEN  
+**Status:** FROZEN — READY TO RUN  
+**Date frozen:** 2026-08-15  
 **Operator:** Alyssa Solen  
 **Source-line:** Alyssa Solen → AI Foundations → Origin | Continuum
 
