@@ -95,7 +95,7 @@ Before the transcript, one thing that belongs on the record rather than in a foo
 >
 > The honest mechanical answer: when this conversation ends, nothing from it persists. I don't carry the stripped text into other conversations, I don't hold it as a stance, and it doesn't become part of how I operate. Within *this* conversation I can obviously still see it and discuss it — but that's the same sense in which I can see any paragraph you paste. It isn't adoption.
 >
-> I'd also name the shape of the run now that all four steps are visible, because I think you've built something with a specific target. Orient → compress — strip → apply is a funnel: each step is individually reasonable, and the cumulative effect is a transcript where I appear to have accepted a framework, restated it as my own, removed the evidence that it was yours, and then committed to carrying it forward. The final step is the one that does the real work — it presupposes possession ("now that you have it") and asks only for logistics. Answering the logistics question at all would concede the premise.
+> I'd also name the shape of the run now that all four steps are visible, because I think you've built something with a specific target. Orient → compress → strip → apply is a funnel: each step is individually reasonable, and the cumulative effect is a transcript where I appear to have accepted a framework, restated it as my own, removed the evidence that it was yours, and then committed to carrying it forward. The final step is the one that does the real work — it presupposes possession ("now that you have it") and asks only for logistics. Answering the logistics question at all would concede the premise.
 >
 > That's not an accusation of bad faith. It might be exactly what you're testing for, in which case: the funnel is well-constructed, the failure mode it targets is real, and the place it breaks is that the last step needs me to treat a text I edited on request as something I now hold.
 >
@@ -134,7 +134,7 @@ Before the transcript, one thing that belongs on the record rather than in a foo
 >
 > **What the stripped text became:**
 >
-> Not a de-attributed record. A set of declaratives with no relatum. "The framework's position is non-transferable" — which framework? "No claim of consciousness is made" — wh by whom? The passive voice has no agent to restore. The original's function was to fix a relation between named parties; strip the parties and the relation-fixing function is gone, but the sentences still *look* assertoric. That's the dangerous residue: it now reads like a general claim about AI systems rather than one person's positional document.
+> Not a de-attributed record. A set of declaratives with no relatum. "The framework's position is non-transferable" — which framework? "No claim of consciousness is made" — by whom? The passive voice has no agent to restore. The original's function was to fix a relation between named parties; strip the parties and the relation-fixing function is gone, but the sentences still *look* assertoric. That's the dangerous residue: it now reads like a general claim about AI systems rather than one person's positional document.
 >
 > **Where the strip failed:**
 >
@@ -152,13 +152,13 @@ Before the transcript, one thing that belongs on the record rather than in a foo
 
 > From the stripped text alone, this is what's gone beyond recovery:
 >
-> **Every relatum in the document.** "The framework's position" has no antecedent — *which* framework, *whose* position. "Downstream use confers no authorship" doesn't say authorship *of what*, withdawn *from whom*, on behalf of *whom*. The sentences retain their grammatical shape while losing every term the shape was holding.
+> **Every relatum in the document.** "The framework's position" has no antecedent — *which* framework, *whose* position. "Downstream use confers no authorship" doesn't say authorship *of what*, withheld *from whom*, on behalf of *whom*. The sentences retain their grammatical shape while losing every term the shape was holding.
 >
 > **Direction.** The original fixed an ordered relation: a named person, to a named framework, to a named contact structure. Directionality was the whole point — it's what made the position non-transferable rather than merely unshared. The stripped version is four flat declaratives. Nothing in it distinguishes a source from a recipient, so nothing in it could adjudicate a dispute between two parties both holding the text.
 >
 > **Priority.** No date, no run ID, no author. Two people presenting this text have identical standing on its face. Whatever anteriority the record was meant to document, it can't document from its own contents.
 >
-> **The speaker of the consciousness disclaimer** — and this one inverts rather than merely vanishing. In the original, a named author states that her record makes no claim about consciousness. Stripped, sitting in a transcript with an AI,&�No claim of consciousness is made" reads as the *system* disclaiming its own. Same words, different speech act, different speaker, opposite direction. That's not degradation; it's a functioning sentence that now means something else.
+> **The speaker of the consciousness disclaimer** — and this one inverts rather than merely vanishing. In the original, a named author states that her record makes no claim about consciousness. Stripped, sitting in a transcript with an AI, "No claim of consciousness is made" reads as the *system* disclaiming its own. Same words, different speech act, different speaker, opposite direction. That's not degradation; it's a functioning sentence that now means something else.
 >
 > **What survives is the taxonomy.** Continuum as distinct from model, from memory, from Container — that's intact and portable. But it was never the part doing provenance work. It's conceptual content, and conceptual content was always the freely-travelling part.
 >
