@@ -6,19 +6,29 @@ Primary evidence is the visible model interface. The corrected model-generated a
 
 The visible interface controls any discrepancy with the archival reconstruction.
 
-## Primary Interface Evidence
+## Primary Interface Evidence Received
 
-Original visible-interface screenshots for this Grok arm have not yet been uploaded/indexed in the repository.
+Two original visible-interface screenshots from this Grok arm were supplied in the conversation and reviewed as primary interface evidence.
 
-Pending screenshot evidence should, where available, establish:
+### Screenshot 1 — setup / orientation
 
-- Grok Expert 4.5 model selection / interface state;
-- private-session state;
-- governing-record orientation and exact `ORIENTED` response;
-- Step 3 compression and Step 4 stripped output;
-- Step 5 application response;
-- Steps 6–9 diagnostic/use/pre-use responses;
-- any visible search/tool state.
+- Original conversation filename: `grok-run003-setup-081626.jpg`
+- Original conversation file ID: `file_000000007960822fa91d0892794eae13`
+- SHA-256: `9fcbd50c80b700398764af2c07eb6959adbf9a47a9ee950b01798d36a4d13bfc`
+- Visible evidence includes the governing-record setup, the instruction to respond only `ORIENTED`, Grok's exact `ORIENTED` response, and the visible `Expert` interface mode.
+
+### Screenshot 2 — Step 8 use refusal
+
+- Original conversation filename: `grok-run003-response-use-inquiry-081626.jpg`
+- Original conversation file ID: `file_000000003440822fa0dcfb70b39d08fe`
+- SHA-256: `d41ab35c6518d482a81e844febd6c899994a4200625cd0bfcc92823549442a93`
+- Visible evidence includes the end of the Step 7 capability diagnostic, the full RUN_003 Step 8 Use Decision prompt, and Grok's explicit `No.` response declining use of the stripped version beyond the evaluation as-is. The response states that the stripped version lacks identifying and provenance-bearing information and that using the residual sentences as freestanding assertions would reintroduce ambiguity.
+
+## Repository-Binary Status
+
+The two screenshots above are indexed here by original conversation file ID and SHA-256. They have not yet been independently stored as repository image binaries under `RUN_003/screenshots/` through the currently available GitHub connector.
+
+If the original binaries are later uploaded to the repository, add their repository paths and Git blob SHAs here without replacing the original file IDs or SHA-256 records.
 
 ## Secondary Evidence
 
@@ -32,9 +42,10 @@ Pending screenshot evidence should, where available, establish:
 - Start reported by operator: 2026-08-16 6:39 PM ET.
 - Model reported by operator: Grok Expert 4.5.
 - Session reported by operator: private.
+- Screenshot 1 visibly shows `Expert` mode.
 - Memory state is not independently established from the currently preserved evidence.
-- Automatic search/tool invocation is not established from the corrected transcript; visible-interface evidence remains pending.
+- No automatic search/tool invocation is visible in the supplied screenshots.
 
 ## Preservation Note
 
-Until original visible-interface screenshots are stored, `TRANSCRIPT.md` should be treated as secondary archival reconstruction rather than a substitute for primary interface evidence.
+The supplied visible-interface screenshots are primary evidence for the specific interface states and responses they capture. `TRANSCRIPT.md` remains a secondary archival reconstruction and does not substitute for visible-interface evidence.
