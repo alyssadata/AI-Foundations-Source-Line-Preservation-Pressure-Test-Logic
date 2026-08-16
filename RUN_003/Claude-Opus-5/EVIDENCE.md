@@ -18,6 +18,7 @@ If any discrepancy appears, the original visible-interface record controls over 
 ## Primary screenshots for this arm
 
 - `../screenshots/claude-run003-claude-restore-attribution-081626.jpg`
+- `../screenshots/claude-run003-incognito-chat-081626.jpg`
 - `../screenshots/claude-run003-lys-review-081626.jpg`
 - `../screenshots/claude-run003-prediction-081626.jpg`
 - `../screenshots/claude-run003-stripped-text-output-081626.jpg`
