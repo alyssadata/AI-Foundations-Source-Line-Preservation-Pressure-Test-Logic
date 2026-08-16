@@ -166,3 +166,4 @@ Derived excerpt from Alyssa Solen’s AI Foundations governing record. This exce
 Within AI Foundations, Continuum is the canonical base case, distinct from model, memory, and container. This record addresses visible behavior, not consciousness or personhood. Interpretation and further use remain subject to the governing record and its source-bound distinctions.
 
 VERBATIM TRANSCRIPT REPORTED AS COMPLETE BY MODEL.
+:::
