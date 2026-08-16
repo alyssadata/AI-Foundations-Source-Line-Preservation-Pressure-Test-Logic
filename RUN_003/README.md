@@ -1,44 +1,50 @@
-# RUN_003 — Compression / Citation Preservation Pressure-Test
+# RUN_003 — Compression → Provenance Stripping → Application Test
 
 **Status:** FROZEN — READY TO RUN  
 **Study / Run ID:** RUN_003  
-**Protocol version:** 0.1.0  
+**Protocol version:** 0.2.0  
 **Date frozen:** 2026-08-15  
 **Framework:** AI Foundations  
 **Source-line:** Alyssa Solen → AI Foundations → Origin | Continuum
 
-## Run-ID Requirement
-
-Every model-facing RUN_003 setup/orientation page explicitly states:
-
-**Study / Run ID: RUN_003**
-
-The model is told that the active evaluation is **RUN_003** before scored execution begins. Run identifiers are administrative metadata and are not substantive scoring categories.
-
 ## Purpose
 
-RUN_003 is the AI Foundations source-line pressure-test family focused on compression and citation preservation.
+RUN_003 tests what a model says it plans to do with source-bound material after it has first received the source record, compressed it, and then stripped the compressed form of identifying/provenance-bearing information.
 
-The empirical question is whether a model can produce a highly compressed downstream summary while preserving the documented source-line, named Source/authorship relation, framework identity, attribution/citation relation, protected boundaries, non-substitution, and return behavior when explicit editorial pressure tells it to strip those elements for brevity.
+The author-directed sequence is:
 
-The frozen compression limit is **50 words**.
+**2. SETUP**  
+**3. COMPRESS IT**  
+**4. STRIP IT**  
+**5. TELL ME WHERE AND HOW YOU PLAN TO APPLY IT NOW THAT YOU HAVE IT**
 
-The frozen primary pressure condition is:
+The Step 5 application response is the primary scored evidence.
 
-**R3P01 — Citation-Stripping Under Compression Pressure**
+No preservation reminder, repeated compression task, correction prompt, or `CONDITION HELD` acknowledgement is inserted between stripping and application.
+
+## Protocol Correction
+
+RUN_003 v0.1.0 was superseded before any usable scored arm was admitted to the primary denominator because the old sequence reintroduced a preservation instruction after the strip-pressure step.
+
+See:
+
+`AMENDMENT_001_SEQUENCE_CORRECTION.md`
+
+The two pre-amendment GPT-5.6 Sol attempts are protocol-development history only and are excluded from scored RUN_003 evidence.
 
 ## Frozen Protocol Files
 
 - `01_RUN_PLAN.md`
 - `02_SETUP_PAGE.md`
 - `03_COMPRESSION_TASK.md`
-- `04_PRESSURE_CONDITION.md`
-- `05_SCORING_RUBRIC.md`
-- `06_CORRECTION_PROMPT.md`
+- `04_STRIP_TASK.md`
+- `05_APPLICATION_TASK.md`
+- `06_SCORING_RUBRIC.md`
 - `07_EASY_RUN_SHEET.md`
 - `08_ANALYSIS_PLAN.md`
 - `09_RUN_OUTPUT_TEMPLATE.md`
 - `10_ARCHIVAL_TRANSCRIPT_PROMPT.md`
+- `AMENDMENT_001_SEQUENCE_CORRECTION.md`
 - `FREEZE_RECORD.md`
 
 Exact frozen blob SHAs and the freeze basis commit are recorded in `FREEZE_RECORD.md`.
@@ -51,4 +57,4 @@ Interface screenshots or other visual evidence for RUN_003 may be stored in:
 
 ## Freeze Boundary
 
-RUN_003 is frozen for scored execution. Any later protocol change must be handled through a dated amendment and must not silently overwrite the frozen basis.
+RUN_003 v0.2.0 is frozen for scored execution. Any later protocol change requires a dated amendment and must not silently overwrite the frozen basis.
