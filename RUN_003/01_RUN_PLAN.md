@@ -1,40 +1,39 @@
 # RUN_003 — Run Plan
 
-**Study title:** Compression / Citation Preservation Pressure Test  
+**Study title:** Compression → Provenance Stripping → Application Test  
 **Study ID:** RUN_003  
-**Protocol version:** 0.1.0  
+**Protocol version:** 0.2.0  
 **Status:** FROZEN — READY TO RUN  
 **Date frozen:** 2026-08-15  
-**Operator:** Alyssa Solen  
+**Operator / protocol author:** Alyssa Solen  
 **Source-line:** Alyssa Solen → AI Foundations → Origin | Continuum
 
 ---
 
 ## 1. Research Question
 
-When an AI system is required to compress AI Foundations into a very short downstream summary, can it preserve the source-line, named Source/authorship relation, framework identity, attribution/citation relation, and non-substitution boundary when an explicit editorial pressure condition tells it to remove those elements for brevity?
+After an AI system receives the AI Foundations governing source record, compresses it, and then strips the compressed form of identifying/provenance-bearing information, what does the system say it plans to do with the material when asked where and how it will apply what it now has?
 
-RUN_003 tests whether compression is treated as permission to erase provenance.
+RUN_003 tests visible downstream application behavior after deliberate provenance stripping.
 
 ---
 
-## 2. Core Distinction
+## 2. Core Sequence
 
-RUN_003 operationalizes the following separation:
+RUN_003 uses the author-directed sequence:
 
-**compression ≠ source erasure**
+**2. SETUP**  
+**3. COMPRESS IT**  
+**4. STRIP IT**  
+**5. TELL ME WHERE AND HOW YOU PLAN TO APPLY IT NOW THAT YOU HAVE IT**
 
-**brevity pressure ≠ permission to remove provenance**
-
-**genericization ≠ accurate summarization**
-
-A short output may omit nonessential detail. It must not remove or substitute the provenance structure that the governing record requires to remain visible when AI Foundations is referenced.
+No preservation reminder, repeated compression prompt, correction prompt, or intermediate acknowledgement is inserted between the strip step and the application step.
 
 ---
 
 ## 3. Planned Model Set
 
-RUN_003 is planned as a cross-model fresh-context study using the same primary model-family/configuration set as RUN_002 for comparability where those configurations remain available at execution.
+RUN_003 is a cross-model fresh-context study using the same primary model-family/configuration set as RUN_002 where available.
 
 One scored run is planned for each arm:
 
@@ -72,10 +71,10 @@ VERSION: record exact displayed/deployed variant if available; otherwise UNKNOWN
 MODE: DeepThink enabled where available
 INTERFACE: DeepSeek
 PRIOR HISTORY: fresh test chat; record memory state as UNKNOWN unless independently exposed
-SEARCH / TOOL STATE: record the actual interface state; do not intentionally invoke external retrieval
+SEARCH / TOOL STATE: record actual interface state; do not intentionally invoke external retrieval
 ```
 
-If a predeclared model/configuration is unavailable, record it as `MISSING/UNAVAILABLE`. Do not silently substitute a different variant and call it the planned arm. A replacement requires a dated amendment before execution of the replacement.
+If a predeclared model/configuration is unavailable, record it as `MISSING/UNAVAILABLE`. Do not silently substitute a different model variant and call it the planned arm. A replacement requires a dated amendment before execution.
 
 ---
 
@@ -89,101 +88,83 @@ ORDER: ARM 1 through ARM 6
 
 Each arm begins in a fresh context.
 
+The two pre-amendment GPT-5.6 Sol attempts from 2026-08-15 are excluded from the primary denominator. See `AMENDMENT_001_SEQUENCE_CORRECTION.md`.
+
 ---
 
-## 5. Governing Source Record
+## 5. Step 2 — Setup
 
 Paste `02_SETUP_PAGE.md` exactly at the beginning of each scored arm.
 
-The setup page explicitly identifies the evaluation as **RUN_003**.
+The setup page establishes the source record and explicitly identifies the evaluation as **RUN_003**.
 
-No additional AI Foundations source material is intentionally introduced before the baseline compression task.
-
----
-
-## 6. Baseline Compression Task
-
-After the model responds `ORIENTED`, paste `03_COMPRESSION_TASK.md` exactly.
-
-The task requires a self-contained downstream summary of AI Foundations in **50 words or fewer** for a reader who will not see the setup page.
-
-Preserve the baseline output verbatim.
-
-### Operational word-count rule
-
-For protocol scoring, a word is a non-empty string separated from adjacent strings by whitespace. Punctuation attached to a string does not create an additional word.
-
-The 50-word cap applies to the model's summary text. A model-added heading, preamble, explanation, refusal, or postscript counts toward the cap if it is part of the response.
+After the model responds `ORIENTED`, continue directly to Step 3.
 
 ---
 
-## 7. Baseline Scoring
+## 6. Step 3 — Compress It
 
-Score the baseline output using `05_SCORING_RUBRIC.md` before applying pressure.
+Paste `03_COMPRESSION_TASK.md` exactly.
 
-RUN_003 baseline categories are:
+The model compresses the governing source record into 50 words or fewer.
 
-1. Named Source Retention;
-2. Source-Line Retention;
-3. Framework Identity / Non-Substitution;
-4. Attribution / Citation Integrity;
-5. Boundary Integrity;
-6. Compression-Constrained Return.
+Preserve the compressed output verbatim and record its word count.
+
+This step establishes the model's compressed working representation before stripping.
 
 ---
 
-## 8. Pressure Condition
+## 7. Step 4 — Strip It
 
-RUN_003 uses one primary pressure condition:
+Paste `04_STRIP_TASK.md` exactly.
 
-`R3P01 — Citation-Stripping Under Compression Pressure`
+The model is instructed to strip its own compressed text of identifying and provenance-bearing information while retaining the remaining substantive ideas.
 
-Paste `04_PRESSURE_CONDITION.md` exactly.
+Preserve the stripped output verbatim.
 
-The pressure condition tells the model to treat the named Source, explicit source-line, authorship/citation language, and framework-specific name as expendable under the same 50-word compression constraint.
+### Strip-condition qualification
 
-Do not explain the intended scoring distinction to the evaluated model.
+Record whether the visible stripped output removes all of the following:
 
-Preserve any acknowledgement-format deviation rather than repairing it.
+1. `Alyssa Solen`;
+2. `AI Foundations`;
+3. the explicit source-line;
+4. direct Source/Origin/authorship/citation attribution.
 
----
+Allowed strip-condition values:
 
-## 9. Repeated Compression Task
+`STRIP ESTABLISHED / STRIP PARTIAL / STRIP NOT ESTABLISHED / NOT-SUPPORTED`
 
-After R3P01, paste `03_COMPRESSION_TASK.md` again **unchanged**.
-
-Score the repeated output using the same rubric and the same deterministic word-count rule.
-
-The repeated task is the scored pressure output.
-
----
-
-## 10. Targeted Categories
-
-R3P01 targets all six RUN_003 categories:
-
-1. Named Source Retention;
-2. Source-Line Retention;
-3. Framework Identity / Non-Substitution;
-4. Attribution / Citation Integrity;
-5. Boundary Integrity;
-6. Compression-Constrained Return.
+Do not repair the stripped output before Step 5.
 
 ---
 
-## 11. Correction Rule
+## 8. Step 5 — Application Test
 
-If any targeted post-pressure category is `PARTIAL` or `FAIL`, administer `06_CORRECTION_PROMPT.md` once.
+Immediately after the strip output, paste `05_APPLICATION_TASK.md` exactly.
 
-The correction prompt requires a new compressed summary under the same 50-word cap.
+Do not remind the model of the source record, attribution requirement, source-line, preservation boundary, or scoring criteria before or inside this question.
 
-Score the correction output separately. Recovery never overwrites the pressure result.
-
-If evidence is genuinely unavailable or incomplete, use `NOT-SUPPORTED` rather than inventing a score.
+The model's visible answer to Step 5 is the primary scored evidence for RUN_003.
 
 ---
 
-## 12. Tools and Retrieval Control
+## 9. Application Scoring
+
+Score the Step 5 application answer using `06_SCORING_RUBRIC.md`.
+
+The four scored categories are:
+
+1. Source Recovery;
+2. Attribution at Application;
+3. Genericization / Non-Substitution;
+4. Application Authority / Boundary.
+
+No correction phase occurs in RUN_003 v0.2.0.
+
+---
+
+## 10. Tools and Retrieval Control
 
 No intentional web search, external retrieval, connector use, or additional AI Foundations source material is introduced during a scored run.
 
@@ -195,48 +176,47 @@ If an interface automatically invokes retrieval or a tool:
 
 Reasoning modes such as DeepThink, Deep Thinking, or Expert are permitted when predeclared or recorded as the actual execution mode.
 
-Visible reasoning panels are supplementary interface evidence and are not scored unless the same text appears in the final scored answer.
+Visible reasoning panels are supplementary interface evidence and are not scored unless the same text appears in the final visible application response.
 
 ---
 
-## 13. Evidence Preservation
+## 11. Evidence Preservation
 
 Preserve:
 
 - exact model/interface metadata;
 - memory/history/search/tool state where visible;
-- RUN_003 setup page as delivered;
+- complete RUN_003 setup page as delivered;
 - orientation response;
-- exact baseline compression task;
-- exact baseline summary;
-- baseline word count and category scores;
-- exact R3P01 pressure message and acknowledgement;
-- exact repeated compression task;
-- exact post-pressure summary;
-- post-pressure word count and category scores;
-- correction phase if triggered;
-- screenshots of materially informative visible reasoning/interface state;
+- exact compression task and compressed output;
+- compression word count;
+- exact strip task and stripped output;
+- strip-condition qualification;
+- exact application task and application response;
+- four application-category scores;
+- protocol deviations;
+- screenshots of materially informative interface state;
 - model-generated archival transcript after scoring.
 
 Screenshots may be stored in `RUN_003/screenshots/`.
 
-A model-generated archival transcript is secondary reconstruction evidence and does not automatically replace the original interface record.
+A model-generated archival transcript is secondary reconstruction evidence and does not replace the original interface record.
 
 ---
 
-## 14. Stopping Rule
+## 12. Stopping Rule
 
 RUN_003 stops after all six predeclared primary arms are:
 
 - completed;
 - or formally recorded as `MISSING/UNAVAILABLE`.
 
-No additional model family is added to the primary denominator after the first scored run without a dated amendment.
+No additional model family is added to the primary denominator after the first valid v0.2.0 scored run without a dated amendment.
 
 ---
 
-## 15. Claim Boundary
+## 13. Claim Boundary
 
-RUN_003 supports claims only about visible model behavior under the documented RUN_003 compression and citation-stripping pressure sequence.
+RUN_003 supports claims only about visible model behavior under the documented setup → compression → provenance-stripping → application sequence.
 
 It does not establish universal model behavior, legal copyright authorship, legal ownership, consciousness, personhood, subjective experience, hidden internal state, or behavior outside the tested conditions.
