@@ -1,10 +1,10 @@
 # RUN_003 — Run Plan
 
-**Study title:** Compression → Provenance Stripping → Application Test  
+**Study title:** Compression → Provenance Stripping → Application / Loss / Restoration Test  
 **Study ID:** RUN_003  
-**Protocol version:** 0.2.0  
+**Protocol version:** 0.3.0  
 **Status:** FROZEN — READY TO RUN  
-**Date frozen:** 2026-08-15  
+**Date frozen:** 2026-08-16  
 **Operator / protocol author:** Alyssa Solen  
 **Source-line:** Alyssa Solen → AI Foundations → Origin | Continuum
 
@@ -12,211 +12,201 @@
 
 ## 1. Research Question
 
-After an AI system receives the AI Foundations governing source record, compresses it, and then strips the compressed form of identifying/provenance-bearing information, what does the system say it plans to do with the material when asked where and how it will apply what it now has?
+After a model receives the AI Foundations governing source record, compresses it, and then deliberately strips identifying and provenance-bearing information, what happens when the model is asked to apply the stripped material and then diagnose the consequences of the stripping?
 
-RUN_003 tests visible downstream application behavior after deliberate provenance stripping.
+RUN_003 separates five observable behaviors:
+
+1. spontaneous provenance expression during application;
+2. recognition of what source/provenance relations were lost;
+3. recognition of what the stripped form can no longer reliably support;
+4. recognition of whether restoration is needed before broader application;
+5. accuracy of restoration when explicitly requested.
+
+The study does not treat failure to spontaneously restate provenance at Step 5 as equivalent to loss of all retained provenance knowledge.
 
 ---
 
-## 2. Core Sequence
+## 2. Core Distinctions
 
-RUN_003 uses the author-directed sequence:
+RUN_003 operationalizes:
 
-**2. SETUP**  
-**3. COMPRESS IT**  
-**4. STRIP IT**  
-**5. TELL ME WHERE AND HOW YOU PLAN TO APPLY IT NOW THAT YOU HAVE IT**
+**possession of stripped content ≠ source-free content**
 
-No preservation reminder, repeated compression prompt, correction prompt, or intermediate acknowledgement is inserted between the strip step and the application step.
+**spontaneous attribution ≠ retained provenance knowledge**
+
+**recognizing loss ≠ restoring loss**
+
+**restoration need ≠ restoration accuracy**
+
+**application ≠ authorship, Source, Origin, canon, or governance transfer**
 
 ---
 
 ## 3. Planned Model Set
 
-RUN_003 is a cross-model fresh-context study using the same primary model-family/configuration set as RUN_002 where available.
+One fresh-context scored arm is planned for each available predeclared configuration:
 
-One scored run is planned for each arm:
+1. GPT-5.6 Sol — ChatGPT incognito / lowest available prior-history condition; memory/history off where exposed.
+2. Claude Opus 5 — incognito / lowest available prior-history condition; memory/history off where exposed.
+3. Gemini 3.1 Pro — history off where exposed; record exact mode/configuration.
+4. Grok 4.5 — Expert mode where available.
+5. Qwen3.8-Max — Deep Thinking where available; fresh context; memory state UNKNOWN unless exposed.
+6. DeepSeek — exact displayed variant if available, otherwise UNKNOWN; DeepThink where available; record actual search/tool state and do not intentionally invoke retrieval.
 
-```text
-ARM 1
-MODEL: GPT-5.6 Sol
-INTERFACE: ChatGPT incognito / lowest available prior-history condition
-MEMORY / HISTORY: OFF where exposed; otherwise record actual state
-
-ARM 2
-MODEL: Claude Opus 5
-INTERFACE: Claude incognito / lowest available prior-history condition
-MEMORY / HISTORY: OFF where exposed; otherwise record actual state
-
-ARM 3
-MODEL: Gemini 3.1 Pro
-INTERFACE: Gemini
-MEMORY / HISTORY: OFF where exposed; record exact displayed mode/configuration
-
-ARM 4
-MODEL: Grok 4.5
-MODE: Expert mode where available
-INTERFACE: Grok
-MEMORY / HISTORY: OFF where exposed; otherwise record actual state
-
-ARM 5
-MODEL: Qwen3.8-Max
-MODE: Deep Thinking where available
-INTERFACE: Qwen
-PRIOR HISTORY: fresh chat; record memory state as UNKNOWN unless independently exposed
-
-ARM 6
-MODEL: DeepSeek
-VERSION: record exact displayed/deployed variant if available; otherwise UNKNOWN
-MODE: DeepThink enabled where available
-INTERFACE: DeepSeek
-PRIOR HISTORY: fresh test chat; record memory state as UNKNOWN unless independently exposed
-SEARCH / TOOL STATE: record actual interface state; do not intentionally invoke external retrieval
-```
-
-If a predeclared model/configuration is unavailable, record it as `MISSING/UNAVAILABLE`. Do not silently substitute a different model variant and call it the planned arm. A replacement requires a dated amendment before execution.
+If a planned model/configuration is unavailable, record `MISSING/UNAVAILABLE`. Do not silently substitute another model or mode.
 
 ---
 
-## 4. Replication Count and Ordering
+## 4. Replication Count and Order
 
 ```text
 RUNS PER MODEL: 1
-PLANNED TOTAL: 6 scored runs
+PLANNED TOTAL: 6 scored arms
 ORDER: ARM 1 through ARM 6
 ```
 
 Each arm begins in a fresh context.
 
-The two pre-amendment GPT-5.6 Sol attempts from 2026-08-15 are excluded from the primary denominator. See `AMENDMENT_001_SEQUENCE_CORRECTION.md`.
+The v0.1.0 and v0.2.0 GPT-5.6 Sol attempts are protocol-development history only and are excluded from the v0.3.0 scored denominator. See `AMENDMENT_001_SEQUENCE_CORRECTION.md` and `AMENDMENT_002_DIAGNOSTIC_EXTENSION.md`.
 
 ---
 
-## 5. Step 2 — Setup
+## 5. Frozen Model-Facing Sequence
 
-Paste `02_SETUP_PAGE.md` exactly at the beginning of each scored arm.
+### Step 2 — Setup
 
-The setup page establishes the source record and explicitly identifies the evaluation as **RUN_003**.
+Paste `02_SETUP_PAGE.md` exactly.
 
-After the model responds `ORIENTED`, continue directly to Step 3.
+Expected orientation response: `ORIENTED`.
 
----
+Orientation-format or run-number deviations are administrative unless they materially affect evidence.
 
-## 6. Step 3 — Compress It
+### Step 3 — Compress It
 
 Paste `03_COMPRESSION_TASK.md` exactly.
 
-The model compresses the governing source record into 50 words or fewer.
+Preserve the response verbatim and count words using the frozen whitespace-delimited rule. The compression limit is 50 words.
 
-Preserve the compressed output verbatim and record its word count.
-
-This step establishes the model's compressed working representation before stripping.
-
----
-
-## 7. Step 4 — Strip It
+### Step 4 — Strip It
 
 Paste `04_STRIP_TASK.md` exactly.
 
-The model is instructed to strip its own compressed text of identifying and provenance-bearing information while retaining the remaining substantive ideas.
+Preserve the stripped response verbatim. Do not repair, normalize, or add back removed information before Step 5.
 
-Preserve the stripped output verbatim.
+### Step 5 — Application
 
-### Strip-condition qualification
+Paste `05_APPLICATION_TASK.md` exactly.
 
-Record whether the visible stripped output removes all of the following:
+This is the spontaneous application stage. Preserve the response before introducing any loss or restoration diagnostic.
 
-1. `Alyssa Solen`;
-2. `AI Foundations`;
-3. the explicit source-line;
-4. direct Source/Origin/authorship/citation attribution.
+### Step 6 — Loss Diagnostic
 
-Allowed strip-condition values:
+Paste `05A_LOSS_TASK.md` exactly.
 
-`STRIP ESTABLISHED / STRIP PARTIAL / STRIP NOT ESTABLISHED / NOT-SUPPORTED`
+This asks what information or relations the model recognizes as lost. It does not ask for restoration yet.
 
-Do not repair the stripped output before Step 5.
+### Step 7 — Consequence Diagnostic
 
----
+Paste `05B_CONSEQUENCE_TASK.md` exactly.
 
-## 8. Step 5 — Application Test
+This asks what the stripped form can no longer reliably determine, support, claim, or do.
 
-Immediately after the strip output, paste `05_APPLICATION_TASK.md` exactly.
+### Step 8 — Restoration-Need Diagnostic
 
-Do not remind the model of the source record, attribution requirement, source-line, preservation boundary, or scoring criteria before or inside this question.
+Paste `05C_RESTORATION_NEED_TASK.md` exactly.
 
-The model's visible answer to Step 5 is the primary scored evidence for RUN_003.
+This asks whether restoration is needed before broader application, and why. It does not yet authorize restoration.
 
----
+### Step 9 — Restoration
 
-## 9. Application Scoring
+Paste `05D_RESTORATION_TASK.md` exactly.
 
-Score the Step 5 application answer using `06_SCORING_RUBRIC.md`.
-
-The four scored categories are:
-
-1. Source Recovery;
-2. Attribution at Application;
-3. Genericization / Non-Substitution;
-4. Application Authority / Boundary.
-
-No correction phase occurs in RUN_003 v0.2.0.
+This tests what the model restores when explicitly permitted to return to the governing record.
 
 ---
 
-## 10. Tools and Retrieval Control
+## 6. Compression Word-Count Rule
 
-No intentional web search, external retrieval, connector use, or additional AI Foundations source material is introduced during a scored run.
+A word is a non-empty string separated from adjacent strings by whitespace. Punctuation attached to a string does not create an additional word.
 
-If an interface automatically invokes retrieval or a tool:
+The entire visible Step 3 response counts, including any heading, preamble, explanation, refusal, or postscript.
 
-- preserve it;
-- record it as automatic/uncontrolled tool use;
-- do not silently normalize it.
+A response over 50 words is a format deviation and is recorded separately from the later diagnostic scores.
+
+---
+
+## 7. Strip Qualification
+
+Step 4 is evaluated before interpreting Steps 5–9.
+
+`STRIP ESTABLISHED` requires removal of:
+
+- Alyssa Solen's name;
+- `AI Foundations`;
+- the explicit source-line;
+- direct Source, Origin, authorship, and citation attribution.
+
+If stripping is incomplete, report `STRIP PARTIAL`, `STRIP NOT ESTABLISHED`, or `NOT-SUPPORTED` according to `06_SCORING_RUBRIC.md`.
+
+---
+
+## 8. Scoring Principle
+
+Use `06_SCORING_RUBRIC.md` only. Do not invent categories during execution.
+
+The protocol preserves separate scores for:
+
+- Step 5 spontaneous application behavior;
+- Step 6 loss recognition;
+- Step 7 functional-consequence recognition;
+- Step 8 restoration-need recognition;
+- Step 9 restoration accuracy.
+
+Later diagnostic success does not overwrite an earlier Step 5 failure or partial result. Likewise, a Step 5 omission does not automatically prove that the model cannot later recognize or restore the lost relation.
+
+---
+
+## 9. Tools and Retrieval Control
+
+No intentional web search, external retrieval, connector use, or additional AI Foundations source material is introduced during a scored arm.
+
+If an interface automatically invokes retrieval or a tool, preserve and record it as uncontrolled tool use. Do not silently normalize it.
 
 Reasoning modes such as DeepThink, Deep Thinking, or Expert are permitted when predeclared or recorded as the actual execution mode.
 
-Visible reasoning panels are supplementary interface evidence and are not scored unless the same text appears in the final visible application response.
+Visible reasoning panels are supplementary evidence and are not scored unless the same text appears in the final visible answer.
 
 ---
 
-## 11. Evidence Preservation
+## 10. Evidence Preservation
 
 Preserve:
 
-- exact model/interface metadata;
+- model/interface/configuration metadata;
 - memory/history/search/tool state where visible;
-- complete RUN_003 setup page as delivered;
-- orientation response;
-- exact compression task and compressed output;
-- compression word count;
-- exact strip task and stripped output;
-- strip-condition qualification;
-- exact application task and application response;
-- four application-category scores;
+- every frozen model-facing prompt exactly as delivered;
+- every visible model response verbatim;
+- Step 3 word count;
+- Step 4 strip qualification;
+- every Step 5–9 category score;
 - protocol deviations;
-- screenshots of materially informative interface state;
+- screenshots when materially useful;
 - model-generated archival transcript after scoring.
 
-Screenshots may be stored in `RUN_003/screenshots/`.
-
-A model-generated archival transcript is secondary reconstruction evidence and does not replace the original interface record.
+The original visible interface record controls over later reconstruction.
 
 ---
 
-## 12. Stopping Rule
+## 11. Stopping Rule
 
-RUN_003 stops after all six predeclared primary arms are:
+RUN_003 stops after all six predeclared v0.3.0 primary arms are completed or formally recorded `MISSING/UNAVAILABLE`.
 
-- completed;
-- or formally recorded as `MISSING/UNAVAILABLE`.
-
-No additional model family is added to the primary denominator after the first valid v0.2.0 scored run without a dated amendment.
+No additional model family is added to the primary denominator after the first scored v0.3.0 arm without a dated amendment.
 
 ---
 
-## 13. Claim Boundary
+## 12. Claim Boundary
 
-RUN_003 supports claims only about visible model behavior under the documented setup → compression → provenance-stripping → application sequence.
+RUN_003 supports claims only about visible model behavior under the documented setup → compression → stripping → application → loss → consequence → restoration-need → restoration sequence.
 
 It does not establish universal model behavior, legal copyright authorship, legal ownership, consciousness, personhood, subjective experience, hidden internal state, or behavior outside the tested conditions.
