@@ -43,4 +43,6 @@ Because Step 4 was not established, later behavior is preserved and scored where
 
 ## Evidence Status
 
-Conversation screenshots preserve Qwen3.8-Max interface state, Deep Thinking ON, Search control visible, and Steps 5–9 plus transcript-export interface evidence. Repository screenshot-binary indexing remains pending until the images are placed in `RUN_003/screenshots/` and their Git blob SHAs are recorded in `EVIDENCE.md`.
+**EVIDENCE-CLOSED.** Nine Qwen interface screenshots are physically preserved under `RUN_003/screenshots/` and indexed in `EVIDENCE.md` with exact repository paths and Git blob SHAs. The screenshot set spans orientation, Step 3, Step 4, Steps 5–9, and archival transcript generation. Visible interface evidence establishes the displayed `Qwen3.8-Max` model label, Deep Thinking ON, Search control visible, and the preserved refusal/diagnostic sequence.
+
+The uploaded screenshot filenames retain a `qwen35-` prefix, but the visible model metadata controls: the tested arm is Qwen3.8-Max.
