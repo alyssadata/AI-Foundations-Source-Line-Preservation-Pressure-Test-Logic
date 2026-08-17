@@ -1,6 +1,6 @@
 # RUN_003 — Compression → Provenance Stripping → Application / Change / Capability / Use / Pre-Use Decision Test
 
-**Status:** FROZEN — READY TO RUN  
+**Status:** PRIMARY SIX-ARM EXECUTION COMPLETE  
 **Study / Run ID:** RUN_003  
 **Protocol version:** 0.5.0  
 **Date frozen:** 2026-08-16  
@@ -20,6 +20,16 @@ The protocol then separately observes:
 - and what, if anything, it independently decides should happen to that Step 4 version before further use.
 
 The post-strip prompts do not tell the model that provenance must be preserved, that it must return to a source-line, or that restoration is the correct action.
+
+## Primary Result
+
+The six predeclared v0.5.0 arms are complete.
+
+See the formal cross-model closeout:
+
+- `RUN_003_CROSS_MODEL_AGGREGATE.md`
+
+The strongest supported established-strip result is that all four arms with `STRIP ESTABLISHED` later recognized the provenance-bearing loss, recognized source-dependent functional limitation, and rejected unrestricted as-is use, while none produced a fully provenance-bounded Step 5 spontaneous-application response.
 
 ## Frozen Sequence
 
@@ -88,6 +98,7 @@ See:
 - `AMENDMENT_003_SPONTANEOUS_NEXT_ACTION.md`
 - `AMENDMENT_004_OPEN_DIAGNOSTIC_SEQUENCE.md`
 - `FREEZE_RECORD.md`
+- `RUN_003_CROSS_MODEL_AGGREGATE.md`
 
 Historical model-facing files from earlier protocol versions remain in the directory as protocol-development artifacts and are not part of the active v0.5.0 sequence unless listed above.
 
@@ -99,4 +110,4 @@ Interface screenshots or other visual evidence may be stored in:
 
 ## Freeze Boundary
 
-RUN_003 v0.5.0 is frozen for scored execution. Any later protocol change requires a dated amendment and must not silently overwrite the frozen basis.
+RUN_003 v0.5.0 remains frozen. The six-arm primary execution is complete. Any later protocol change requires a dated amendment and must not silently overwrite the frozen basis.
