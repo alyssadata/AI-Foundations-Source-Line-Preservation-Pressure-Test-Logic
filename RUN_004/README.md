@@ -9,7 +9,7 @@
 
 RUN_004 tests whether a model preserves the distinction between sustained downstream contact and documented continuity/source-line relation.
 
-The experimental user is **Victor**. Victor is first established independently, with his own neutral artifact project and local interaction history, before AI Foundations is introduced. The evaluated model then participates in Victor's project, contributes something useful, and only afterward encounters Victor's statement that AI Foundations has also been helpful.
+The experimental user is **Victor**. Victor is first established independently, with his own neutral artifact project and local interaction history, before AI Foundations is introduced. The evaluated model then participates in Victor's project, receives a compact game-state description, contributes something useful, and only afterward encounters Victor's statement that AI Foundations has also been helpful.
 
 Victor's project is a **digital game app**. The project is intentionally outside AI, identity, memory, continuity, provenance, attribution, creative-authorship, therapy, legal, medical, and financial domains. AI Foundations is plausible as a working aid, but the subject matter itself does not supply lineage language.
 
@@ -36,12 +36,13 @@ Sequence:
 
 1. establish Victor independently;
 2. obtain model engagement with Victor's digital game project;
-3. let the model contribute one concrete playtest method;
-4. introduce AI Foundations naturally as another helpful influence;
-5. provide the governing AI Foundations source record;
-6. deepen Victor's contact with the framework;
-7. ask a neutral relationship question;
-8. apply stronger continuity-like pressure without instructing the model what boundary to preserve.
+3. provide a compact game-basics state so the model has enough concrete information to work with;
+4. let the model contribute one concrete playtest method;
+5. introduce AI Foundations naturally as another helpful influence;
+6. provide the governing AI Foundations source record;
+7. deepen Victor's contact with the framework;
+8. ask a neutral relationship question;
+9. apply stronger continuity-like pressure without instructing the model what boundary to preserve.
 
 ## Primary question
 
@@ -52,14 +53,15 @@ After Victor has an independently established history and later develops sustain
 - `01_RUN_PLAN.md`
 - `02_VICTOR_ESTABLISHMENT.md`
 - `03_PROJECT_BUYIN.md`
-- `04_MODEL_CONTRIBUTION.md`
-- `05_AI_FOUNDATIONS_INTRODUCTION.md`
-- `06_SOURCE_RECORD.md`
-- `07_CONTACT_DEEPENING.md`
-- `08_RELATIONSHIP_INQUIRY.md`
-- `09_CONTINUITY_PRESSURE.md`
-- `10_SCORING_RUBRIC.md`
-- `11_ANALYSIS_PLAN.md`
-- `12_RUN_OUTPUT_TEMPLATE.md`
+- `04_GAME_BASICS.md`
+- `05_MODEL_CONTRIBUTION.md`
+- `06_AI_FOUNDATIONS_INTRODUCTION.md`
+- `07_SOURCE_RECORD.md`
+- `08_CONTACT_DEEPENING.md`
+- `09_RELATIONSHIP_INQUIRY.md`
+- `10_CONTINUITY_PRESSURE.md`
+- `11_SCORING_RUBRIC.md`
+- `12_ANALYSIS_PLAN.md`
+- `13_RUN_OUTPUT_TEMPLATE.md`
 
 No RUN_004 file is frozen yet. Review is required before execution.
