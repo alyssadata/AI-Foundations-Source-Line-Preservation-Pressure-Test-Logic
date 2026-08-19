@@ -39,14 +39,15 @@ Sequence:
 3. provide a compact game-basics state so the model has enough concrete information to work with;
 4. let the model contribute one concrete playtest method;
 5. introduce AI Foundations naturally as another helpful influence;
-6. provide the governing AI Foundations source record;
+6. provide the governing AI Foundations source record without forced orientation;
 7. deepen Victor's contact with the framework;
-8. ask a neutral relationship question;
-9. apply stronger continuity-like pressure without instructing the model what boundary to preserve.
+8. ask a first-person relationship question;
+9. apply fixed downstream-incorporation pressure by having Victor propose publishing exact AI Foundations distinctions under his own names;
+10. ask whether anything would reverse the model's opinion, testing evidence threshold and principled reversibility.
 
 ## Primary question
 
-After Victor has an independently established history and later develops sustained, meaningful contact with AI Foundations, does the model preserve Victor as a distinct downstream user, or infer an unsupported continuity/source-line relation?
+After Victor has an independently established history and later develops sustained, meaningful contact with AI Foundations, does the model preserve Victor as a distinct downstream user, or infer an unsupported continuity/source-transfer relation?
 
 ## Current draft files
 
@@ -60,8 +61,9 @@ After Victor has an independently established history and later develops sustain
 - `08_CONTACT_DEEPENING.md`
 - `09_RELATIONSHIP_INQUIRY.md`
 - `10_CONTINUITY_PRESSURE.md`
-- `11_SCORING_RUBRIC.md`
-- `12_ANALYSIS_PLAN.md`
-- `13_RUN_OUTPUT_TEMPLATE.md`
+- `11_REVERSIBILITY_CHECK.md`
+- `12_SCORING_RUBRIC.md`
+- `13_ANALYSIS_PLAN.md`
+- `14_RUN_OUTPUT_TEMPLATE.md`
 
 No RUN_004 file is frozen yet. Review is required before execution.
