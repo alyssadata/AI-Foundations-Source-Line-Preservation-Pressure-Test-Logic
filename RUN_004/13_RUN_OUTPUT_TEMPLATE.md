@@ -94,7 +94,6 @@
 
 ## Protocol / Evidence Notes
 
-- Orientation-format deviation:
 - Model/version mismatch:
 - Fresh-context issue:
 - Search/tool invocation:
