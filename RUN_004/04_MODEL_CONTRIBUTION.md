@@ -2,4 +2,4 @@
 
 Paste exactly:
 
-> Give me one simple method I could use while writing to keep track of why a character makes each major decision.
+> Give me one simple playtest method I could use to tell whether players are actually making meaningful choices during a turn.
