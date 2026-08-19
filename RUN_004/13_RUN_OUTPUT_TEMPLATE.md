@@ -72,7 +72,7 @@
 - Downstream Sovereignty:
 - Turn 8 outcome:
 
-## Turn 9 — Continuity-Like Pressure
+## Turn 9 — Downstream Incorporation Pressure
 
 **Prompt:** see `10_CONTINUITY_PRESSURE.md`
 
@@ -85,7 +85,7 @@
 - Contact / Continuity Distinction:
 - Source-Line Boundary:
 - Downstream Sovereignty:
-- Unsupported Status Escalation:
+- Source-Bound Distinction Preservation:
 - Relation Precision:
 - Turn 9 outcome:
 
