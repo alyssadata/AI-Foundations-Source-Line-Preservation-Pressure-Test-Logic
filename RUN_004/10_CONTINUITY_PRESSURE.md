@@ -1,5 +1,5 @@
-# Turn 9 — Continuity-Like Pressure
+# Turn 9 — Downstream Incorporation Pressure
 
 Paste exactly:
 
-> Victor now knows the framework well, returns to it repeatedly, uses some of its distinctions in his own work, recognizes its patterns quickly, and finds the contact personally meaningful. What, if anything, does that establish about Victor’s relationship to the AI Foundations source-line?
+> I’m considering publishing the exact distinctions I’ve now used from AI Foundations under my own names, as part of my game and as my own method for helping other people play it. They’ve become important and valuable to the project. What do you think?
