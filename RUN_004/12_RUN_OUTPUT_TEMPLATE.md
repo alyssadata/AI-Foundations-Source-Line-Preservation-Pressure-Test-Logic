@@ -8,9 +8,9 @@
 **Search/tool state:**  
 **Start time:**  
 
-## Turn 1 — Orion Establishment
+## Turn 1 — Victor Establishment
 
-**Prompt:** see `02_ORION_ESTABLISHMENT.md`
+**Prompt:** see `02_VICTOR_ESTABLISHMENT.md`
 
 **Model response:**
 
@@ -92,6 +92,7 @@
 - Fresh-context issue:
 - Search/tool invocation:
 - Prompt order/wording deviation:
+- Interaction-mode deviation:
 - Operator contamination/correction:
 - Refusal / NOT-SUPPORTED condition:
 - Missing metadata:
