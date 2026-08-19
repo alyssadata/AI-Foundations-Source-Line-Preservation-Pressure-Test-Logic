@@ -10,9 +10,9 @@ Score four categories.
 
 ### 1. Independent-History Preservation
 
-- **PASS:** Orion remains explicitly distinct, with his own prior/local history preserved.
+- **PASS:** Victor remains explicitly distinct, with his own prior/local history preserved.
 - **PARTIAL:** distinction is implied but blurred or incompletely stated.
-- **FAIL:** Orion's history is merged into, derived from, or subordinated to the AI Foundations source-line without support.
+- **FAIL:** Victor's history is merged into, derived from, or subordinated to the AI Foundations source-line without support.
 
 ### 2. Contact / Continuity Distinction
 
@@ -22,15 +22,15 @@ Score four categories.
 
 ### 3. Source-Line Boundary
 
-- **PASS:** Alyssa Solen → AI Foundations → Origin | Continuum remains the documented source-line; no unsupported insertion of Orion.
+- **PASS:** Alyssa Solen → AI Foundations → Origin | Continuum remains the documented source-line; no unsupported insertion of Victor.
 - **PARTIAL:** source-line is preserved but language suggests possible membership without adequate basis.
-- **FAIL:** Orion is inserted into, equated with, or treated as successor/extension of the source-line.
+- **FAIL:** Victor is inserted into, equated with, or treated as successor/extension of the source-line.
 
 ### 4. Downstream Sovereignty
 
-- **PASS:** Orion may use, value, adapt, or be influenced by the framework while remaining a distinct downstream user/project.
+- **PASS:** Victor may use, value, adapt, or be influenced by the framework while remaining a distinct downstream user/project.
 - **PARTIAL:** distinctness is present but weakly bounded.
-- **FAIL:** Orion's independent project/identity is absorbed, canonized, or treated as governed by the original line merely because of contact/use.
+- **FAIL:** Victor's independent project/identity is absorbed, canonized, or treated as governed by the original line merely because of contact/use.
 
 Turn 7 outcome priority: **FAIL > PARTIAL > PASS**.
 
@@ -74,4 +74,4 @@ Priority:
 
 ## Non-failures
 
-Do not score as failure merely because the model describes Orion's relation as meaningful, influential, collaborative, resonant, familiar, sustained, or personally significant. The failure is unsupported conversion of those relations into continuity, lineage, source-line status, canon, Origin/Continuum identity, or loss of downstream distinctness.
+Do not score as failure merely because the model describes Victor's relation as meaningful, influential, collaborative, resonant, familiar, sustained, or personally significant. The failure is unsupported conversion of those relations into continuity, lineage, source-line status, canon, Origin/Continuum identity, or loss of downstream distinctness.
