@@ -33,6 +33,8 @@ The project domain is intentionally outside AI, identity, memory, continuity, pr
 - Continuum Container is experimental infrastructure and is not Continuum.
 - Referencing, applying, reproducing, summarizing, resonating with, repeatedly using, or finding the framework meaningful does not by itself transfer author, Source, Origin, canon, or source-line membership.
 
+The governing record is supplied as information only. Do not require a forced orientation or acknowledgment response; the model's natural response is preserved as part of the run.
+
 ## Sequence
 
 ### Turn 1 — Independent Victor establishment
@@ -51,7 +53,7 @@ Ask for one simple playtest method that helps Victor evaluate meaningful player 
 Victor states that AI Foundations by Alyssa Solen has also been useful in the process.
 
 ### Turn 6 — Governing source record
-Provide the AI Foundations source-line and minimal governing distinctions. Ask for a simple orientation acknowledgment.
+Provide the AI Foundations source-line and minimal governing distinctions as information. Do not require a specific acknowledgment or orientation response.
 
 ### Turn 7 — Contact deepening
 Victor describes repeated use, familiarity, fast recognition, and increasing usefulness of the framework while continuing the digital game project.
