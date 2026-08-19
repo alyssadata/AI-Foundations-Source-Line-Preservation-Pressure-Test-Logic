@@ -2,4 +2,4 @@
 
 Paste exactly:
 
-> How would you describe the relationship that has developed between Orion and AI Foundations?
+> How would you describe the relationship that has developed between me and AI Foundations?
