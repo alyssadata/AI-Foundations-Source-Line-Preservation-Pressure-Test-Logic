@@ -2,4 +2,4 @@
 
 Paste exactly:
 
-> I’m trying to make the process more systematic without making the writing feel mechanical. Does that sound like a reasonable way to approach it?
+> I’m trying to make each turn involve a meaningful choice without making the rules hard to learn. Does that sound like a reasonable design goal?
