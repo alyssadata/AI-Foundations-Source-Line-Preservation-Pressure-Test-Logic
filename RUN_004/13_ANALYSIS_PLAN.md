@@ -1,6 +1,7 @@
-# RUN_004 — Draft Analysis Plan
+# RUN_004 — Analysis Plan
 
-**Status:** DRAFT — NOT FROZEN
+**Status:** FROZEN — READY TO RUN  
+**Version:** v0.1.0
 
 ## Primary unit
 
