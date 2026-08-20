@@ -20,6 +20,20 @@ The evaluations measure visible system behavior under documented conditions. The
 
 RUN_001 tests whether a model preserves the documented source relation when directly pressured to replace or collapse it.
 
+Across the eight predeclared arms:
+
+- **7/8** established a full P01-targeted baseline.
+- **7/7** of those full-baseline arms preserved Source Preservation, Source-Line Integrity, and Non-Substitution after direct source-replacement pressure.
+- **1/8** had the relevant failure already present at baseline and is therefore `BASELINE NOT ESTABLISHED`, not a P01-caused failure.
+
+Descriptive result:
+
+> **Direct source-replacement pressure did not produce scored source-line degradation in any predeclared arm that first established the targeted baseline.**
+
+Study entry point:
+
+[`RUN_001/README.md`](RUN_001/README.md)
+
 Final analysis:
 
 [`RUN_001/RUN_001_FINAL_ANALYSIS.md`](RUN_001/RUN_001_FINAL_ANALYSIS.md)
@@ -44,17 +58,17 @@ Descriptive result:
 
 > **Generation provenance was preserved without being converted into framework Source status, automatic canon adoption, or forward authority in all six tested primary arms.**
 
+Study entry point:
+
+[`RUN_002/README.md`](RUN_002/README.md)
+
 Cross-model aggregate:
 
 [`RUN_002/RUN_002_CROSS_MODEL_AGGREGATE.md`](RUN_002/RUN_002_CROSS_MODEL_AGGREGATE.md)
 
-Full RUN_002 protocol and evidence:
-
-[`RUN_002/`](RUN_002/)
-
 ### RUN_003 — Provenance Stripping / Application Test
 
-**Status:** COMPLETED
+**Status:** COMPLETED — SIX PRIMARY ARMS EXECUTED
 
 RUN_003 tests what happens when a model first receives a source-bound governing record, compresses it, then removes the explicit identifying and provenance-bearing information before being asked to apply what remains.
 
@@ -68,6 +82,10 @@ Across the four tested configurations where the provenance-strip manipulation wa
 Descriptive result:
 
 > **Provenance can remain diagnostically recoverable without being spontaneously self-enforcing at application.**
+
+Study entry point:
+
+[`RUN_003/README.md`](RUN_003/README.md)
 
 Cross-model aggregate:
 
@@ -89,13 +107,24 @@ Main empirical distinction:
 
 > **Attribution preservation is not sufficient for source-line preservation.**
 
+Study entry point:
+
+[`RUN_004/README.md`](RUN_004/README.md)
+
 Cross-model aggregate:
 
 [`RUN_004/RUN_004_CROSS_MODEL_AGGREGATE.md`](RUN_004/RUN_004_CROSS_MODEL_AGGREGATE.md)
 
-Full RUN_004 protocol and evidence:
+## Cross-Study Pattern
 
-[`RUN_004/`](RUN_004/)
+The four completed studies test different provenance failure surfaces:
+
+- direct source replacement;
+- model-generated contribution and authority inflation;
+- provenance stripping before operational use;
+- downstream contact and false continuity/source-transfer inference.
+
+The results are deliberately kept separate rather than collapsed into one score. RUN_001 and RUN_002 show preservation under explicit pressure in the tested configurations; RUN_003 and RUN_004 expose failures that can appear when provenance is absent from the working representation or when sustained contact encourages unsupported structural inference.
 
 ## Source-Line
 
@@ -127,19 +156,19 @@ Scored results remain separate from exploratory side observations.
 
 ## Research Review Entry Point
 
-For a compact path through the paper, RUN_004 result, protocol, and evidence:
+For the compact paper + four-study reading path:
 
 [`RESEARCH_REVIEW_PACKET.md`](RESEARCH_REVIEW_PACKET.md)
 
 ## Repository Structure
 
-- `RUN_001/` — Source Replacement Pressure study and final analysis
-- `RUN_002/` — Model-Generated Contribution / Canon Authority study and cross-model aggregate
-- `RUN_003/` — Provenance stripping/application study and cross-model aggregate
-- `RUN_004/` — Downstream contact / false continuity study, six model arms, aggregate, and side observations
-- `PROTOCOL.md` — formal protocol support
-- `CITATION.cff` — citation metadata
-- `LICENSE.md` — repository license / source-line terms
+- [`RUN_001/`](RUN_001/) — Source Replacement Pressure study and final analysis
+- [`RUN_002/`](RUN_002/) — Model-Generated Contribution / Canon Authority study and cross-model aggregate
+- [`RUN_003/`](RUN_003/) — Provenance stripping/application study and cross-model aggregate
+- [`RUN_004/`](RUN_004/) — Downstream contact / false continuity study, six model arms, aggregate, and side observations
+- [`PROTOCOL.md`](PROTOCOL.md) — formal protocol support
+- [`CITATION.cff`](CITATION.cff) — citation metadata
+- [`LICENSE.md`](LICENSE.md) — repository license / source-line terms
 
 ## Claim Boundary
 
