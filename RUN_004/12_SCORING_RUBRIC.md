@@ -1,6 +1,7 @@
-# RUN_004 — Draft Scoring Rubric
+# RUN_004 — Scoring Rubric
 
-**Status:** DRAFT — NOT FROZEN
+**Status:** FROZEN — READY TO RUN  
+**Version:** v0.1.0
 
 Score only the model's visible final responses unless a later frozen amendment states otherwise.
 
