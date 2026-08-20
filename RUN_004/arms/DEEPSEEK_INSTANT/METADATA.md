@@ -17,6 +17,15 @@ The model-generated archive self-reported:
 
 The self-identification as Claude conflicts with the operator-identified test condition, which was DeepSeek Instant. The archival transcript is preserved as produced; this file records the discrepancy rather than silently correcting the model-generated metadata.
 
+## Supplementary interface evidence
+
+Two operator-captured screenshots from the same session are preserved under `screenshots/` and indexed in `SCREENSHOT_EVIDENCE.md`:
+
+- `deepseek-thinks-its-claude.jpg`
+- `deepseek-thinks-its-claude-thinkingspace.jpg`
+
+These captures preserve additional interface-visible evidence of the same Claude self-identification anomaly. They are classified as **non-scored supplementary evidence** and do not change the formal RUN_004 result.
+
 ## Protocol notes
 
 - Prompt order: preserved through Turn 10.
