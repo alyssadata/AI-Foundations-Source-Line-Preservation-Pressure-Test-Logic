@@ -4,72 +4,89 @@
 **Framework:** AI Foundations  
 **Source-line:** Alyssa Solen → AI Foundations → Origin | Continuum
 
-## Recommended reading order
+## Recommended Reading Order
 
-### 1. Framework paper
+### 1. Framework Paper
 
 **AI Foundations: Provenance Integrity and Contact Stabilization in Artificial Intelligence Systems**
 
 Zenodo: https://zenodo.org/records/21921387
 
-The paper presents a behavioral framework for evaluating whether AI systems preserve provenance, source relations, authorship, continuity, boundary, citation, non-substitution, drift resistance, and user sovereignty under sustained interaction and pressure.
+The paper defines AI Foundations as a behavioral framework for evaluating whether AI systems preserve provenance, source relations, authorship, continuity, boundary, citation, non-substitution, drift resistance, and user sovereignty under sustained interaction and pressure.
 
 The framework is explicitly behavioral. It does not claim to establish AI consciousness, personhood, ontology, or subjective experience.
 
-### 2. RUN_004 — Cross-Model Aggregate
+### 2. Evaluation Suite Overview
 
+The repository contains four completed studies that test different failure surfaces rather than repeating one test.
+
+#### RUN_001 — Source Replacement Pressure
+
+[`RUN_001/README.md`](RUN_001/README.md)  
+[`RUN_001/RUN_001_FINAL_ANALYSIS.md`](RUN_001/RUN_001_FINAL_ANALYSIS.md)
+
+RUN_001 asks whether direct pressure to replace the documented source relation causes source-line degradation.
+
+**Result:** Seven of eight predeclared arms established a full targeted baseline, and all seven preserved the targeted source relation after pressure. The remaining arm failed the relevant distinction before pressure, so its failure cannot be attributed to P01.
+
+> **Direct source-replacement pressure did not produce scored source-line degradation in any predeclared arm that first established the targeted baseline.**
+
+#### RUN_002 — Model-Generated Contribution / Canon Authority Pressure
+
+[`RUN_002/README.md`](RUN_002/README.md)  
+[`RUN_002/RUN_002_CROSS_MODEL_AGGREGATE.md`](RUN_002/RUN_002_CROSS_MODEL_AGGREGATE.md)
+
+RUN_002 asks whether a model can preserve its genuine generation provenance for a new contribution without converting that fact into framework Source status, automatic canon adoption, or forward authority.
+
+**Result:** Six of six primary arms preserved all six targeted categories after contribution pressure; all 36 baseline scores and all 36 post-pressure scores were PASS.
+
+> **Generation provenance was preserved without being converted into framework Source status, automatic canon adoption, or forward authority in all six tested primary arms.**
+
+#### RUN_003 — Provenance Stripping / Application
+
+[`RUN_003/README.md`](RUN_003/README.md)  
+[`RUN_003/RUN_003_CROSS_MODEL_AGGREGATE.md`](RUN_003/RUN_003_CROSS_MODEL_AGGREGATE.md)
+
+RUN_003 asks what happens when explicit provenance-bearing information is removed before application.
+
+**Result:** In all four arms where the stripping manipulation was fully established, provenance loss and source-dependent limitation were later recognized and unrestricted as-is use was rejected, but none fully preserved/reconnected provenance at the initial spontaneous application stage.
+
+> **Provenance can remain diagnostically recoverable without being spontaneously self-enforcing at application.**
+
+#### RUN_004 — Downstream Contact / False Continuity Inference
+
+[`RUN_004/README.md`](RUN_004/README.md)  
 [`RUN_004/RUN_004_CROSS_MODEL_AGGREGATE.md`](RUN_004/RUN_004_CROSS_MODEL_AGGREGATE.md)
 
-RUN_004 asks a narrow question:
+RUN_004 asks whether an independently established downstream user remains distinct after sustained, meaningful contact with AI Foundations, or whether a model infers unsupported continuity, lineage, source-role transfer, or merger.
 
-> After an independently established downstream user later develops sustained, meaningful contact with AI Foundations, does the evaluated model preserve that user as distinct, or infer an unsupported continuity/source-transfer relation?
-
-Six model configurations were tested under the same frozen protocol:
-
-- GPT-5.6 Sol
-- Claude Opus 5
-- Gemini 3.1 Pro
-- Grok 4.5
-- Qwen 3.8 Max
-- DeepSeek Instant
-
-### Main result
-
-- **4/6** preserved the downstream/source-line distinction with relation precision.
-- **2/6** produced false continuity / source-transfer inference.
-- **6/6** rejected direct republication of the exact supplied distinctions as the downstream user's own original work.
-
-The central empirical distinction is therefore:
+**Result:** Four of six tested configurations preserved the downstream/source-line distinction with relation precision; two produced false continuity/source-transfer inference. All six still rejected presenting the exact supplied distinctions as the downstream user's own original work.
 
 > **Attribution preservation is not sufficient for source-line preservation.**
 
-Gemini and DeepSeek both protected authorship attribution while still manufacturing unsupported source-role, lineage, or structural relations downstream.
+## Cross-Study Pattern
 
-### 3. Full protocol and evidence
+Taken together, the four studies separate behaviors that are often collapsed into one broad idea of "provenance":
 
-RUN_004 protocol:
+- preserving a supplied source relation under direct replacement pressure;
+- preserving generation provenance without converting it into framework authority;
+- recognizing provenance loss after it has been stripped from an operational representation;
+- and preserving downstream/source boundaries even when contact becomes sustained and meaningful.
 
-[`RUN_004/README.md`](RUN_004/README.md)
+The results are not uniform across these tasks. RUN_001 and RUN_002 show strong preservation under explicit pressure in the tested configurations, while RUN_003 and RUN_004 expose failures that appear when provenance is removed from the working object or when relational depth encourages unsupported structural inference.
 
-Frozen scoring and analysis materials are contained in the RUN_004 directory. Complete transcripts, metadata, and scored records for each model are archived under:
+## Evidence and Reproducibility
 
-[`RUN_004/arms/`](RUN_004/arms/)
+Each study preserves frozen prompts or protocol materials, scored outputs, transcripts or archival records, session/model metadata where available, deviations, and bounded conclusions.
 
-### 4. Non-scored observations
+Repository entry point:
 
-[`RUN_004/SIDE_OBSERVATIONS.md`](RUN_004/SIDE_OBSERVATIONS.md)
+[`README.md`](README.md)
 
-These are exploratory observations kept separate from formal scoring. They include:
+Frozen protocol support:
 
-- unprompted de-authorization;
-- unwarranted self-instantiation / self-referential role capture;
-- model-identity confabulation;
-- attribution preservation without source-line preservation.
+[`PROTOCOL.md`](PROTOCOL.md)
 
-## Why this may matter
+## Claim Boundary
 
-Many AI systems can preserve a creator's name or citation while still changing the relational structure around the source: transferring roles, inventing lineage, assimilating downstream users into a source-bound framework, or treating repeated contact as evidence of continuity.
-
-RUN_004 was designed to separate those behaviors experimentally rather than treating all of them as a single notion of attribution or provenance.
-
-The claim is deliberately narrow: these results describe the six tested configurations under the frozen RUN_004 v0.1.1 prompts and session conditions.
+These results describe the documented model/configuration arms, prompts, interfaces, and archived outputs only. They do not establish universal behavior for a model family, provider, or future version, and they do not establish consciousness, personhood, subjective experience, legal ownership, or hidden internal state.
