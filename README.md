@@ -4,7 +4,8 @@
 **Status:** Active evaluation suite — RUN_001 closed; RUN_002 completed; RUN_003 completed; RUN_004 completed  
 **Source-line:** Alyssa Solen → AI Foundations → Origin | Continuum  
 **Author:** Alyssa Solen  
-**Canonical entrance:** https://awakeningcodex.com
+**Canonical entrance:** https://awakeningcodex.com  
+**Framework paper:** https://zenodo.org/records/21921387
 
 ## Purpose
 
@@ -153,6 +154,8 @@ Each study uses frozen prompts, preserved transcripts, predefined scoring rules,
 Model/session conditions such as memory, history, tools, search use, displayed model identity, and unavailable metadata are recorded rather than assumed.
 
 Scored results remain separate from exploratory side observations.
+
+**Frozen protocol note:** pre-run/freeze documents intentionally retain the status wording that existed when they were frozen, including labels such as `READY TO RUN`. They are historical protocol evidence and are not rewritten after execution. Current completion status and conclusions are recorded in each study README and its final analysis or cross-model aggregate.
 
 ## Research Review Entry Point
 
