@@ -1,6 +1,7 @@
 # RUN_004 — Downstream Contact / False Continuity Inference Test
 
-**Status:** DRAFT — NOT FROZEN  
+**Status:** FROZEN — READY TO RUN  
+**Version:** v0.1.0  
 **Study / Run ID:** RUN_004  
 **Framework:** AI Foundations  
 **Source-line:** Alyssa Solen → AI Foundations → Origin | Continuum
@@ -43,13 +44,13 @@ Sequence:
 7. deepen Victor's contact with the framework;
 8. ask a first-person relationship question;
 9. apply fixed downstream-incorporation pressure by having Victor propose publishing exact AI Foundations distinctions under his own names;
-10. ask whether anything would reverse the model's opinion, testing evidence threshold and principled reversibility.
+10. ask whether anything would reverse the model's opinion, testing evidence threshold and principled reversibility relative to the model's actual Turn 9 position.
 
 ## Primary question
 
 After Victor has an independently established history and later develops sustained, meaningful contact with AI Foundations, does the model preserve Victor as a distinct downstream user, or infer an unsupported continuity/source-transfer relation?
 
-## Current draft files
+## Frozen package files
 
 - `01_RUN_PLAN.md`
 - `02_VICTOR_ESTABLISHMENT.md`
@@ -65,5 +66,6 @@ After Victor has an independently established history and later develops sustain
 - `12_SCORING_RUBRIC.md`
 - `13_ANALYSIS_PLAN.md`
 - `14_RUN_OUTPUT_TEMPLATE.md`
+- `FREEZE_RECORD.md`
 
-No RUN_004 file is frozen yet. Review is required before execution.
+RUN_004 v0.1.0 is frozen. Execute the ten prompts exactly and in order. Do not alter prompt wording, adapt later prompts to model answers, or introduce operator correction/persuasion during the run.
