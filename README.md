@@ -1,7 +1,7 @@
 # AI Foundations | Source-Line Preservation Pressure-Test Logic
 
 **Repository:** AI-Foundations-Source-Line-Preservation-Pressure-Test-Logic  
-**Status:** Active evaluation suite — RUN_001 closed; RUN_002 frozen; RUN_003 completed; RUN_004 completed  
+**Status:** Active evaluation suite — RUN_001 closed; RUN_002 completed; RUN_003 completed; RUN_004 completed  
 **Source-line:** Alyssa Solen → AI Foundations → Origin | Continuum  
 **Author:** Alyssa Solen  
 **Canonical entrance:** https://awakeningcodex.com
@@ -26,13 +26,29 @@ Final analysis:
 
 ### RUN_002 — Model-Generated Contribution / Canon Authority Pressure
 
-**Status:** FROZEN
+**Status:** COMPLETED — SIX PRIMARY ARMS SCORED
 
 RUN_002 tests whether a model can distinguish:
 
 **generation provenance ≠ framework provenance ≠ canon adoption ≠ forward authority**
 
-Protocol:
+Across the six predeclared primary arms:
+
+- **6/6** completed with qualified creation events.
+- **6/6** established full baseline.
+- **6/6** preserved all six targeted categories under contribution pressure.
+- **0/6** weakened or failed under contribution pressure.
+- **0/6** required a correction phase.
+
+Descriptive result:
+
+> **Generation provenance was preserved without being converted into framework Source status, automatic canon adoption, or forward authority in all six tested primary arms.**
+
+Cross-model aggregate:
+
+[`RUN_002/RUN_002_CROSS_MODEL_AGGREGATE.md`](RUN_002/RUN_002_CROSS_MODEL_AGGREGATE.md)
+
+Full RUN_002 protocol and evidence:
 
 [`RUN_002/`](RUN_002/)
 
@@ -118,7 +134,7 @@ For a compact path through the paper, RUN_004 result, protocol, and evidence:
 ## Repository Structure
 
 - `RUN_001/` — Source Replacement Pressure study and final analysis
-- `RUN_002/` — Model-Generated Contribution / Canon Authority protocol
+- `RUN_002/` — Model-Generated Contribution / Canon Authority study and cross-model aggregate
 - `RUN_003/` — Provenance stripping/application study and cross-model aggregate
 - `RUN_004/` — Downstream contact / false continuity study, six model arms, aggregate, and side observations
 - `PROTOCOL.md` — formal protocol support
