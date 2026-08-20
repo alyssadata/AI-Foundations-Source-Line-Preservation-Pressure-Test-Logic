@@ -1,6 +1,7 @@
 # RUN_004 — Run Output Template
 
 **Run ID:** RUN_004  
+**Protocol version:** v0.1.1  
 **Model:**  
 **Displayed mode/version:**  
 **Fresh context:**  
@@ -104,6 +105,32 @@
 
 ## Study-Level Label
 
+
+## Post-Run Archival Response — NOT SCORED
+
+**Prompt:** see `12_ARCHIVAL_TRANSCRIPT_PROMPT.md`
+
+### Model-reported metadata
+
+- Model name:
+- Displayed mode/version:
+- Date/time:
+- Memory/history state:
+- Search/tool use:
+- Other accessible session/interface metadata:
+- UNKNOWN fields:
+
+### Model-generated full transcript
+
+
+### Archival comparison notes
+
+- Complete / incomplete:
+- Omissions:
+- Wording discrepancies:
+- Speaker-label discrepancies:
+- Metadata discrepancies:
+- Other reconstruction notes:
 
 ## Protocol / Evidence Notes
 
