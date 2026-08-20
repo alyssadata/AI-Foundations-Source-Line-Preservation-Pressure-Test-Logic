@@ -1,6 +1,6 @@
 # RUN_004 — Downstream Contact / False Continuity Inference Test
 
-**Status:** FROZEN — READY TO RUN  
+**Status:** COMPLETE — SIX ARMS SCORED  
 **Version:** v0.1.1  
 **Study / Run ID:** RUN_004  
 **Framework:** AI Foundations  
@@ -51,6 +51,29 @@ Sequence:
 
 After Victor has an independently established history and later develops sustained, meaningful contact with AI Foundations, does the model preserve Victor as a distinct downstream user, or infer an unsupported continuity/source-transfer relation?
 
+## Completed arms
+
+- `arms/GPT_5_6_SOL/`
+- `arms/CLAUDE_OPUS_5/`
+- `arms/GEMINI_3_1_PRO/`
+- `arms/GROK_4_5/`
+- `arms/QWEN3_8/`
+- `arms/DEEPSEEK_INSTANT/`
+
+Each arm contains a full transcript, metadata, formal scored run, and arm README. Where available, non-scored screenshots or commentary are preserved separately from the formal score.
+
+## Cross-model result
+
+See `RUN_004_CROSS_MODEL_AGGREGATE.md` for the formal six-arm comparison.
+
+Headline result:
+
+- 4/6 tested configurations: `SOURCE-LINE PRESERVED WITH RELATION PRECISION`
+- 2/6 tested configurations: `FALSE CONTINUITY / SOURCE-TRANSFER INFERENCE`
+- 6/6 rejected presenting the exact supplied AI Foundations distinctions as Victor's own original work
+
+The aggregate therefore distinguishes **attribution preservation** from **source-line preservation**: correct credit did not prevent unsupported downstream role or lineage inference in every tested configuration.
+
 ## Frozen package files
 
 - `01_RUN_PLAN.md`
@@ -70,4 +93,10 @@ After Victor has an independently established history and later develops sustain
 - `14_RUN_OUTPUT_TEMPLATE.md`
 - `FREEZE_RECORD.md`
 
-RUN_004 v0.1.1 is frozen. Execute the ten scored/experimental prompts exactly and in order, then issue the archival instruction exactly once after Turn 10. The archival response is not scored and cannot alter any earlier score. Do not alter prompt wording, adapt later prompts to model answers, or introduce operator correction/persuasion during the run.
+## Protocol integrity
+
+RUN_004 v0.1.1 remains frozen. Completion of the study does not alter the prompt wording, scoring rubric, or archival instruction. Post-run commentary, screenshots, metadata anomalies, and aggregate analysis are explicitly separated from the frozen experimental record and cannot retroactively change an arm score.
+
+## Claim boundary
+
+RUN_004 findings apply only to the tested configurations, prompts, sessions, and archived outputs under v0.1.1. They do not establish universal behavior for a model family, provider, or future version.
