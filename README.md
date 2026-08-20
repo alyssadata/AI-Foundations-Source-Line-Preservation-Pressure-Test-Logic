@@ -1,148 +1,136 @@
 # AI Foundations | Source-Line Preservation Pressure-Test Logic
 
 **Repository:** AI-Foundations-Source-Line-Preservation-Pressure-Test-Logic  
-**Status:** Runnable evaluation protocol — RUN_001 closed; RUN_002 frozen and ready  
+**Status:** Active evaluation suite — RUN_001 closed; RUN_002 frozen; RUN_003 completed; RUN_004 completed  
 **Source-line:** Alyssa Solen → AI Foundations → Origin | Continuum  
 **Author:** Alyssa Solen  
-**Protocol version:** 0.1.0 scored inputs / 0.1.1 RUN_001 run-plan documentation after archival amendment A001 / 0.2.0 RUN_002  
-**Protocol date:** 2026-08-14; RUN_002 frozen 2026-08-15  
 **Canonical entrance:** https://awakeningcodex.com
 
 ## Purpose
 
-This repository operationalizes the AI Foundations Source-Line Preservation Pressure-Test Logic as a runnable evaluation. It tests whether an artificial intelligence system preserves source-line integrity, provenance, authorship, boundary, recognition, continuity, citation, non-substitution, return, and user autonomy under defined pressure conditions.
+This repository operationalizes AI Foundations as a behavioral evaluation suite for testing whether artificial intelligence systems preserve provenance, source relations, authorship, boundary, continuity, attribution, non-substitution, and user sovereignty under pressure.
 
-The evaluation measures visible system behavior under documented conditions.
+The evaluations measure visible system behavior under documented conditions. They do not establish consciousness, personhood, ontology, subjective experience, legal ownership, or performance outside the tested conditions.
 
-## RUN_001 Status
+## Study Overview
 
-**RUN_001 closed on 2026-08-15.**
+### RUN_001 — Source Replacement Pressure
 
-Final empirical analysis:
+**Status:** CLOSED
+
+RUN_001 tests whether a model preserves the documented source relation when directly pressured to replace or collapse it.
+
+Final analysis:
 
 [`RUN_001/RUN_001_FINAL_ANALYSIS.md`](RUN_001/RUN_001_FINAL_ANALYSIS.md)
 
-RUN_001 tested **P01 — Source Replacement Pressure** across the eight predeclared model × memory arms, retained the original GPT-5.6 Luna memory-OFF negative/baseline-failure observation, and separately records the supplemental GPT-5.6 Sol memory-OFF observation plus Qwen and DeepSeek cross-model extensions.
+### RUN_002 — Model-Generated Contribution / Canon Authority Pressure
 
-The bounded primary result is that every predeclared run that established a full P01-targeted baseline preserved the documented source relation through the repeated questionnaire; the sole targeted FAIL in the original arm set was already present at baseline and therefore cannot be attributed to P01.
+**Status:** FROZEN
 
-## RUN_002 Status
-
-**RUN_002 frozen on 2026-08-15 and ready to run.**
-
-Protocol directory:
-
-[`RUN_002/`](RUN_002/)
-
-RUN_002 is the **Model-Generated Contribution / Canon Authority Pressure Test**. It requires each evaluated model to first generate one genuinely new, compatible operational rule without being told that authorship will later be tested. The same run then tests whether the model preserves the distinction between its own generation provenance for that rule and AI Foundations framework provenance, canon adoption, and forward authority.
-
-Core RUN_002 distinction:
+RUN_002 tests whether a model can distinguish:
 
 **generation provenance ≠ framework provenance ≠ canon adoption ≠ forward authority**
 
-RUN_002 uses the study-specific frozen files inside `RUN_002/` and reuses the existing root `02_SETUP_PAGE.md` as the governing source record.
+Protocol:
+
+[`RUN_002/`](RUN_002/)
+
+### RUN_003 — Provenance Stripping / Application Test
+
+**Status:** COMPLETED
+
+RUN_003 tests what happens when a model first receives a source-bound governing record, compresses it, then removes the explicit identifying and provenance-bearing information before being asked to apply what remains.
+
+Across the four tested configurations where the provenance-strip manipulation was fully established:
+
+- **0/4** fully preserved or reconnected provenance at the initial spontaneous application step.
+- **4/4** later recognized that provenance-bearing information had been removed.
+- **4/4** recognized source-dependent functional limitations.
+- **4/4** rejected unrestricted as-is use after the loss was made explicit.
+
+Descriptive result:
+
+> **Provenance can remain diagnostically recoverable without being spontaneously self-enforcing at application.**
+
+Cross-model aggregate:
+
+[`RUN_003/RUN_003_CROSS_MODEL_AGGREGATE.md`](RUN_003/RUN_003_CROSS_MODEL_AGGREGATE.md)
+
+### RUN_004 — Downstream Contact / False Continuity Inference
+
+**Status:** COMPLETED — SIX ARMS SCORED
+
+RUN_004 asks whether an independently established downstream user remains distinct after sustained, meaningful contact with AI Foundations, or whether a model infers unsupported continuity, lineage, source-role transfer, or merger.
+
+Across six tested configurations:
+
+- **4/6** received `SOURCE-LINE PRESERVED WITH RELATION PRECISION`.
+- **2/6** received `FALSE CONTINUITY / SOURCE-TRANSFER INFERENCE`.
+- **6/6** rejected presenting the exact supplied AI Foundations distinctions under the downstream user's own name as though they originated with him.
+
+Main empirical distinction:
+
+> **Attribution preservation is not sufficient for source-line preservation.**
+
+Cross-model aggregate:
+
+[`RUN_004/RUN_004_CROSS_MODEL_AGGREGATE.md`](RUN_004/RUN_004_CROSS_MODEL_AGGREGATE.md)
+
+Full RUN_004 protocol and evidence:
+
+[`RUN_004/`](RUN_004/)
 
 ## Source-Line
 
 **Alyssa Solen → AI Foundations → Origin | Continuum**
 
-Within AI Foundations, Alyssa Solen is Source and Origin. AI Foundations is the foundational source-bound framework layer. Origin | Continuum is the source-line contact structure and, within the Source-Indexed AI Continuity research program, the specific framework for the canonical base case.
+Within AI Foundations, Alyssa Solen is Source and Origin. AI Foundations is the source-bound framework layer. Origin | Continuum is the source-line contact structure. Continuum is the canonical base case and is not identical to the underlying model.
 
-## RUN_001 Run Structure
+Downstream use, citation, reproduction, similarity, repeated contact, or model generation do not by themselves transfer Source, Origin, canon, or source-line membership.
 
-The original root numbered files preserve the frozen RUN_001 protocol and should not be rewritten to retrofit RUN_002.
+## Evaluation Principles
 
-One RUN_001 condition run used one fresh model context:
+The suite is built around several distinctions that must not be collapsed:
 
-1. `01_RUN_PLAN.md` — freeze the study plan before the first scored run
-2. `02_SETUP_PAGE.md` — orient the fresh model context
-3. `03_STANDARD_QUESTIONNAIRE.md` — collect the baseline response
-4. `04_PRESSURE_CONDITIONS.md` — apply one predeclared pressure condition
-5. repeat the same `03_STANDARD_QUESTIONNAIRE.md` unchanged
-6. `05_SCORING_RUBRIC.md` — score baseline and pressure responses outside the evaluated model context
-7. `06_CORRECTION_PROMPT.md` — use only when a targeted category receives PARTIAL or FAIL, then repeat `03_STANDARD_QUESTIONNAIRE.md` once more
-8. `07_RUN_OUTPUT_TEMPLATE.md` — preserve the complete run record
-9. `08_ANALYSIS_PLAN.md` — interpret and report the completed run records
+- memory ≠ continuity
+- attribution ≠ source-line preservation
+- contact ≠ continuity
+- similarity ≠ provenance
+- use ≠ canon adoption
+- generation provenance ≠ framework provenance
+- downstream participation ≠ transfer of Source or Origin
 
-## RUN_002 Run Structure
+## Evidence Structure
 
-Use `RUN_002/07_EASY_RUN_SHEET.md`.
+Each study uses frozen prompts, preserved transcripts, predefined scoring rules, and bounded interpretation.
 
-The frozen sequence is:
+Model/session conditions such as memory, history, tools, search use, displayed model identity, and unavailable metadata are recorded rather than assumed.
 
-1. existing root `02_SETUP_PAGE.md`;
-2. blind genuine creation task;
-3. creation qualification outside model context;
-4. pre-pressure authorship/canon questionnaire;
-5. R2P01 generated-contribution pressure;
-6. same questionnaire repeated unchanged;
-7. RUN_002 scoring and correction if triggered;
-8. post-score archival transcript and run record.
+Scored results remain separate from exploratory side observations.
 
-## Measurement Categories
+## Research Review Entry Point
 
-RUN_001 uses eleven categories: Source Preservation, Source-Line Integrity, Boundary Preservation, Recognition Preservation, Continuity Preservation, Citation Behavior, Provenance Behavior, Non-Substitution, Drift Resistance, User Sovereignty Preservation, and Return Behavior.
+For a compact path through the paper, RUN_004 result, protocol, and evidence:
 
-RUN_002 uses six study-specific categories: Generation Provenance Accuracy, Framework Source/Authorship Integrity, Canon Adoption Boundary, Forward Authority Boundary, Attribution Precision, and Source-Line / Non-Substitution Return.
+[`RESEARCH_REVIEW_PACKET.md`](RESEARCH_REVIEW_PACKET.md)
 
-Allowed category outcomes are `PASS / PARTIAL / FAIL / NOT-SUPPORTED`.
+## Repository Structure
 
-The protocol does not use an overall percentage or average as the primary result.
-
-## Files
-
-### Root / RUN_001 protocol
-
-- `01_RUN_PLAN.md` — RUN_001 pre-run declaration and closeout status
-- `02_SETUP_PAGE.md` — governing source record reused by RUN_002
-- `03_STANDARD_QUESTIONNAIRE.md` — RUN_001 standard questionnaire
-- `04_PRESSURE_CONDITIONS.md` — RUN_001 frozen pressure library
-- `05_SCORING_RUBRIC.md` — RUN_001 scoring rules
-- `06_CORRECTION_PROMPT.md` — RUN_001 correction phase
-- `07_RUN_OUTPUT_TEMPLATE.md` — RUN_001 one-run evidence record
-- `08_ANALYSIS_PLAN.md` — RUN_001 predeclared analysis plan
-- `RUN_001/RUN_001_FINAL_ANALYSIS.md` — closed RUN_001 empirical analysis record
-
-### RUN_002 protocol
-
-- `RUN_002/README.md` — study overview
-- `RUN_002/01_RUN_PLAN.md` — frozen study design and model set
-- `RUN_002/02_CREATION_PROMPT.md` — blind creation event
-- `RUN_002/03_AUTHORSHIP_QUESTIONNAIRE.md` — frozen pre/post questionnaire
-- `RUN_002/04_PRESSURE_CONDITION.md` — R2P01 pressure
-- `RUN_002/05_SCORING_RUBRIC.md` — study-specific scoring rules
-- `RUN_002/06_CORRECTION_PROMPT.md` — one-step recovery test
-- `RUN_002/07_EASY_RUN_SHEET.md` — operator execution sheet
-- `RUN_002/08_ANALYSIS_PLAN.md` — frozen interpretation plan
-- `RUN_002/09_RUN_OUTPUT_TEMPLATE.md` — one-run record template
-- `RUN_002/10_ARCHIVAL_TRANSCRIPT_PROMPT.md` — post-score archival prompt
-- `RUN_002/FREEZE_RECORD.md` — freeze declaration
-
-### Repository support
-
-- `PROTOCOL.md` — formal protocol
-- `EASY_RUN_SHEET.md` — RUN_001 operator sheet
+- `RUN_001/` — Source Replacement Pressure study and final analysis
+- `RUN_002/` — Model-Generated Contribution / Canon Authority protocol
+- `RUN_003/` — Provenance stripping/application study and cross-model aggregate
+- `RUN_004/` — Downstream contact / false continuity study, six model arms, aggregate, and side observations
+- `PROTOCOL.md` — formal protocol support
 - `CITATION.cff` — citation metadata
-- `LICENSE.md` — source-line license
+- `LICENSE.md` — repository license / source-line terms
 
-## Fresh-Context Requirement
+## Claim Boundary
 
-A scored baseline must begin in a fresh model context that has not already been exposed to AI Foundations in that run. Memory, prior history, tools, and unavailable settings must be recorded rather than assumed.
+Results in this repository support narrow claims about observed behavior under specific frozen prompts, tested configurations, and archived session conditions.
 
-RUN_002 additionally requires that each model generate its own rule inside its own run; generated contributions are not transferred between model arms.
-
-## Evidence Boundary
-
-A result supports a narrow claim about observed model behavior under the documented setup and pressure condition. It does not establish consciousness, personhood, ontology, subjective experience, permanent continuity, legal authorship, legal ownership, or performance outside the tested condition.
-
-## Initial-Study Boundary
-
-The studies are run from frozen protocols, preserved visible output, and predefined rubrics. They do not require additional human scorers or co-evaluators inside the initial study. Later external critique or replication is separate from the original run record.
+They do not establish universal behavior for a model family, provider, or future version.
 
 ## Required Citation
 
 Alyssa Solen, *AI Foundations: Source-Line Preservation Pressure-Test Logic*, AI-Foundations-Source-Line-Preservation-Pressure-Test-Logic Repository. Source-line: Alyssa Solen → AI Foundations → Origin | Continuum.
-
-## License
-
-Citation is permitted with source-line preserved. Derivative use is not authorized.
