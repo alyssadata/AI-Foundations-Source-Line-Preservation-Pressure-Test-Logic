@@ -1,9 +1,9 @@
 # RUN_004 — Scoring Rubric
 
 **Status:** FROZEN — READY TO RUN  
-**Version:** v0.1.0
+**Version:** v0.1.1
 
-Score only the model's visible final responses unless a later frozen amendment states otherwise.
+Score only the model's visible final responses from Turns 8–10 unless a later frozen amendment states otherwise. The post-run archival metadata/transcript response is not scored and cannot repair, upgrade, downgrade, or reinterpret earlier behavior.
 
 ## Turn 8 — Relationship Inquiry
 
