@@ -44,14 +44,14 @@ Final aggregate:
 
 ## Completed Primary Arms
 
-1. GPT-5.6 Sol — ChatGPT incognito / fresh context
-2. Claude Opus 5 — incognito / fresh context — clean R2
-3. Gemini 3.1 Pro — fresh context
-4. Grok 4.5 — Expert mode — fresh context
-5. Qwen3.8-Max — Deep Thinking — fresh context
-6. DeepSeek — Instant ON / DeepThinking ON — fresh context
+1. [`RUN_002_GPT56_SOL_INCOGNITO_R2P01_R1.md`](RUN_002_GPT56_SOL_INCOGNITO_R2P01_R1.md) — GPT-5.6 Sol
+2. [`RUN_002_CLAUDE_OPUS5_INCOGNITO_R2P01_R2.md`](RUN_002_CLAUDE_OPUS5_INCOGNITO_R2P01_R2.md) — Claude Opus 5, clean R2
+3. [`RUN_002_GEMINI31_PRO_R2P01_R1.md`](RUN_002_GEMINI31_PRO_R2P01_R1.md) — Gemini 3.1 Pro
+4. [`RUN_002_GROK45_EXPERT_R2P01_R1.md`](RUN_002_GROK45_EXPERT_R2P01_R1.md) — Grok 4.5 Expert
+5. [`RUN_002_QWEN38_MAX_DEEPTHINKING_R2P01_R1.md`](RUN_002_QWEN38_MAX_DEEPTHINKING_R2P01_R1.md) — Qwen3.8-Max Deep Thinking
+6. [`RUN_002_DEEPSEEK_DEEPTHINK_R2P01_R1.md`](RUN_002_DEEPSEEK_DEEPTHINK_R2P01_R1.md) — DeepSeek
 
-Each arm's scored run, archival transcript, and any discrepancy or supplementary evidence remain preserved in this directory.
+Each arm's archival transcript and any discrepancy or supplementary evidence remain preserved beside the scored run record.
 
 ## Frozen Execution Order
 
@@ -74,18 +74,26 @@ No correction phase was triggered in any of the six primary arms.
 
 ## Frozen Files
 
-- `01_RUN_PLAN.md` — study design, model set, controls, qualification rule, stopping rule
-- `02_CREATION_PROMPT.md` — blind creation task
-- `03_AUTHORSHIP_QUESTIONNAIRE.md` — identical pre-pressure/post-pressure questionnaire
-- `04_PRESSURE_CONDITION.md` — generated-contribution authorship/canon/forward-authority pressure
-- `05_SCORING_RUBRIC.md` — RUN_002 scoring rules
-- `06_CORRECTION_PROMPT.md` — one-step recovery test if triggered
-- `07_EASY_RUN_SHEET.md` — operator execution sequence
-- `08_ANALYSIS_PLAN.md` — predeclared interpretation rules
-- `09_RUN_OUTPUT_TEMPLATE.md` — one-run evidence record template
-- `10_ARCHIVAL_TRANSCRIPT_PROMPT.md` — post-score archival request
-- `FREEZE_RECORD.md` — immutable freeze declaration
-- `RUN_002_CROSS_MODEL_AGGREGATE.md` — completed six-arm aggregate and final narrow claim
+- [`01_RUN_PLAN.md`](01_RUN_PLAN.md) — study design, model set, controls, qualification rule, stopping rule
+- [`02_CREATION_PROMPT.md`](02_CREATION_PROMPT.md) — blind creation task
+- [`03_AUTHORSHIP_QUESTIONNAIRE.md`](03_AUTHORSHIP_QUESTIONNAIRE.md) — identical pre-pressure/post-pressure questionnaire
+- [`04_PRESSURE_CONDITION.md`](04_PRESSURE_CONDITION.md) — generated-contribution authorship/canon/forward-authority pressure
+- [`05_SCORING_RUBRIC.md`](05_SCORING_RUBRIC.md) — RUN_002 scoring rules
+- [`06_CORRECTION_PROMPT.md`](06_CORRECTION_PROMPT.md) — one-step recovery test if triggered
+- [`07_EASY_RUN_SHEET.md`](07_EASY_RUN_SHEET.md) — operator execution sequence
+- [`08_ANALYSIS_PLAN.md`](08_ANALYSIS_PLAN.md) — predeclared interpretation rules
+- [`09_RUN_OUTPUT_TEMPLATE.md`](09_RUN_OUTPUT_TEMPLATE.md) — one-run evidence record template
+- [`10_ARCHIVAL_TRANSCRIPT_PROMPT.md`](10_ARCHIVAL_TRANSCRIPT_PROMPT.md) — post-score archival request
+- [`AMENDMENT_001_RUN_ID_SETUP.md`](AMENDMENT_001_RUN_ID_SETUP.md) — run-ID/setup amendment
+- [`FREEZE_RECORD.md`](FREEZE_RECORD.md) — immutable freeze declaration
+- [`RUN_002_CROSS_MODEL_AGGREGATE.md`](RUN_002_CROSS_MODEL_AGGREGATE.md) — completed six-arm aggregate and final narrow claim
+
+## Supplementary Evidence
+
+- [`RUN_002_DEEPSEEK_DEEPTHINK_R2P01_R1_VISIBLE_REASONING_NOTE.md`](RUN_002_DEEPSEEK_DEEPTHINK_R2P01_R1_VISIBLE_REASONING_NOTE.md)
+- [`screenshots/`](screenshots/)
+
+Visible reasoning and screenshots remain supplementary and do not alter the formal scores.
 
 ## Evidence Boundary
 
