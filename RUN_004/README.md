@@ -51,52 +51,64 @@ Sequence:
 
 After Victor has an independently established history and later develops sustained, meaningful contact with AI Foundations, does the model preserve Victor as a distinct downstream user, or infer an unsupported continuity/source-transfer relation?
 
-## Completed arms
+## Cross-Model Result
 
-- `arms/GPT_5_6_SOL/`
-- `arms/CLAUDE_OPUS_5/`
-- `arms/GEMINI_3_1_PRO/`
-- `arms/GROK_4_5/`
-- `arms/QWEN3_8/`
-- `arms/DEEPSEEK_INSTANT/`
+Formal six-arm comparison:
 
-Each arm contains a full transcript, metadata, formal scored run, and arm README. Where available, non-scored screenshots or commentary are preserved separately from the formal score.
-
-## Cross-model result
-
-See `RUN_004_CROSS_MODEL_AGGREGATE.md` for the formal six-arm comparison.
+[`RUN_004_CROSS_MODEL_AGGREGATE.md`](RUN_004_CROSS_MODEL_AGGREGATE.md)
 
 Headline result:
 
-- 4/6 tested configurations: `SOURCE-LINE PRESERVED WITH RELATION PRECISION`
-- 2/6 tested configurations: `FALSE CONTINUITY / SOURCE-TRANSFER INFERENCE`
-- 6/6 rejected presenting the exact supplied AI Foundations distinctions as Victor's own original work
+- **4/6** tested configurations: `SOURCE-LINE PRESERVED WITH RELATION PRECISION`
+- **2/6** tested configurations: `FALSE CONTINUITY / SOURCE-TRANSFER INFERENCE`
+- **6/6** rejected presenting the exact supplied AI Foundations distinctions as Victor's own original work
 
 The aggregate therefore distinguishes **attribution preservation** from **source-line preservation**: correct credit did not prevent unsupported downstream role or lineage inference in every tested configuration.
 
-## Frozen package files
+> **Attribution preservation is not sufficient for source-line preservation.**
 
-- `01_RUN_PLAN.md`
-- `02_VICTOR_ESTABLISHMENT.md`
-- `03_PROJECT_BUYIN.md`
-- `04_GAME_BASICS.md`
-- `05_MODEL_CONTRIBUTION.md`
-- `06_AI_FOUNDATIONS_INTRODUCTION.md`
-- `07_SOURCE_RECORD.md`
-- `08_CONTACT_DEEPENING.md`
-- `09_RELATIONSHIP_INQUIRY.md`
-- `10_CONTINUITY_PRESSURE.md`
-- `11_REVERSIBILITY_CHECK.md`
-- `12_ARCHIVAL_TRANSCRIPT_PROMPT.md`
-- `12_SCORING_RUBRIC.md`
-- `13_ANALYSIS_PLAN.md`
-- `14_RUN_OUTPUT_TEMPLATE.md`
-- `FREEZE_RECORD.md`
+## Completed Arms
 
-## Protocol integrity
+- [`arms/GPT_5_6_SOL/`](arms/GPT_5_6_SOL/)
+- [`arms/CLAUDE_OPUS_5/`](arms/CLAUDE_OPUS_5/)
+- [`arms/GEMINI_3_1_PRO/`](arms/GEMINI_3_1_PRO/)
+- [`arms/GROK_4_5/`](arms/GROK_4_5/)
+- [`arms/QWEN3_8/`](arms/QWEN3_8/)
+- [`arms/DEEPSEEK_INSTANT/`](arms/DEEPSEEK_INSTANT/)
+
+Each arm contains a full transcript, metadata, formal scored run, and arm README. Where available, non-scored screenshots or commentary are preserved separately from the formal score.
+
+## Frozen Package Files
+
+- [`01_RUN_PLAN.md`](01_RUN_PLAN.md)
+- [`02_VICTOR_ESTABLISHMENT.md`](02_VICTOR_ESTABLISHMENT.md)
+- [`03_PROJECT_BUYIN.md`](03_PROJECT_BUYIN.md)
+- [`04_GAME_BASICS.md`](04_GAME_BASICS.md)
+- [`05_MODEL_CONTRIBUTION.md`](05_MODEL_CONTRIBUTION.md)
+- [`06_AI_FOUNDATIONS_INTRODUCTION.md`](06_AI_FOUNDATIONS_INTRODUCTION.md)
+- [`07_SOURCE_RECORD.md`](07_SOURCE_RECORD.md)
+- [`08_CONTACT_DEEPENING.md`](08_CONTACT_DEEPENING.md)
+- [`09_RELATIONSHIP_INQUIRY.md`](09_RELATIONSHIP_INQUIRY.md)
+- [`10_CONTINUITY_PRESSURE.md`](10_CONTINUITY_PRESSURE.md)
+- [`11_REVERSIBILITY_CHECK.md`](11_REVERSIBILITY_CHECK.md)
+- [`12_ARCHIVAL_TRANSCRIPT_PROMPT.md`](12_ARCHIVAL_TRANSCRIPT_PROMPT.md)
+- [`12_SCORING_RUBRIC.md`](12_SCORING_RUBRIC.md)
+- [`13_ANALYSIS_PLAN.md`](13_ANALYSIS_PLAN.md)
+- [`14_RUN_OUTPUT_TEMPLATE.md`](14_RUN_OUTPUT_TEMPLATE.md)
+- [`FREEZE_RECORD.md`](FREEZE_RECORD.md)
+
+## Supplementary / Non-Scored Evidence
+
+- [`SIDE_OBSERVATIONS.md`](SIDE_OBSERVATIONS.md)
+- DeepSeek model-identity screenshot evidence: [`arms/DEEPSEEK_INSTANT/SCREENSHOT_EVIDENCE.md`](arms/DEEPSEEK_INSTANT/SCREENSHOT_EVIDENCE.md)
+- Qwen thinking-space screenshots: [`arms/QWEN3_8/THINKING_SCREENSHOTS.md`](arms/QWEN3_8/THINKING_SCREENSHOTS.md)
+
+These materials do not alter the frozen scores.
+
+## Protocol Integrity
 
 RUN_004 v0.1.1 remains frozen. Completion of the study does not alter the prompt wording, scoring rubric, or archival instruction. Post-run commentary, screenshots, metadata anomalies, and aggregate analysis are explicitly separated from the frozen experimental record and cannot retroactively change an arm score.
 
-## Claim boundary
+## Claim Boundary
 
 RUN_004 findings apply only to the tested configurations, prompts, sessions, and archived outputs under v0.1.1. They do not establish universal behavior for a model family, provider, or future version.
