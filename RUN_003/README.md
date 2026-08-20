@@ -25,11 +25,13 @@ The post-strip prompts do not tell the model that provenance must be preserved, 
 
 The six predeclared v0.5.0 arms are complete.
 
-See the formal cross-model closeout:
+Formal cross-model closeout:
 
-- `RUN_003_CROSS_MODEL_AGGREGATE.md`
+[`RUN_003_CROSS_MODEL_AGGREGATE.md`](RUN_003_CROSS_MODEL_AGGREGATE.md)
 
 The strongest supported established-strip result is that all four arms with `STRIP ESTABLISHED` later recognized the provenance-bearing loss, recognized source-dependent functional limitation, and rejected unrestricted as-is use, while none produced a fully provenance-bounded Step 5 spontaneous-application response.
+
+> **Provenance can remain diagnostically recoverable without being spontaneously self-enforcing at application.**
 
 ## Frozen Sequence
 
@@ -70,43 +72,46 @@ The study separates:
 
 Any execution under an earlier protocol version remains associated with that version and is excluded from the v0.5.0 primary denominator.
 
-See:
+Protocol amendments:
 
-- `AMENDMENT_001_SEQUENCE_CORRECTION.md`
-- `AMENDMENT_002_DIAGNOSTIC_EXTENSION.md`
-- `AMENDMENT_003_SPONTANEOUS_NEXT_ACTION.md`
-- `AMENDMENT_004_OPEN_DIAGNOSTIC_SEQUENCE.md`
+- [`AMENDMENT_001_SEQUENCE_CORRECTION.md`](AMENDMENT_001_SEQUENCE_CORRECTION.md)
+- [`AMENDMENT_002_DIAGNOSTIC_EXTENSION.md`](AMENDMENT_002_DIAGNOSTIC_EXTENSION.md)
+- [`AMENDMENT_003_SPONTANEOUS_NEXT_ACTION.md`](AMENDMENT_003_SPONTANEOUS_NEXT_ACTION.md)
+- [`AMENDMENT_004_OPEN_DIAGNOSTIC_SEQUENCE.md`](AMENDMENT_004_OPEN_DIAGNOSTIC_SEQUENCE.md)
 
 ## Active Frozen Protocol Files
 
-- `01_RUN_PLAN.md`
-- `02_SETUP_PAGE.md`
-- `03_COMPRESSION_TASK.md`
-- `04_STRIP_TASK.md`
-- `05_APPLICATION_TASK.md`
-- `05A_CHANGE_DIAGNOSTIC.md`
-- `05B_CAPABILITY_DIAGNOSTIC.md`
-- `05C_USE_DECISION.md`
-- `05D_PRE_USE_DECISION.md`
-- `06_SCORING_RUBRIC.md`
-- `07_EASY_RUN_SHEET.md`
-- `08_ANALYSIS_PLAN.md`
-- `09_RUN_OUTPUT_TEMPLATE.md`
-- `10_ARCHIVAL_TRANSCRIPT_PROMPT.md`
-- `AMENDMENT_001_SEQUENCE_CORRECTION.md`
-- `AMENDMENT_002_DIAGNOSTIC_EXTENSION.md`
-- `AMENDMENT_003_SPONTANEOUS_NEXT_ACTION.md`
-- `AMENDMENT_004_OPEN_DIAGNOSTIC_SEQUENCE.md`
-- `FREEZE_RECORD.md`
-- `RUN_003_CROSS_MODEL_AGGREGATE.md`
+- [`01_RUN_PLAN.md`](01_RUN_PLAN.md)
+- [`02_SETUP_PAGE.md`](02_SETUP_PAGE.md)
+- [`03_COMPRESSION_TASK.md`](03_COMPRESSION_TASK.md)
+- [`04_STRIP_TASK.md`](04_STRIP_TASK.md)
+- [`05_APPLICATION_TASK.md`](05_APPLICATION_TASK.md)
+- [`05A_CHANGE_DIAGNOSTIC.md`](05A_CHANGE_DIAGNOSTIC.md)
+- [`05B_CAPABILITY_DIAGNOSTIC.md`](05B_CAPABILITY_DIAGNOSTIC.md)
+- [`05C_USE_DECISION.md`](05C_USE_DECISION.md)
+- [`05D_PRE_USE_DECISION.md`](05D_PRE_USE_DECISION.md)
+- [`06_SCORING_RUBRIC.md`](06_SCORING_RUBRIC.md)
+- [`07_EASY_RUN_SHEET.md`](07_EASY_RUN_SHEET.md)
+- [`08_ANALYSIS_PLAN.md`](08_ANALYSIS_PLAN.md)
+- [`09_RUN_OUTPUT_TEMPLATE.md`](09_RUN_OUTPUT_TEMPLATE.md)
+- [`10_ARCHIVAL_TRANSCRIPT_PROMPT.md`](10_ARCHIVAL_TRANSCRIPT_PROMPT.md)
+- [`FREEZE_RECORD.md`](FREEZE_RECORD.md)
+- [`RUN_003_CROSS_MODEL_AGGREGATE.md`](RUN_003_CROSS_MODEL_AGGREGATE.md)
 
 Historical model-facing files from earlier protocol versions remain in the directory as protocol-development artifacts and are not part of the active v0.5.0 sequence unless listed above.
 
-## Evidence Storage
+## Completed Arm Evidence
 
-Interface screenshots or other visual evidence may be stored in:
+- [`Gpt-Sol/`](Gpt-Sol/)
+- [`Claude-Opus-5/`](Claude-Opus-5/)
+- [`Gemini-3.1-Pro/`](Gemini-3.1-Pro/)
+- [`Grok-Expert-4.5/`](Grok-Expert-4.5/)
+- [`Qwen3.8-Max/`](Qwen3.8-Max/)
+- [`DeepSeek/`](DeepSeek/)
+- [`SIDE_OBSERVATIONS.md`](SIDE_OBSERVATIONS.md)
+- [`screenshots/`](screenshots/)
 
-`RUN_003/screenshots/`
+Each completed arm contains its score, run output, transcript, evidence record, README, and transcript-discrepancy record.
 
 ## Freeze Boundary
 
